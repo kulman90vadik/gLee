@@ -43,6 +43,13 @@
         border-radius: 25px;
         padding: 10px 35px;
         display: flex;
+        margin-right: 15px;
+        align-items: center;
+    }
+    &__holder {
+        padding: 6px 20px 4px 0;
+        border-right: 1px solid #fff;
+        margin-right: 20px;
     }
     &__icons {
         position: relative;
@@ -50,12 +57,17 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        &:hover .header__heart-num,
+        &:hover .header__corb-num{
+            background-color: #000;
+            color: #fff;
+        }
     }
     &__heart {
         display: block;
         width: 18px;
         height: 16px;
-        background-image: url(../images/heart.png);
+        background-image: url(../images/heart.svg);
     }
     &__corb {
         display: block;
@@ -78,6 +90,22 @@
         color: $title;
         line-height: 1.6;
         text-align: center;
+        transition: color .3s ease-in, background-color .3s ease-in;
+    }
+    &__burger-menu {
+        width: 48px;
+        height: 48px;
+        border: none;
+        padding: 0;
+        border-radius: 50%;
+        cursor: pointer;
+        background-image: url(../images/menu.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: opacity .3s ease-in;
+        &:hover {
+            opacity: .5;
+        }
     }
 }
 
