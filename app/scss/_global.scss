@@ -14,18 +14,8 @@ body {
     height: 100%;
 }
 
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-}
-
 .main {
-    flex: 1 0 auto;
-}
-
-.footer {
-    flex: 0 0 auto;
+    flex-grow: 1;
 }
 
 body {
@@ -33,6 +23,8 @@ body {
     font-size: 16px;
     background-color: #fff;
     color: $global;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
@@ -43,5 +35,12 @@ body {
         max-width: 1800px;
         padding: 0 15px;
         margin: 0 auto;
+    }
+}
+
+.logo {
+    outline: transparent;
+    &:focus {
+        outline: 1px solid $vio;
     }
 }
