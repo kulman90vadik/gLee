@@ -339,7 +339,6 @@
 
 .products {
     padding-top: 65px;
-    margin-bottom: 140px;
     &__buttons {
         display: flex;
         justify-content: center;
@@ -366,13 +365,12 @@
     &__inner {
         display: flex;
         flex-wrap: wrap;
-        margin-right: -30px;
+        margin: 0 -30px 140px 0;
     }
     &__block {
         max-width: 270px;
         min-height: 380px;
-        margin-bottom: 40px;
-        margin-right: 30px;
+        margin: 0 30px 40px 0;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -442,11 +440,68 @@
 }
 
 
+.cards {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    &__card {
+        max-width: 49%;
+        width: 100%;
+        background-color: #feefe2;
+        padding: 100px 0 100px 135px;
+        display: flex;
+    }
+    &__photo--big {
+        width: 233px;
+        height: 405px;
+        margin: -200px 15px 0 0;
 
-
-
-
-
+    }
+    &__photo--small {
+        width: 222px;
+        height: 399px;
+        margin: -200px 55px 0 0;
+    }
+    &__info {
+        max-width: 346px;
+        color: $title;
+    }
+    &__title {
+        font-size: 26px;
+        line-height: 1.2;
+        @extend %dmsans-700;
+        margin-bottom: 25px;
+        display: block;
+    }
+    &__text {
+        line-height: 1.8;
+        margin-bottom: 20px;
+    }
+    &__link {
+        display: inline-block;
+        @extend %rubik-500;
+        font-size: 15px;
+        padding: 20px 15px;
+        border: 1px solid rgba(67, 99, 114, 0.4);
+        border-radius: 5px;
+        outline: transparent;
+        background-color: transparent;
+        transition: background-color .3s ease-in;
+        &:hover {
+            background-color: $btn-color;
+        }
+        &:focus {
+            background-color: $btn-color;
+        }
+    }
+    &__more {
+        margin-right: 40px;
+        display: inline-block;
+    }
+    &__arrow {
+        fill: $global;
+    }
+}
 
 
 
