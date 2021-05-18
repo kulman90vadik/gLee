@@ -44,3 +44,11 @@ body {
         outline: 1px solid $vio;
     }
 }
+
+.title {
+    @extend %dmsans-700;
+    text-align: center;
+    font-size: 36px;
+    color: #191919;
+    margin-bottom: 30px;
+}
