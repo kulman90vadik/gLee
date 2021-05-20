@@ -10,15 +10,15 @@
 </head>
 <body>
     <header class="header">
+        <h1 class="visually-hidden">sofa shop</h1>
         <div class="container container--fluid">
-            <div class="header__inner">
+            <nav class="header__inner">
                 <a class="logo header__logo" href="#">
-                    <img class="logo__images" src="images/logo.png" alt="Logotip">
+                    <img class="logo__images" src="images/logo.png" alt="Logo" width="146" height="39">
                 </a>
-                <nav class="menu">
-                    <ul class="menu__list">
+                    <ul class="menu">
                         <li class="menu__item">                                                  
-                            <a class="menu__link" href="#">Home +</a>
+                            <a class="menu__link" href="#">Home<span class="menu__plus">+</span></a>
                         </li>
                         <li class="menu__item">
                             <a class="menu__link" href="#">About</a>
@@ -27,7 +27,7 @@
                             <a class="menu__link" href="#">Services</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="#">Pages +</a>
+                            <a class="menu__link" href="#">Pages<span class="menu__plus">+</span></a>
                         </li>
                         <li class="menu__item">
                             <a class="menu__link" href="#">News</a>
@@ -36,369 +36,462 @@
                             <a class="menu__link" href="#">Contact</a>
                         </li>
                     </ul>
-                </nav>
                 <div class="header__socials">
                     <button class="header__search" type="button">
                         <svg class="header__search-svg" xmlns="http://www.w3.org/2000/svg" width="15.28" height="15.281" viewBox="0 0 15.28 15.281">
                             <path id="icon" fill-rule="evenodd" d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z" transform="translate(-1544.72 -66)"/>
                         </svg>
+                        <span class="visually-hidden">when you click on this icon, a site search field opens</span>
                     </button>
-                    <div class="header__basket">
-                        <div class="header__holder">
-                            <a class="header__icons header__heart" href="#">
+                            <button class="header__icons header__icons-heart" type="button">
+                                <svg class="header__heart" width="19" height="18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewBox="0 0.742 19 16.515"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="1.983 1.721 17.859 15.523"><path paint-order="stroke fill markers" fill-rule="evenodd" d="M10.913 17.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76.091-2.65 2.207-4.707 4.818-4.707 1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM6.8 3.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z"/></svg></svg>
                                 <span class="header__heart-num">0</span>
-                                <span class="visually-hidden">icon heart</span>
-                            </a>
-                        </div>
-                        <a class="header__icons header__corb" href="#">
+                                <span class="visually-hidden">when you click on this icon, you can view a list of your favorite products</span>
+                            </button>
+                        <button class="header__icons header__icons-corb" type="button">
+                            <svg class="header__corb" xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 18.94 16.969">
+                                <path fill-rule="evenodd" d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z" transform="translate(-1716 -69)"/>
+                            </svg>
                             <span class="header__corb-num">0</span>
-                            <span class="visually-hidden">icon corb</span>
-                        </a>
-                    </div>
-                    <button class="header__burger-menu">
-                        <span class="visually-hidden">icon burger menu</span>
+                            <span class="visually-hidden">when you click on this icon, you can view the list of products in the shopping cart</span>
+                        </button>
+                    <button class="header__burger-menu" type="button">
+                        <svg class="header__menu" width="21" height="22" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewBox="0 0.5 21 21" fill="#fff"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="2 1.589 20.029 20.029"><path paint-order="stroke fill markers" fill-rule="evenodd" d="M4.146 5.88A2.144 2.144 0 0 1 2 3.736c0-1.187.96-2.146 2.146-2.146 1.187 0 2.146.959 2.146 2.146 0 1.186-.96 2.146-2.146 2.146zm0 7.87A2.145 2.145 0 0 1 2 11.603c0-1.186.96-2.145 2.146-2.145 1.187 0 2.146.959 2.146 2.145 0 1.187-.96 2.147-2.146 2.147zm0 7.868A2.144 2.144 0 0 1 2 19.472c0-1.187.96-2.146 2.146-2.146 1.187 0 2.146.96 2.146 2.146 0 1.187-.96 2.146-2.146 2.146zM12.014 5.88a2.144 2.144 0 0 1-2.146-2.146c0-1.187.96-2.146 2.146-2.146 1.187 0 2.146.959 2.146 2.146 0 1.186-.959 2.146-2.146 2.146zm0 7.869a2.145 2.145 0 0 1-2.146-2.147c0-1.186.96-2.145 2.146-2.145 1.187 0 2.146.959 2.146 2.145 0 1.187-.959 2.147-2.146 2.147zm0 7.868a2.144 2.144 0 0 1-2.146-2.146c0-1.187.96-2.146 2.146-2.146 1.187 0 2.146.96 2.146 2.146 0 1.187-.959 2.146-2.146 2.146zM19.883 5.88a2.144 2.144 0 0 1-2.146-2.146c0-1.187.96-2.146 2.146-2.146 1.187 0 2.146.959 2.146 2.146 0 1.186-.96 2.146-2.146 2.146zm0 7.869a2.145 2.145 0 0 1-2.146-2.147c0-1.186.96-2.145 2.146-2.145 1.187 0 2.146.959 2.146 2.145 0 1.187-.96 2.147-2.146 2.147zm0 7.868a2.144 2.144 0 0 1-2.146-2.146c0-1.187.96-2.146 2.146-2.146 1.187 0 2.146.96 2.146 2.146 0 1.187-.96 2.146-2.146 2.146z"/></svg></svg>
+                        <span class="visually-hidden">when you click on this icon, the user profile will open</span>
                     </button>
                 </div>
-            </div>
+            </nav>
         </div>
     </header>
         <main class="main">
             <section class="trendy">
-                <div class="trendy__slider">
-                    <div class="trendy__slide">
-                        <div class="container">
-                            <div class="trendy__inner">
-                                <div class="trendy__holder">
-                                    <h1 class="trendy__title">Smart and trendy</h1>
-                                    <p class="trendy__text">
-                                        Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
-                                    </p>
-                                    <a class="trendy__link" href="#">
-                                        Shop Now
-                                    </a>
+                <div class="container container--fluid">
+                    <h2 class="visually-hidden">Smart and trendy</h2>
+                    <ul class="products-slider">
+                        <li class="products-slider__slide">
+                            <div class="container">
+                                <div class="products-slider__inner">
+                                    <div class="products-slider__holder">
+                                        <div class="products-slider__name">Smart and trendy</div>
+                                        <div class="products-slider__text">
+                                            <p>
+                                                Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
+                                            </p>
+                                        </div>
+                                        <a class="products-slider__link" href="#">
+                                            Shop Now
+                                        </a>
+                                    </div>
+                                    <img class="products-slider__photo" src="images/trendy-slider.png" alt="sofa" width="640" height="264">
                                 </div>
-                                <div class="trendy__bg" style="background-image: url(images/trendy-slider.png)">
-                                    <span class="visually-hidden">Photo sofa</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="trendy__slide">
-                        <div class="container">
-                            <div class="trendy__inner">
-                                <div class="trendy__holder">
-                                    <h1 class="trendy__title">Smart and trendy</h1>
-                                    <p class="trendy__text">
-                                        Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
-                                    </p>
-                                    <a class="trendy__link" href="#">
-                                        Shop Now
-                                    </a>
-                                </div>
-                                <div class="trendy__bg" style="background-image: url(images/trendy-slider.png)">
-                                    <span class="visually-hidden">Photo sofa</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="trendy__slide">
-                        <div class="container">
-                            <div class="trendy__inner">
-                                <div class="trendy__holder">
-                                    <h1 class="trendy__title">Smart and trendy</h1>
-                                    <p class="trendy__text">
-                                        Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
-                                    </p>
-                                    <a class="trendy__link" href="#">
-                                        Shop Now
-                                    </a>
-                                </div>
-                                <div class="trendy__bg" style="background-image: url(images/trendy-slider.png)">
-                                    <span class="visually-hidden">Photo sofa</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="services">
-                    <ul class="services__list">
-                        <li class="services__item services__item--small">
-                            <div class="services__icon services__icon--support">
-                                <span class="visually-hidden">icon time</span>
-                            </div>
-                            <div class="services__info">
-                                <span class="services__title">Support 24/7.</span>
-                                <p class="services__text services__text--support">
-                                    Contact us 24 hours a day, 7 days a week.
-                                </p>
                             </div>
                         </li>
-                        <li class="services__item services__item--big">
-                            <div class="services__icon services__icon--delivery">
-                                <span class="visually-hidden">icon auto</span>
-                            </div>
-                            <div class="services__info">
-                                <span class="services__title">Delivery.</span>
-                                <p class="services__text">
-                                    Free shipping on all US order.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="services__item services__item--huge">
-                            <div class="services__icon services__icon--secure">
-                                <span class="visually-hidden">icon credit card</span>
-                            </div>
-                            <div class="services__info">
-                                <span class="services__title">100% Payment secure.</span>
-                                <p class="services__text services__text--secure">
-                                    We ensure secure payment with PEV.
-                                </p>
+                        <li class="products-slider__slide">
+                            <div class="container">
+                                <div class="products-slider__inner">
+                                    <div class="products-slider__holder">
+                                        <div class="products-slider__name">Smart and trendy</div>
+                                        <div class="products-slider__text">
+                                            <p>
+                                                Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
+                                            </p>
+                                        </div>
+                                        <a class="products-slider__link" href="#">
+                                            Shop Now
+                                        </a>
+                                    </div>
+                                    <img class="products-slider__photo" src="images/trendy-slider.png" alt="sofa" width="640" height="264">
+                                </div>
                             </div>
                         </li>
+                        <li class="products-slider__slide">
+                            <div class="container">
+                                <div class="products-slider__inner">
+                                    <div class="products-slider__holder">
+                                        <div class="products-slider__name">Smart and trendy</div>
+                                        <div class="products-slider__text">
+                                            <p>
+                                                Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
+                                            </p>
+                                        </div>
+                                        <a class="products-slider__link" href="#">
+                                            Shop Now
+                                        </a>
+                                    </div>
+                                    <img class="products-slider__photo" src="images/trendy-slider.png" alt="sofa" width="640" height="264">
+                                </div>
+                            </div>
+                        </li>
+                        
                     </ul>
+                    <div class="services">
+                        <ul class="services__list">
+                            <li class="services__item services__item--small">
+                                <div class="services__info">
+                                    <h3 class="services__title services__support">Support 24/7.</h3>
+                                    <div class="services__text services__text--support">
+                                        <p>
+                                            Contact us 24 hours a day, 7 days a week.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="services__item services__item--big">
+                                <div class="services__info">
+                                    <h3 class="services__title services__delivery">Delivery.</h3>
+                                    <div class="services__text">
+                                        <p>
+                                            Free shipping on all US order.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="services__item services__item--huge">
+                                <div class="services__info">
+                                    <h3 class="services__title services__secure">100% Payment secure.</h3>
+                                    <div class="services__text services__text--secure">
+                                        <p>
+                                            We ensure secure payment with PEV.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
-            <section class="products">
+            <section class="products-week">
                 <div class="container">
-                    <h2 class="title products__title">Products of the week</h2>
-                    <ul class="products__buttons">
-                        <li class="products__item">                                
-                            <button class="products__btn" type="button" data-filter="all">All</button>
+                    <h2 class="title products-week__title">Products of the week</h2>
+                    <ul class="products-week__buttons">
+                        <li class="products-week__item">                                
+                            <button class="products-week__btn" type="button" data-filter="all">All</button>
                         </li>
-                        <li class="products__item">
-                            <button class="products__btn" type="button" data-filter=".furnitures">Furnitures</button>
+                        <li class="products-week__item">
+                            <button class="products-week__btn" type="button" data-filter=".furnitures">Furnitures</button>
                         </li>
-                        <li class="products__item">
-                            <button class="products__btn" type="button" data-filter=".chairs">Chairs</button>
+                        <li class="products-week__item">
+                            <button class="products-week__btn" type="button" data-filter=".chairs">Chairs</button>
                         </li>
-                        <li class="products__item">
-                            <button class="products__btn" type="button" data-filter=".lighting">Lighting</button>
+                        <li class="products-week__item">
+                            <button class="products-week__btn" type="button" data-filter=".lighting">Lighting</button>
                         </li>
-                        <li class="products__item">
-                            <button class="products__btn" type="button" data-filter=".decor">Decor</button>
+                        <li class="products-week__item">
+                            <button class="products-week__btn" type="button" data-filter=".decor">Decor</button>
                         </li>
                     </ul>
-                    <ul class="products__inner">
-                        <li class="products__block mix all furnitures">
-                            <img class="products__photo" src="images/products-1.png" alt="photo Wooden radio">
-                            <span class="products__name">Wooden radio</span>
-                            <span class="products__price">$29.00</span>
-                            <div class="products__icons">
-                                <a class="products__link" href="#">
-                                    <svg class="products__search-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 15.28 15.281">
-                                        <path id="icon" fill-rule="evenodd" d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z" transform="translate(-1544.72 -66)"/>
-                                    </svg>
-                                    <span class="visually-hidden">icon search</span>
-                                </a>
-                                <a class="products__link" href="#">
-                                    <svg class="products__corb-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 18.94 16.969">
-                                        <path fill-rule="evenodd"  d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z" transform="translate(-1716 -69)"/>
-                                    </svg>
-                                    <span class="visually-hidden">icon corb</span>
-                                </a>
-                                <a class="products__link" href="#">
-                                    <svg class="products__hart-svg" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewBox="0 0.742 19 16.515"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="1.983 1.721 17.859 15.523"><path paint-order="stroke fill markers" fill-rule="evenodd" d="M10.913 17.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76.091-2.65 2.207-4.707 4.818-4.707 1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM6.8 3.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z"/></svg></svg>
-                                    <span class="visually-hidden">icon heart</span>
-                                </a>
-                            </div>
+
+                    <ul class="products-week__inner">
+                        <li class="products-week__block mix all furnitures">
+                            <article class="product-card">
+                                <img class="product-card__photo" src="images/products-1.png" alt="photo Wooden radio" width="186" height="195">
+                                <h3 class="product-card__name">Wooden radio</h3>
+                                <span class="product-card__price">
+                                    <span class="product-card__money">$</span>
+                                    29.00
+                                </span>
+                                <div class="product-card__icons">
+                                    <a class="product-card__link" href="#">
+                                        <svg class="product-card__search-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 15.28 15.281">
+                                            <path id="icon" fill-rule="evenodd" d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z" transform="translate(-1544.72 -66)"/>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                            the search icon when you click on it will be a detailed description of the product
+                                        </span>
+                                    </a>
+                                    <button class="product-card__link" type="button">
+                                        <svg class="product-card__corb-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 18.94 16.969">
+                                            <path fill-rule="evenodd"  d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z" transform="translate(-1716 -69)"/>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                            the shopping cart icon that will be added to the shopping cart when you click on it
+                                        </span>
+                                    </button>
+                                    <button class="product-card__link" type="button">
+                                        <svg class="product-card__hart-svg" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewBox="0 0.742 19 16.515"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="1.983 1.721 17.859 15.523"><path paint-order="stroke fill markers" fill-rule="evenodd" d="M10.913 17.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76.091-2.65 2.207-4.707 4.818-4.707 1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM6.8 3.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z"/></svg></svg>
+                                        <span class="visually-hidden">
+                                            heart icon that will add the product to the list of your favorite products when you click on it
+                                        </span>
+                                    </button>
+                                </div>
+                            </article>
                         </li>
-                        <li class="products__block mix all furnitures">
-                            <img class="products__photo" src="images/products-2.png" alt="photo Wooden radio">
-                            <span class="products__name">Wooden chair</span>
-                            <span class="products__price">$29.00</span>
-                            <div class="products__icons">
-                                <a class="products__link" href="#">
-                                    <svg class="products__search-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 15.28 15.281">
-                                        <path id="icon" fill-rule="evenodd" d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z" transform="translate(-1544.72 -66)"/>
-                                    </svg>
-                                    <span class="visually-hidden">icon search</span>
-                                </a>
-                                <a class="products__link" href="#">
-                                    <svg class="products__corb-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 18.94 16.969">
-                                        <path fill-rule="evenodd"  d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z" transform="translate(-1716 -69)"/>
-                                    </svg>
-                                    <span class="visually-hidden">icon corb</span>
-                                </a>
-                                <a class="products__link" href="#">
-                                    <svg class="products__hart-svg" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewBox="0 0.742 19 16.515"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="1.983 1.721 17.859 15.523"><path paint-order="stroke fill markers" fill-rule="evenodd" d="M10.913 17.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76.091-2.65 2.207-4.707 4.818-4.707 1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM6.8 3.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z"/></svg></svg>
-                                    <span class="visually-hidden">icon heart</span>
-                                </a>
-                            </div>
+
+                        <li class="products-week__block mix all furnitures">
+                            <article class="product-card">
+                                <img class="product-card__photo" src="images/products-2.png" alt="photo Wooden radio" width="148" height="206">
+                                <h3 class="product-card__name">Wooden chair</h3>
+                                <span class="product-card__price">
+                                    <span class="product-card__money">$</span>
+                                    29.00
+                                </span>
+                                <div class="product-card__icons">
+                                    <a class="product-card__link" href="#">
+                                        <svg class="product-card__search-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 15.28 15.281">
+                                            <path id="icon" fill-rule="evenodd" d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z" transform="translate(-1544.72 -66)"/>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                            the search icon when you click on it will be a detailed description of the product
+                                        </span>
+                                    </a>
+                                    <button class="product-card__link" type="button">
+                                        <svg class="product-card__corb-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 18.94 16.969">
+                                            <path fill-rule="evenodd"  d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z" transform="translate(-1716 -69)"/>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                            the shopping cart icon that will be added to the shopping cart when you click on it
+                                        </span>
+                                    </button>
+                                    <button class="product-card__link" type="button">
+                                        <svg class="product-card__hart-svg" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewBox="0 0.742 19 16.515"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="1.983 1.721 17.859 15.523"><path paint-order="stroke fill markers" fill-rule="evenodd" d="M10.913 17.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76.091-2.65 2.207-4.707 4.818-4.707 1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM6.8 3.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z"/></svg></svg>
+                                        <span class="visually-hidden">
+                                            heart icon that will add the product to the list of your favorite products when you click on it
+                                        </span>
+                                    </button>
+                                </div>
+                            </article>
                         </li>
-                        <li class="products__block mix all chairs">
-                            <img class="products__photo" src="images/products-3.png" alt="photo Wooden radio">
-                            <span class="products__name">White chair</span>
-                            <span class="products__price">$29.00</span>
-                            <div class="products__icons">
-                                <a class="products__link" href="#">
-                                    <svg class="products__search-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 15.28 15.281">
-                                        <path id="icon" fill-rule="evenodd" d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z" transform="translate(-1544.72 -66)"/>
-                                    </svg>
-                                    <span class="visually-hidden">icon search</span>
-                                </a>
-                                <a class="products__link" href="#">
-                                    <svg class="products__corb-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 18.94 16.969">
-                                        <path fill-rule="evenodd"  d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z" transform="translate(-1716 -69)"/>
-                                    </svg>
-                                    <span class="visually-hidden">icon corb</span>
-                                </a>
-                                <a class="products__link" href="#">
-                                    <svg class="products__hart-svg" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewBox="0 0.742 19 16.515"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="1.983 1.721 17.859 15.523"><path paint-order="stroke fill markers" fill-rule="evenodd" d="M10.913 17.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76.091-2.65 2.207-4.707 4.818-4.707 1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM6.8 3.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z"/></svg></svg>
-                                    <span class="visually-hidden">icon heart</span>
-                                </a>
-                            </div>
+                        <li class="products-week__block mix all chairs">
+                            <article class="product-card">
+                                <img class="product-card__photo" src="images/products-3.png" alt="photo Wooden radio" width="208" height="164">
+                                <h3 class="product-card__name">White chair</h3>
+                                <span class="product-card__price">
+                                    <span class="product-card__money">$</span>
+                                    29.00
+                                </span>
+                                <div class="product-card__icons">
+                                    <a class="product-card__link" href="#">
+                                        <svg class="product-card__search-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 15.28 15.281">
+                                            <path id="icon" fill-rule="evenodd" d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z" transform="translate(-1544.72 -66)"/>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                            the search icon when you click on it will be a detailed description of the product
+                                        </span>
+                                    </a>
+                                    <button class="product-card__link" type="button">
+                                        <svg class="product-card__corb-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 18.94 16.969">
+                                            <path fill-rule="evenodd"  d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z" transform="translate(-1716 -69)"/>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                            the shopping cart icon that will be added to the shopping cart when you click on it
+                                        </span>
+                                    </button>
+                                    <button class="product-card__link" type="button">
+                                        <svg class="product-card__hart-svg" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewBox="0 0.742 19 16.515"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="1.983 1.721 17.859 15.523"><path paint-order="stroke fill markers" fill-rule="evenodd" d="M10.913 17.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76.091-2.65 2.207-4.707 4.818-4.707 1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM6.8 3.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z"/></svg></svg>
+                                        <span class="visually-hidden">
+                                            heart icon that will add the product to the list of your favorite products when you click on it
+                                        </span>
+                                    </button>
+                                </div>
+                            </article>
                         </li>
-                        <li class="products__block  mix all chairs">
-                            <img class="products__photo" src="images/products-4.png" alt="photo Wooden radio">
-                            <span class="products__name">Retro table</span>
-                            <span class="products__price">$29.00</span>
-                            <div class="products__icons">
-                                <a class="products__link" href="#">
-                                    <svg class="products__search-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 15.28 15.281">
-                                        <path id="icon" fill-rule="evenodd" d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z" transform="translate(-1544.72 -66)"/>
-                                    </svg>
-                                    <span class="visually-hidden">icon search</span>
-                                </a>
-                                <a class="products__link" href="#">
-                                    <svg class="products__corb-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 18.94 16.969">
-                                        <path fill-rule="evenodd"  d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z" transform="translate(-1716 -69)"/>
-                                    </svg>
-                                    <span class="visually-hidden">icon corb</span>
-                                </a>
-                                <a class="products__link" href="#">
-                                    <svg class="products__hart-svg" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewBox="0 0.742 19 16.515"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="1.983 1.721 17.859 15.523"><path paint-order="stroke fill markers" fill-rule="evenodd" d="M10.913 17.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76.091-2.65 2.207-4.707 4.818-4.707 1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM6.8 3.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z"/></svg></svg>
-                                    <span class="visually-hidden">icon heart</span>
-                                </a>
-                            </div>
+                        <li class="products-week__block  mix all chairs">
+                            <article class="product-card">
+                                <img class="product-card__photo" src="images/products-4.png" alt="photo Wooden radio" width="224" height="135">
+                                <h3 class="product-card__name">Retro table</h3>
+                                <span class="product-card__price">
+                                    <span class="product-card__money">$</span>
+                                    29.00
+                                </span>
+                                <div class="product-card__icons">
+                                    <a class="product-card__link" href="#">
+                                        <svg class="product-card__search-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 15.28 15.281">
+                                            <path id="icon" fill-rule="evenodd" d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z" transform="translate(-1544.72 -66)"/>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                            the search icon when you click on it will be a detailed description of the product
+                                        </span>
+                                    </a>
+                                    <button class="product-card__link" type="button">
+                                        <svg class="product-card__corb-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 18.94 16.969">
+                                            <path fill-rule="evenodd"  d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z" transform="translate(-1716 -69)"/>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                            the shopping cart icon that will be added to the shopping cart when you click on it
+                                        </span>
+                                    </button>
+                                    <button class="product-card__link" type="button">
+                                        <svg class="product-card__hart-svg" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewBox="0 0.742 19 16.515"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="1.983 1.721 17.859 15.523"><path paint-order="stroke fill markers" fill-rule="evenodd" d="M10.913 17.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76.091-2.65 2.207-4.707 4.818-4.707 1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM6.8 3.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z"/></svg></svg>
+                                        <span class="visually-hidden">
+                                            heart icon that will add the product to the list of your favorite products when you click on it
+                                        </span>
+                                    </button>
+                                </div>
+                            </article>
                         </li>
-                        <li class="products__block mix all lighting">
-                            <img class="products__photo" src="images/products-5.png" alt="photo Wooden radio">
-                            <span class="products__name">Wooden radio</span>
-                            <span class="products__price">$29.00</span>
-                            <div class="products__icons">
-                                <a class="products__link" href="#">
-                                    <svg class="products__search-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 15.28 15.281">
-                                        <path id="icon" fill-rule="evenodd" d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z" transform="translate(-1544.72 -66)"/>
-                                    </svg>
-                                    <span class="visually-hidden">icon search</span>
-                                </a>
-                                <a class="products__link" href="#">
-                                    <svg class="products__corb-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 18.94 16.969">
-                                        <path fill-rule="evenodd"  d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z" transform="translate(-1716 -69)"/>
-                                    </svg>
-                                    <span class="visually-hidden">icon corb</span>
-                                </a>
-                                <a class="products__link" href="#">
-                                    <svg class="products__hart-svg" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewBox="0 0.742 19 16.515"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="1.983 1.721 17.859 15.523"><path paint-order="stroke fill markers" fill-rule="evenodd" d="M10.913 17.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76.091-2.65 2.207-4.707 4.818-4.707 1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM6.8 3.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z"/></svg></svg>
-                                    <span class="visually-hidden">icon heart</span>
-                                </a>
-                            </div>
+                        <li class="products-week__block mix all lighting">
+                            <article class="product-card">
+                                <img class="product-card__photo" src="images/products-5.png" alt="photo Wooden radio" width="236" height="162">
+                                <h3 class="product-card__name">Wooden radio</h3>
+                                <span class="product-card__price">
+                                    <span class="product-card__money">$</span>
+                                    29.00
+                                </span>
+                                <div class="product-card__icons">
+                                    <a class="product-card__link" href="#">
+                                        <svg class="product-card__search-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 15.28 15.281">
+                                            <path id="icon" fill-rule="evenodd" d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z" transform="translate(-1544.72 -66)"/>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                            the search icon when you click on it will be a detailed description of the product
+                                        </span>
+                                    </a>
+                                    <button class="product-card__link" type="button">
+                                        <svg class="product-card__corb-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 18.94 16.969">
+                                            <path fill-rule="evenodd"  d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z" transform="translate(-1716 -69)"/>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                            the shopping cart icon that will be added to the shopping cart when you click on it
+                                        </span>
+                                    </button>
+                                    <button class="product-card__link" type="button">
+                                        <svg class="product-card__hart-svg" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewBox="0 0.742 19 16.515"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="1.983 1.721 17.859 15.523"><path paint-order="stroke fill markers" fill-rule="evenodd" d="M10.913 17.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76.091-2.65 2.207-4.707 4.818-4.707 1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM6.8 3.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z"/></svg></svg>
+                                        <span class="visually-hidden">
+                                            heart icon that will add the product to the list of your favorite products when you click on it
+                                        </span>
+                                    </button>
+                                </div>
+                            </article>
                         </li>
-                        <li class="products__block mix all lighting">
-                            <img class="products__photo" src="images/products-6.png" alt="photo Wooden radio">
-                            <span class="products__name">Wooden chair</span>
-                            <span class="products__price">$29.00</span>
-                            <div class="products__icons">
-                                <a class="products__link" href="#">
-                                    <svg class="products__search-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 15.28 15.281">
-                                        <path id="icon" fill-rule="evenodd" d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z" transform="translate(-1544.72 -66)"/>
-                                    </svg>
-                                    <span class="visually-hidden">icon search</span>
-                                </a>
-                                <a class="products__link" href="#">
-                                    <svg class="products__corb-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 18.94 16.969">
-                                        <path fill-rule="evenodd"  d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z" transform="translate(-1716 -69)"/>
-                                    </svg>
-                                    <span class="visually-hidden">icon corb</span>
-                                </a>
-                                <a class="products__link" href="#">
-                                    <svg class="products__hart-svg" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewBox="0 0.742 19 16.515"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="1.983 1.721 17.859 15.523"><path paint-order="stroke fill markers" fill-rule="evenodd" d="M10.913 17.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76.091-2.65 2.207-4.707 4.818-4.707 1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM6.8 3.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z"/></svg></svg>
-                                    <span class="visually-hidden">icon heart</span>
-                                </a>
-                            </div>
+                        <li class="products-week__block mix all lighting">
+                            <article class="product-card">
+                                <img class="product-card__photo" src="images/products-6.png" alt="photo Wooden radio" width="230" height="170">
+                                <h3 class="product-card__name">Wooden chair</h3>
+                                <span class="product-card__price">
+                                    <span class="product-card__money">$</span>
+                                    29.00
+                                </span>
+                                <div class="product-card__icons">
+                                    <a class="product-card__link" href="#">
+                                        <svg class="product-card__search-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 15.28 15.281">
+                                            <path id="icon" fill-rule="evenodd" d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z" transform="translate(-1544.72 -66)"/>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                            the search icon when you click on it will be a detailed description of the product
+                                        </span>
+                                    </a>
+                                    <button class="product-card__link" type="button">
+                                        <svg class="product-card__corb-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 18.94 16.969">
+                                            <path fill-rule="evenodd"  d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z" transform="translate(-1716 -69)"/>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                            the shopping cart icon that will be added to the shopping cart when you click on it
+                                        </span>
+                                    </button>
+                                    <button class="product-card__link" type="button">
+                                        <svg class="product-card__hart-svg" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewBox="0 0.742 19 16.515"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="1.983 1.721 17.859 15.523"><path paint-order="stroke fill markers" fill-rule="evenodd" d="M10.913 17.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76.091-2.65 2.207-4.707 4.818-4.707 1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM6.8 3.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z"/></svg></svg>
+                                        <span class="visually-hidden">
+                                            heart icon that will add the product to the list of your favorite products when you click on it
+                                        </span>
+                                    </button>
+                                </div>
+                            </article>
                         </li>
-                        <li class="products__block mix all decor">
-                            <img class="products__photo" src="images/products-7.png" alt="photo Wooden radio">
-                            <span class="products__name">Wooden chair</span>
-                            <span class="products__price">$29.00</span>
-                            <div class="products__icons">
-                                <a class="products__link" href="#">
-                                    <svg class="products__search-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 15.28 15.281">
-                                        <path id="icon" fill-rule="evenodd" d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z" transform="translate(-1544.72 -66)"/>
-                                    </svg>
-                                    <span class="visually-hidden">icon search</span>
-                                </a>
-                                <a class="products__link" href="#">
-                                    <svg class="products__corb-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 18.94 16.969">
-                                        <path fill-rule="evenodd"  d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z" transform="translate(-1716 -69)"/>
-                                    </svg>
-                                    <span class="visually-hidden">icon corb</span>
-                                </a>
-                                <a class="products__link" href="#">
-                                    <svg class="products__hart-svg" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewBox="0 0.742 19 16.515"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="1.983 1.721 17.859 15.523"><path paint-order="stroke fill markers" fill-rule="evenodd" d="M10.913 17.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76.091-2.65 2.207-4.707 4.818-4.707 1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM6.8 3.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z"/></svg></svg>
-                                    <span class="visually-hidden">icon heart</span>
-                                </a>
-                            </div>
+                        <li class="products-week__block mix all decor">
+                            <article class="product-card">
+                                <img class="product-card__photo" src="images/products-7.png" alt="photo Wooden radio" width="232" height="167">
+                                <h3 class="product-card__name">Wooden chair</h3>
+                                <span class="product-card__price">
+                                    <span class="product-card__money">$</span>
+                                    29.00
+                                </span>
+                                <div class="product-card__icons">
+                                    <a class="product-card__link" href="#">
+                                        <svg class="product-card__search-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 15.28 15.281">
+                                            <path id="icon" fill-rule="evenodd" d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z" transform="translate(-1544.72 -66)"/>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                            the search icon when you click on it will be a detailed description of the product
+                                        </span>
+                                    </a>
+                                    <button class="product-card__link" type="button">
+                                        <svg class="product-card__corb-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 18.94 16.969">
+                                            <path fill-rule="evenodd"  d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z" transform="translate(-1716 -69)"/>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                            the shopping cart icon that will be added to the shopping cart when you click on it
+                                        </span>
+                                    </button>
+                                    <button class="product-card__link" type="button">
+                                        <svg class="product-card__hart-svg" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewBox="0 0.742 19 16.515"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="1.983 1.721 17.859 15.523"><path paint-order="stroke fill markers" fill-rule="evenodd" d="M10.913 17.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76.091-2.65 2.207-4.707 4.818-4.707 1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM6.8 3.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z"/></svg></svg>
+                                        <span class="visually-hidden">
+                                            heart icon that will add the product to the list of your favorite products when you click on it
+                                        </span>
+                                    </button>
+                                </div>
+                            </article>
                         </li>
-                        <li class="products__block mix all decor">
-                            <img class="products__photo" src="images/products-8.png" alt="photo Wooden radio">
-                            <span class="products__name">Retro table</span>
-                            <span class="products__price">$29.00</span>
-                            <div class="products__icons">
-                                <a class="products__link" href="#">
-                                    <svg class="products__search-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 15.28 15.281">
-                                        <path id="icon" fill-rule="evenodd" d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z" transform="translate(-1544.72 -66)"/>
-                                    </svg>
-                                    <span class="visually-hidden">icon search</span>
-                                </a>
-                                <a class="products__link" href="#">
-                                    <svg class="products__corb-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 18.94 16.969">
-                                        <path fill-rule="evenodd"  d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z" transform="translate(-1716 -69)"/>
-                                    </svg>
-                                    <span class="visually-hidden">icon corb</span>
-                                </a>
-                                <a class="products__link" href="#">
-                                    <svg class="products__hart-svg" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewBox="0 0.742 19 16.515"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="1.983 1.721 17.859 15.523"><path paint-order="stroke fill markers" fill-rule="evenodd" d="M10.913 17.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76.091-2.65 2.207-4.707 4.818-4.707 1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM6.8 3.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z"/></svg></svg>
-                                    <span class="visually-hidden">icon heart</span>
-                                </a>
-                            </div>
+                        <li class="products-week__block mix all decor">
+                            <article class="product-card">
+                                <img class="product-card__photo" src="images/products-8.png" alt="photo Wooden radio" width="238" height="153">
+                                <h3 class="product-card__name">Retro table</h3>
+                                <span class="product-card__price">
+                                    <span class="product-card__money">$</span>
+                                    29.00
+                                </span>
+                                <div class="product-card__icons">
+                                    <a class="product-card__link" href="#">
+                                        <svg class="product-card__search-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 15.28 15.281">
+                                            <path id="icon" fill-rule="evenodd" d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z" transform="translate(-1544.72 -66)"/>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                            the search icon when you click on it will be a detailed description of the product
+                                        </span>
+                                    </a>
+                                    <button class="product-card__link" type="button">
+                                        <svg class="product-card__corb-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 18.94 16.969">
+                                            <path fill-rule="evenodd"  d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z" transform="translate(-1716 -69)"/>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                            the shopping cart icon that will be added to the shopping cart when you click on it
+                                        </span>
+                                    </button>
+                                    <button class="product-card__link" type="button">
+                                        <svg class="product-card__hart-svg" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewBox="0 0.742 19 16.515"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="1.983 1.721 17.859 15.523"><path paint-order="stroke fill markers" fill-rule="evenodd" d="M10.913 17.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76.091-2.65 2.207-4.707 4.818-4.707 1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM6.8 3.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z"/></svg></svg>
+                                        <span class="visually-hidden">
+                                            heart icon that will add the product to the list of your favorite products when you click on it
+                                        </span>
+                                    </button>
+                                </div>
+                            </article>
                         </li>
                     </ul>
                 </div>
-
-                <ul class="cards">
-                    <li class="cards__card">
-                        <img class="cards__photo cards__photo--big" src="images/card-1.png" alt="">
-                        <div class="cards__info">
-                            <span class="cards__title">Mirum Notare Tellus</span>
-                            <p class="cards__text">
-                                LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27LEDCornLight
-                            </p>
-                            <a class="cards__link" href="#">
-                                <span class="cards__more">View More</span>
-                                <svg class="cards__arrow" xmlns="http://www.w3.org/2000/svg" width="22" height="9" viewBox="0 0 22 9">
-                                    <path fill-rule="evenodd" d="M535.3,654.472h16.948l-0.1,2.857a0.292,0.292,0,0,0,0,.41l0.172,0.172a0.28,0.28,0,0,0,.2.086,0.285,0.285,0,0,0,.2-0.084l4.193-4.211A0.292,0.292,0,0,0,557,653.5a0.283,0.283,0,0,0-.084-0.2l-4.193-4.213a0.289,0.289,0,0,0-.407,0l-0.172.173a0.287,0.287,0,0,0-.084.2,0.278,0.278,0,0,0,.084.2l0.113,2.865H535.292a0.3,0.3,0,0,0-.292.295v1.37A0.292,0.292,0,0,0,535.3,654.472Z" transform="translate(-535 -649)"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="cards__card">
-                        <img class="cards__photo cards__photo--small" src="images/card-2.png" alt="">
-                        <div class="cards__info">
-                            <span class="cards__title">Malesuada Tempor Euismod</span>
-                            <p class="cards__text">
-                                50W 8000lm Compact Size for HID StreetLightReplacementLEDCornLight
-                            </p>
-                            <a class="cards__link" href="#">
-                                <span class="cards__more">View More</span>
-                                <svg class="cards__arrow" xmlns="http://www.w3.org/2000/svg" width="22" height="9" viewBox="0 0 22 9">
-                                    <path fill-rule="evenodd" d="M535.3,654.472h16.948l-0.1,2.857a0.292,0.292,0,0,0,0,.41l0.172,0.172a0.28,0.28,0,0,0,.2.086,0.285,0.285,0,0,0,.2-0.084l4.193-4.211A0.292,0.292,0,0,0,557,653.5a0.283,0.283,0,0,0-.084-0.2l-4.193-4.213a0.289,0.289,0,0,0-.407,0l-0.172.173a0.287,0.287,0,0,0-.084.2,0.278,0.278,0,0,0,.084.2l0.113,2.865H535.292a0.3,0.3,0,0,0-.292.295v1.37A0.292,0.292,0,0,0,535.3,654.472Z" transform="translate(-535 -649)"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
+                <!-- <div class="container container--fluid">
+                    <ul class="cards">
+                        <li class="cards__card">
+                            <img class="cards__photo cards__photo--big" src="images/card-1.png" alt="photo lamp">
+                            <div class="cards__info">
+                                <span class="cards__title">Mirum Notare Tellus</span>
+                                <p class="cards__text">
+                                    LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27LEDCornLight
+                                </p>
+                                <a class="cards__link" href="#">
+                                    <span class="cards__more">View More</span>
+                                    <svg class="cards__arrow" xmlns="http://www.w3.org/2000/svg" width="22" height="9" viewBox="0 0 22 9">
+                                        <path fill-rule="evenodd" d="M535.3,654.472h16.948l-0.1,2.857a0.292,0.292,0,0,0,0,.41l0.172,0.172a0.28,0.28,0,0,0,.2.086,0.285,0.285,0,0,0,.2-0.084l4.193-4.211A0.292,0.292,0,0,0,557,653.5a0.283,0.283,0,0,0-.084-0.2l-4.193-4.213a0.289,0.289,0,0,0-.407,0l-0.172.173a0.287,0.287,0,0,0-.084.2,0.278,0.278,0,0,0,.084.2l0.113,2.865H535.292a0.3,0.3,0,0,0-.292.295v1.37A0.292,0.292,0,0,0,535.3,654.472Z" transform="translate(-535 -649)"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="cards__card">
+                            <img class="cards__photo cards__photo--small" src="images/card-2.png"  alt="photo lamp">
+                            <div class="cards__info">
+                                <span class="cards__title">Malesuada Tempor Euismod</span>
+                                <p class="cards__text">
+                                    50W 8000lm Compact Size for HID StreetLightReplacementLEDCornLight
+                                </p>
+                                <a class="cards__link" href="#">
+                                    <span class="cards__more">View More</span>
+                                    <svg class="cards__arrow" xmlns="http://www.w3.org/2000/svg" width="22" height="9" viewBox="0 0 22 9">
+                                        <path fill-rule="evenodd" d="M535.3,654.472h16.948l-0.1,2.857a0.292,0.292,0,0,0,0,.41l0.172,0.172a0.28,0.28,0,0,0,.2.086,0.285,0.285,0,0,0,.2-0.084l4.193-4.211A0.292,0.292,0,0,0,557,653.5a0.283,0.283,0,0,0-.084-0.2l-4.193-4.213a0.289,0.289,0,0,0-.407,0l-0.172.173a0.287,0.287,0,0,0-.084.2,0.278,0.278,0,0,0,.084.2l0.113,2.865H535.292a0.3,0.3,0,0,0-.292.295v1.37A0.292,0.292,0,0,0,535.3,654.472Z" transform="translate(-535 -649)"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div> -->
 
             </section>
 
@@ -408,8 +501,8 @@
                 <div class="footer__content">
                     <ul class="footer__column">
                         <li class="footer__item">
-                            <a class="logo footer__logo">
-                                <img class="logo__images" src="images/logo.png" alt="Logotip">
+                            <a class="logo footer__logo" href="#">
+                                <img class="logo__images" src="images/logo.png" alt="Logo" width="146" height="39">
                             </a>
                         </li>
                         <li class="footer__item">
@@ -434,7 +527,7 @@
                         </li>
                     </ul>
                     <div class="footer__column">
-                        <span class="footer__title">Services</span>
+                        <span class="footer__name">Services</span>
                         <ul class="footer__list">
                             <li class="footer__row">
                                 <a class="footer__link" href="#">About us</a>
@@ -454,7 +547,7 @@
                         </ul>
                     </div>
                     <div class="footer__column">
-                        <span class="footer__title">Account</span>
+                        <span class="footer__name">Account</span>
                         <ul class="footer__list">
                             <li class="footer__row">
                                 <a class="footer__link" href="#">Your Account</a>
@@ -471,7 +564,7 @@
                         </ul>
                     </div>
                     <div class="footer__column">
-                        <span class="footer__title">Account</span>
+                        <span class="footer__name">Account</span>
                         <div class="footer__text">
                             <p>
                                 Subscribe by our newsletter and get update protidin.
@@ -479,6 +572,7 @@
                         </div>
                         <form class="footer__form">
                             <label class="footer__label" for="email"></label>
+                            <span class="visually-hidden">field for entering your mail to subscribe</span>
                             <input class="footer__input" type="email" name="email" id="email" placeholder="Email address" required>
                             <button class="footer__btn" type="submit">Subscribe</button>
                         </form>
