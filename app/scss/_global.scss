@@ -33,15 +33,17 @@ body {
     margin: 0 auto;
     &--fluid {
         max-width: 1800px;
-        padding: 0 15px;
-        margin: 0 auto;
     }
 }
 
 .logo {
     outline: transparent;
+    &:active,
     &:focus {
         outline: 1px solid $vio;
+    }
+    &__images {
+        object-fit: cover;
     }
 }
 
@@ -49,6 +51,6 @@ body {
     @extend %dmsans-700;
     text-align: center;
     font-size: 36px;
-    color: #191919;
+    color: $title300;
     margin-bottom: 30px;
 }

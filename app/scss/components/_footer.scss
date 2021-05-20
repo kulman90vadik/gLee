@@ -14,13 +14,13 @@
         display: block;
         padding-bottom: 5px;
     }
-    &__item:not(:last-child) {
-        margin-bottom: 20px;
-    }
     &__item {
         font-size: 14px;
-        color: #7b7b7b;
+        color: $text;
         line-height: 1.7;
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
     }
     &__address {
         max-width: 200px;
@@ -38,7 +38,7 @@
             color: $vio;
         }
     }
-    &__title {
+    &__name {
         display: block;
         text-transform: uppercase;
         @extend %dmsans-700;
@@ -47,8 +47,10 @@
         padding-top: 15px;
         color: $vio;
     }
-    &__row:not(:last-child) {
-        margin-bottom: 15px;
+    &__row {
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
     }
     &__text p,
     &__link {
@@ -77,7 +79,7 @@
         position: relative;
     }
     &__input {
-        background-color: #fef7f0;
+        background-color: $fff300;
         border: none;
         padding: 12px 104px 12px 15px;
         outline: transparent;
@@ -134,31 +136,18 @@
         line-height: 1.1;
         transition: color .3s ease-in;
         outline: transparent;
-        &:hover {
-            color: $vio;
-        }
+        &:hover,
         &:focus {
             color: $vio;
         }
     }
-    &__menu-item:not(:last-child) {
-        padding-right: 15px;
-        border-right: 2px solid $text;
-    }
-    &__menu-item:not(:first-child) {
-        padding-left: 15px;
+    &__menu-item {
+        &:not(:last-child) {
+            padding-right: 15px;
+            border-right: 2px solid $text;
+        }
+        &:not(:first-child) {
+            padding-left: 15px;
+        }
     }
 }
-
-// .Ellipse_34 {
-//     border-radius: 50%;
-//     background-image: -moz-linear-gradient( 180deg, rgb(255,255,255) 0%, rgb(255,255,255) 100%);
-//     background-image: -webkit-linear-gradient( 180deg, rgb(255,255,255) 0%, rgb(255,255,255) 100%);
-//     background-image: -ms-linear-gradient( 180deg, rgb(255,255,255) 0%, rgb(255,255,255) 100%);
-//     position: absolute;
-//     left: 1026px;
-//     top: 243px;
-//     width: 634px;
-//     height: 634px;
-//     z-index: 231;
-//   }

@@ -1,8 +1,10 @@
-@import 'reset';
-@import 'vars';
 @import 'fonts';
+@import 'vars';
+@import 'reset';
 @import 'libs';
 @import 'global';
+
+// companents
 @import 'footer';
 
 
@@ -23,73 +25,85 @@
         border: none;
         padding: 0;
         border-radius: 50%;
-        background-color: #edf1f4;
+        background-color: $fff100;
         display: flex;
         cursor: pointer;
         transition: background-color .3s ease-in;
         margin-right: 20px;
         outline: transparent;
         &:hover .header__search-svg{
-            fill: #2c2c2c;
+            fill: $gray000;
         }
         &:hover{
-            background-color: #6c7074;
+            background-color: rgba($orange, 0.5);
         }
+        &:active,
         &:focus {
             outline: 1px solid $title;
         }
     }
     &__search-svg {
-        fill: #243f4d;
+        fill: $title;
         margin: auto;
         transition: fill .3s ease-in;
     }
-    &__basket {
-        background-color: #fcd7b6;
-        border-radius: 25px;
-        padding: 10px 35px;
-        display: flex;
-        margin-right: 15px;
-        align-items: center;
-    }
-    &__holder {
-        padding: 6px 20px 4px 0;
-        border-right: 1px solid #fff;
-        margin-right: 20px;
-    }
     &__icons {
         position: relative;
+        background-color: $orange;
         display: block;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
         outline: transparent;
+        cursor: pointer;
+        border: none;
+        transition: background-color .3a ease-in;
         &:hover .header__heart-num,
         &:hover .header__corb-num{
-            background-color: #000;
+            background-color: $title;
             color: #fff;
         }
+        &:active,
         &:focus {
             outline: 1px solid $title;
         }
+        &:hover {
+            background-color: rgba($orange, 0.5); 
+        }
     }
+    &__icons-corb {
+        padding: 17px 40px 9px 30px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        margin-right: 17px;
+    }
+    &__icons-heart {
+        padding: 17px 30px 9px 40px;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        &::after {
+            position: absolute;
+            content: '';
+            width: 1px;
+            height: 30px;
+            background-color: #fff;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    &__corb,
     &__heart {
-        display: block;
-        width: 18px;
-        height: 16px;
-        background-image: url(../images/heart.svg);
+        fill: $title;
     }
-    &__corb {
-        display: block;
-        width: 19px;
-        height: 17px;
-        background-image: url(../images/corb.svg);
+    &__heart-num {
+        right: 20px;
+        top: 9px;
+    }
+    &__corb-num {
+        right: 31px;
+        top: 9px;
     }
     &__heart-num,
     &__corb-num {
         position: absolute;
-        right: -5px;
-        top: -5px;
         @extend %dmsans-400;
         font-size: 10px;
         width: 16px;
@@ -103,30 +117,32 @@
         transition: color .3s ease-in, background-color .3s ease-in;
     }
     &__burger-menu {
+        display: flex;
         width: 48px;
         height: 48px;
         border: none;
         padding: 0;
         border-radius: 50%;
         cursor: pointer;
-        background-image: url(../images/menu.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        transition: opacity .3s ease-in;
+        background-color: $gray;
+        transition: background-color .3s ease-in;
         outline: transparent;
+        cursor: pointer;
         &:hover {
-            opacity: .5;
+            background-color: $btn-color;
         }
+        &:active,
         &:focus {
             outline: 1px solid $title;
         }
     }
+    &__menu {
+        margin: auto;
+    }
 }
 
 .menu {
-    &__list {
-        display: flex;
-    }
+    display: flex;
     &__item:not(:last-child) {
         margin-right: 33px;
     }
@@ -137,47 +153,55 @@
         transition: color .3s linear;
         outline: transparent;
         &:hover {
-            color: #f39747;
+            color: $orange100;
         }
+        &:active,
         &:focus {
-            color: $vio;
+            color: $orange;
         }
+    }
+    &__plus {
+        padding-left: 3px;
     }
 }
 
-.trendy {
-    &__slider {
-        & .slick-dots {
-            position: absolute;
-            display: flex;
-            width: 100%;
-            justify-content: center;
-            bottom: 45px;
-        }
-        & .slick-dots li:not(:last-child) {
+.products-slider {
+    & .slick-dots {
+        position: absolute;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        bottom: 45px;
+    }
+    & .slick-dots li {
+        &:not(:last-child) {
             margin-right: 10px;
         }
-        & .slick-dots li button {
-            @extend %rubik-500;
-            color: $title;
-            padding: 0;
-            cursor: pointer;
-            font-size: 15px;
-            border-radius: 50%;
-            border: none;
-            width: 30px;
-            height: 30px;
-            background-color: rgba(255, 255, 255, 0.3);
-            outline: transparent;
-            &:focus {
-                outline: 1px solid $vio;
-            }
+    }
+    & .slick-dots li button {
+        @extend %rubik-500;
+        color: $title;
+        padding: 0;
+        cursor: pointer;
+        font-size: 15px;
+        border-radius: 50%;
+        border: none;
+        width: 30px;
+        height: 30px;
+        background-color: rgba(255, 255, 255, 0.3);
+        outline: transparent;
+        &:active,
+        &:focus {
+            outline: 1px solid $vio;
         }
-        & .slick-dots li.slick-active button {
-            background-color: rgb(255, 255, 255);
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.6);
         }
     }
-    &__title {
+    & .slick-dots li.slick-active button {
+        background-color: rgb(255, 255, 255);
+    }
+    &__name {
         @extend %rubik-500;
         color: $title;
         font-size: 72px;
@@ -208,7 +232,7 @@
             width: 22px;
             height: 9px;
             background-image: url(../images/arrow.svg);
-            @extend %bg;
+            @include bg;
             right: 15px;
             top: 50%;
             transform: translateY(-50%);
@@ -216,6 +240,7 @@
         &:hover {
             background-color: $vio;
         }
+        &:active,
         &:focus {
             outline: 1px solid $vio;
         }
@@ -235,7 +260,7 @@
             content: '';
             border-radius: 50%;
             background-image: url(../images/slide-bg.png);
-            @extend %bg;
+            @include bg;
             width: 634px;
             height: 634px;
             z-index: 3;
@@ -244,13 +269,11 @@
             transform: translateY(-45%);
         }
     }
-    &__bg {
-        width: 640px;
-        height: 264px;
-        @extend %bg;
+    &__photo {
         z-index: 5;
     }
 }
+
 
 .services {
     &__list {
@@ -260,12 +283,12 @@
     &__item {
         width: 100%;
         padding: 45px 0;
-        background-color: #fef7f0;
+        background-color: $fff300;
         display: flex;
         justify-content: center;
-    }
-    &__item:not(:last-child) {
-        border-right: 1px solid #e8e4df;
+        &:not(:last-child) {
+            border-right: 1px solid #e8e4df;
+        }
     }
     &__item--small {
         max-width: 31%;
@@ -276,44 +299,56 @@
     &__item--huge {
         max-width: 34%;
     }
-    &__icon {
-        margin-right: 25px;
-        @extend %bg;
+    &__support,
+    &__delivery,
+    &__secure {
         position: relative;
         &::after {
-            position: absolute;
-            content: '';
             border-radius: 50%;
             background-color: rgba(163, 187, 200, 0.3);
             width: 20px;
             height: 20px;
+            position: absolute;
+            content: '';
+        }
+        &::before {
+            position: absolute;
+            content: '';
+            @include bg;
+            width: 49px;
         }
     }
-    &__icon--support {
-        width: 49px;
-        height: 49px;
-        background-image: url(../images/time.svg);
+    &__support {
         &::after {
-            bottom: -5px;
-            right: -2px;
+            left: -48px;
+            top: 35px;
+        }
+        &::before {
+            height: 49px;
+            background-image: url(../images/time.svg);
+            left: -75px;
         }
     }
-    &__icon--delivery {
-        width: 49px;
-        height: 29px;
-        background-image: url(../images/delivery-truck.svg);
+    &__delivery {
         &::after {
-            bottom: -8px;
-            right: -5px;
+            left: -41px;
+            top: 16px;
+        }
+        &::before {
+            height: 29px;
+            background-image: url(../images/delivery-truck.svg);
+            left: -75px;
         }
     }
-    &__icon--secure {
-        width: 49px;
-        height: 44px;
-        background-image: url(../images/credit-card.svg);
+    &__secure {
         &::after {
-            bottom: -7px;
-            right: -8px;
+            left: -39px;
+            top: 30px;
+        }
+        &::before {
+            height: 44px;
+            background-image: url(../images/credit-card.svg);
+            left: -75px;
         }
     }
     &__title {
@@ -326,7 +361,7 @@
     }
     &__text {
         @extend %dmsans-400;
-        color: #585858;
+        color: $gray100;
         line-height: 1.8;
     }
     &__text--support {
@@ -337,9 +372,8 @@
     }
 }
 
-.products {
+.products-week {
     padding-top: 65px;
-    margin-bottom: 140px;
     &__buttons {
         display: flex;
         justify-content: center;
@@ -366,23 +400,29 @@
     &__inner {
         display: flex;
         flex-wrap: wrap;
-        margin-right: -30px;
+        margin: 0 -30px 140px 0;
     }
     &__block {
-        max-width: 270px;
-        min-height: 380px;
-        margin-bottom: 40px;
-        margin-right: 30px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        margin: 0 30px 40px 0;
         box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
         border-radius: 10px;
-        position: relative;
-        &:hover .products__icons{
-            opacity: 1;
-        }
+        max-width: 270px;
+        min-height: 380px;
+        width: 100%;
+    }
+}
+
+.product-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 380px;
+    height: auto;
+    padding-bottom: 31px;
+    padding-top: 25px;
+    &:hover .product-card__icons{
+        opacity: 1;
     }
     &__photo {
         margin-bottom: auto;
@@ -396,32 +436,35 @@
         display: block;
     }
     &__price {
-        color: #a3bbc8;
+        color: $gray;
         @extend %dmsans-700;
-        margin-bottom: 31px;
     }
     &__link {
+        border: none;
         width: 44px;
         height: 44px;
         border-radius: 50%;
         background-color: #fff;
         display: flex;
+        cursor: pointer;
         transition:  background-color .3s ease-in;
         outline: transparent;
-        &:hover .products__search-svg,
-        &:hover .products__corb-svg,
-        &:hover .products__hart-svg{
+        box-shadow: 0px 0px 0px 2px rgba(236,236,236,0.48);
+        &:hover .product-card__search-svg,
+        &:hover .product-card__corb-svg,
+        &:hover .product-card__hart-svg{
             fill: #fff;
         }
         &:hover {
-            background-color: #a3bac7;
+            background-color: $blue;
         }
+        &:active,
         &:focus {
             outline: 1px solid $title;
         }
-    }
-    &__link:not(:last-child) {
-        margin-right: 15px;
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
     }
     &__icons {
         display: flex;
@@ -435,31 +478,75 @@
     &__hart-svg,
     &__corb-svg,
     &__search-svg {
-        fill: #a3bbc8;
+        fill: $gray;
         margin: auto;
         transition:  fill .3s ease-in;
     }
 }
 
 
+.cards {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    &__card {
+        max-width: 49%;
+        width: 100%;
+        background-color: $fff000;
+        padding: 100px 0 100px 135px;
+        display: flex;
+    }
+    &__photo--big {
+        width: 233px;
+        height: 405px;
+        margin: -200px 15px 0 0;
+
+    }
+    &__photo--small {
+        width: 222px;
+        height: 399px;
+        margin: -200px 55px 0 0;
+    }
+    &__info {
+        max-width: 346px;
+        color: $title;
+    }
+    &__title {
+        font-size: 26px;
+        line-height: 1.2;
+        @extend %dmsans-700;
+        margin-bottom: 25px;
+        display: block;
+    }
+    &__text {
+        line-height: 1.8;
+        margin-bottom: 20px;
+    }
+    &__link {
+        display: inline-block;
+        @extend %rubik-500;
+        font-size: 15px;
+        padding: 20px 15px;
+        border: 1px solid rgba(67, 99, 114, 0.4);
+        border-radius: 5px;
+        outline: transparent;
+        background-color: transparent;
+        transition: background-color .3s ease-in;
+        &:hover,
+        &:focus {
+            background-color: $btn-color;
+        }
+        &:active {
+            background-color: $vio;
+        }
+    }
+    &__more {
+        margin-right: 40px;
+        display: inline-block;
+    }
+    &__arrow {
+        fill: $global;
+    }
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@import 'media';
