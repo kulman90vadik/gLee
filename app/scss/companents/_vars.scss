@@ -16,7 +16,8 @@ $fff300: #fef7f0;
 $blue: #a3bac7;
 $fff000: #feefe2;
 $title300: #191919;
-
+$bl000: #262626;
+$bl100: #222933;
 
 @mixin bg {
     background-repeat: no-repeat;
@@ -24,28 +25,17 @@ $title300: #191919;
     background-position: center;
 }
 
-%dmsans-700 {
-    font-family: 'DMSans', sans-serif;
-    font-weight: 700;
-}
 
-%dmsans-500 {
-    font-family: 'DMSans', sans-serif;
-    font-weight: 500;
-}
+$DmSans: 'DMSans', sans-serif;
+$Rubik: 'Rubik', sans-serif;
+$Poppins: 'Poppins', sans-serif;
+$fw700: 700;
+$fw500: 500;
+$fw400: 400;
 
-%dmsans-400 {
-    font-family: 'DMSans', sans-serif;
-    font-weight: 400;
+@function max($numbers...) {
+@return m#{a}x(#{$numbers});
 }
-
-%rubik-500 {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
+@function min($numbers...) {
+@return m#{i}n(#{$numbers});
 }
-
-%rubik-400 {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 400;
-}
-

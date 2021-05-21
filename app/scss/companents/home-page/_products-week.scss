@@ -1,0 +1,40 @@
+.products-week {
+    padding-top: 65px;
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 80px;
+    }
+    &__item:not(:last-child) {
+        margin-right: 20px;
+    }
+    &__btn {
+        padding: 0;
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        font-family: $DmSans;
+        font-weight: $fw700;
+        color: $btn-color;
+        transition: color .3s ease-in;
+        outline: transparent;
+        &:hover,
+        &.mixitup-control-active,
+        &:focus {
+            color: #191919;
+        }
+    }
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -30px 140px 0;
+    }
+    &__block {
+        margin: 0 30px 40px 0;
+        box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+        border-radius: 10px;
+        max-width: 270px;
+        min-height: 380px;
+        width: 100%;
+    }
+}

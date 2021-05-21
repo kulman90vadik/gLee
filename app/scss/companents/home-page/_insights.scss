@@ -1,0 +1,49 @@
+.insights {
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    &__title {
+        margin-bottom: 0;
+    }
+    &__link {
+        color: $bl000;
+        font-family: $DmSans;
+        font-weight: $fw700;
+        outline: transparent;
+        &:active .insights__icon,
+        &:hover .insights__icon {
+            fill: $orange100;
+        }
+        &:hover .insights__view {
+            color: $orange100;
+        }
+        &:focus .insights__view,
+        &:active .insights__view {
+            color: $orange;
+        }
+    }
+    &__view{
+        margin-right: 15px;
+        display: inline-block;
+        transition: color .3s ease-in;
+    }
+    &__icon {
+        fill: $bl000;
+        transition: color .3s ease-in;
+        outline: transparent;
+        &:focus {
+            fill: $orange;
+        }
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        max-width: 370px;
+        width: 100%;
+    }
+}

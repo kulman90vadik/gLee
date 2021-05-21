@@ -19,7 +19,8 @@ body {
 }
 
 body {
-    @extend %rubik-400;
+    font-family: $Rubik;
+    font-weight: $fw400;
     font-size: 16px;
     background-color: #fff;
     color: $global;
@@ -48,7 +49,8 @@ body {
 }
 
 .title {
-    @extend %dmsans-700;
+    font-family: $DmSans;
+    font-weight: $fw700;
     text-align: center;
     font-size: 36px;
     color: $title300;
