@@ -1,0 +1,42 @@
+.popup {
+    position: relative;
+    height: 500px;
+    @include bg;
+    margin-bottom: 110px;
+    &__link {
+        position: absolute;
+        display: flex;
+        width: 98px;
+        height: 98px;
+        border-radius: 50%;
+        background-color: $gray;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+        box-shadow: 0px 0px 0px 13px rgba(163, 187, 200, 0.4);
+        transition: background-color .3s ease-in;
+        outline: transparent;
+        &:focus {
+            background-color: $gray000;
+            box-shadow: none;
+        }
+        &:hover {
+            background-color: rgba($gray, 0.9);
+        }
+        &:hover .popup__play{
+            fill: $orange;
+        }
+        &:active {
+            box-shadow: none;
+        }
+    }
+    &__play {
+        margin: auto;
+        fill: #fff;
+        outline: transparent;
+        &:focus {
+            background-color: $gray000;
+        }
+    }
+}
