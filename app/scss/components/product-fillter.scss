@@ -1,0 +1,25 @@
+.product-fillter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    &__item:not(:last-child) {
+        margin-right: 20px;
+    }
+    &__btn {
+        padding: 0;
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        font-family: $DmSans;
+        font-weight: $fw700;
+        color: $btn-color;
+        transition: color .3s ease-in;
+        outline: transparent;
+        &:hover,
+        &.mixitup-control-active,
+        &:focus {
+            color: #191919;
+        }
+    }
+}
+

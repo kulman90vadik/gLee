@@ -1,0 +1,56 @@
+.desing {
+    margin-bottom: 85px;
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -30px;
+    }
+    &__block {
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        max-width: 370px;
+        height: 246px;
+        width: 100%;
+        margin: 0 30px 35px 0;
+        padding-bottom: 40px;
+        background-color: $fff400;
+        overflow: hidden;
+    }
+    &__info {
+        position: absolute;
+        max-width: 172px;
+        top: 35px;
+        left: 30px;
+        font-family: $DmSans;
+        font-weight: $fw700;
+    }
+    &__product-1 {
+        margin-right: -75px;
+    }
+    &__product-2 {
+        margin-right: -40px;
+    }
+    &__product-3 {
+        margin-right: 52px;
+    }
+    &__product-4 {
+        margin-right: -40px;
+    }
+    &__product-5 {
+        margin-right: 30px;
+    }
+    &__product-6 {
+        margin-right: -145px;
+    }
+    &__title {
+        font-size: 20px;
+        color: $title300;
+        margin-bottom: 15px;
+    }
+    &__classic {
+        color: $gray;
+    }
+}
+

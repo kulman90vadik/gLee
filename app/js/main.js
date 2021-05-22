@@ -13,5 +13,6 @@ $(function(){
     })
 
     var mixer = mixitup('.products-week__inner');
+    // var mixer = mixitup('.desing__inner');
     
 })

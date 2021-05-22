@@ -1,37 +1,38 @@
 .products-slider {
-    & .slick-dots {
+    .slick-dots {
         position: absolute;
         display: flex;
         width: 100%;
         justify-content: center;
         bottom: 45px;
-    }
-    & .slick-dots li {
-        &:not(:last-child) {
-            margin-right: 10px;
+        li {
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+            button {
+                font-family: $Rubik;
+                font-weight: $fw500;
+                color: $title;
+                padding: 0;
+                cursor: pointer;
+                font-size: 15px;
+                border-radius: 50%;
+                border: none;
+                width: 30px;
+                height: 30px;
+                background-color: rgba(255, 255, 255, 0.3);
+                outline: transparent;
+                &:active,
+                &:focus {
+                    outline: 1px solid $vio;
+                }
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.6);
+                }
+            }
         }
     }
-    & .slick-dots li button {
-        font-family: $Rubik;
-        font-weight: $fw500;
-        color: $title;
-        padding: 0;
-        cursor: pointer;
-        font-size: 15px;
-        border-radius: 50%;
-        border: none;
-        width: 30px;
-        height: 30px;
-        background-color: rgba(255, 255, 255, 0.3);
-        outline: transparent;
-        &:active,
-        &:focus {
-            outline: 1px solid $vio;
-        }
-        &:hover {
-            background-color: rgba(255, 255, 255, 0.6);
-        }
-    }
+    
     & .slick-dots li.slick-active button {
         background-color: rgb(255, 255, 255);
     }
@@ -67,7 +68,7 @@
             content: '';
             width: 22px;
             height: 9px;
-            background-image: url(../images/arrow.svg);
+            background-image: url(../images/icons/arrow.svg);
             @include bg;
             right: 15px;
             top: 50%;
@@ -82,14 +83,13 @@
         }
     }
     &__slide {
-        height: 820px;
         background-color: $orange;
-        padding-top: 215px;
     }
     &__inner {
+        height: 820px;
         display: flex;
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: center;
         position: relative;
         &::after {
             position: absolute;
