@@ -1,7 +1,7 @@
 .article-card {
     &__info {
         padding: 35px 30px 25px;
-        background-color: #ccc;
+        background-color: #fff;
         position: relative;
     }
     &__link {
@@ -32,7 +32,19 @@
     }
     &__date {
         margin-right: 25px;
-        display: block;
+        display: flex;
+        align-items: center;
+    }
+    &__author {
+        display: flex;
+        align-items: center;
+    }
+    &__user,
+    &__calendar {
+        width: 10px;
+        height: 10px;
+        fill: $bl100;
+        margin-right: 5px;
     }
     &__news {
         text-transform: uppercase;

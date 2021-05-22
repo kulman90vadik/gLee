@@ -44,7 +44,7 @@ const cheerio      = require('gulp-cheerio');
 
 
 const htmlInclude = () => {
-    return src(['app/html/**/*.html'])
+    return src(['app/html/*.html'])
     .pipe(fileInclude ({
         prefix: '@',
         basepath: '@file',
@@ -122,6 +122,7 @@ function watching () {
     watch(['app/scss/**/*.scss'], styles);
     watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
     watch(['app/**/*.html']).on('change', browserSync.reload);
+    watch(['app/scss/**/*.scss']).on('change', browserSync.reload);
     watch(['app/html/**/*.html'], htmlInclude);
     // watch(['app/images/**.svg'], svgSprites);
 }
