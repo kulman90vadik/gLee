@@ -1,8 +1,28 @@
 <section class="products-week">
     <div class="container">
         <h2 class="title products-week__title">Products of the week</h2>
-        @include('../product-fillter.html')
-        <ul class="products-week__inner">
+        <!-- @include('../product-fillter.html') -->
+
+        <ul class="product-fillter">
+            <li class="product-fillter__item">                                
+                <button class="product-fillter__btn filter" type="button" data-filter="all">All</button>
+            </li>
+            <li class="product-fillter__item">
+                <button class="product-fillter__btn filter" type="button" data-filter=".furnitures">Furnitures</button>
+            </li>
+            <li class="product-fillter__item">
+                <button class="product-fillter__btn filter" type="button" data-filter=".chairs">Chairs</button>
+            </li>
+            <li class="product-fillter__item">
+                <button class="product-fillter__btn filter" type="button" data-filter=".lighting">Lighting</button>
+            </li>
+            <li class="product-fillter__item">
+                <button class="product-fillter__btn filter" type="button" data-filter=".decor">Decor</button>
+            </li>
+        </ul>
+
+
+        <ul class="products-week__inner" id="products-week__inner">
             <li class="products-week__block mix all furnitures">
                 <article class="product-card">
                     <img class="product-card__photo" src="images/products-1.png" alt="photo Wooden radio" width="186" height="195">

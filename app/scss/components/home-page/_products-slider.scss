@@ -15,7 +15,7 @@
                 color: $title;
                 padding: 0;
                 cursor: pointer;
-                font-size: 15px;
+                font-size: 11px;
                 border-radius: 50%;
                 border: none;
                 width: 30px;
@@ -45,12 +45,17 @@
         text-transform: uppercase;
         max-width: 445px;
         margin-bottom: 35px;
+        @include lineClamp;
+        -webkit-line-clamp: 2;
     }
     &__text {
         font-size: 18px;
         line-height: 1.6;
         max-width: 350px;
         margin-bottom: 35px;
+        @include lineClamp;
+        -webkit-line-clamp: 2;
+
     }
     &__link {
         font-family: $Rubik;

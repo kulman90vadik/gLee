@@ -1,16 +1,22 @@
 .article-card {
+    overflow: hidden;
+    // height: 100%;
     &__info {
-        padding: 35px 30px 25px;
+        padding: 31px 30px 25px;
         background-color: #fff;
         position: relative;
+        height: 100%;
     }
     &__link {
         margin-bottom: 15px;
         display: flex;
         font-size: 18px;
+        line-height: 1.2;
         font-family: $DmSans;
         font-weight: $fw500;
         color: $bl000;
+        @include lineClamp;
+        -webkit-line-clamp: 3;
         outline: transparent;
         transition: color .3s ease-in;
         &:hover,
@@ -59,5 +65,11 @@
         border-radius: 25px;
         font-family: $Poppins;
         font-weight: $fw700;
+    }
+    &__images {
+        transition: transform .3s ease-in;
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 }

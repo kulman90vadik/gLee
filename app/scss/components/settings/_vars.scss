@@ -26,6 +26,11 @@ $bl100: #222933;
     background-position: center;
 }
 
+@mixin lineClamp {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 
 $DmSans: 'DMSans', sans-serif;
 $Rubik: 'Rubik', sans-serif;

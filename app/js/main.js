@@ -12,7 +12,22 @@ $(function(){
         autoplaySpeed: 2000
     })
 
-    var mixer = mixitup('.products-week__inner');
+    // var mixer = mixitup('.products-week__inner');
     // var mixer = mixitup('.desing__inner');
     
+
+    $('#products-week__inner').mixItUp({
+        selectors: {
+            filter: '.filter'
+        }
+    });
+    
+    $('#desing__inner').mixItUp({
+        selectors: {
+            filter: '.filter-2'
+        }
+    });
+
+
+
 })

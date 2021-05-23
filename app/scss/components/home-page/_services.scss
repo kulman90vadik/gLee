@@ -6,7 +6,7 @@
     &__item {
         max-width: 33.333%;
         width: 100%;
-        padding: 45px 0;
+        padding: 42px 0;
         background-color: $fff300;
         display: flex;
         justify-content: center;
@@ -77,7 +77,10 @@
         font-family: $DmSans;
         color: $gray100;
         line-height: 1.8;
+        @include lineClamp;
+        -webkit-line-clamp: 2;
     }
+    &__text--delivery,
     &__text--support {
         max-width: 200px;
     }
