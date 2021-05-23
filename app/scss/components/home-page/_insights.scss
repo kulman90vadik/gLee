@@ -37,6 +37,8 @@
         fill: $bl000;
         transition: color .3s ease-in;
         outline: transparent;
+        width: 7px;
+        height: 12px;
         &:focus {
             fill: $orange;
         }

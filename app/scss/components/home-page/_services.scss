@@ -4,6 +4,7 @@
         justify-content: space-between;
     }
     &__item {
+        max-width: 33.333%;
         width: 100%;
         padding: 45px 0;
         background-color: $fff300;
@@ -13,19 +14,9 @@
             border-right: 1px solid #e8e4df;
         }
     }
-    &__item--small {
-        max-width: 31%;
-    }
-    &__item--big {
-        max-width: 35%;
-    }
-    &__item--huge {
-        max-width: 34%;
-    }
-    &__support,
-    &__delivery,
-    &__secure {
+    &__info {
         position: relative;
+        padding-left: 85px;
         &::after {
             border-radius: 50%;
             background-color: rgba(163, 187, 200, 0.3);
@@ -39,39 +30,38 @@
             content: '';
             @include bg;
             width: 49px;
+            left: 0;
+            top: 0;
         }
     }
-    &__support {
-        &::after {
-            left: -48px;
-            top: 35px;
-        }
+    &__info-support {
         &::before {
             height: 49px;
-            background-image: url(../images/time.svg);
-            left: -75px;
+            background-image: url(../images/icons/time.svg);
+        }
+        &::after {
+            left: 26px;
+            top: 36px;
         }
     }
-    &__delivery {
-        &::after {
-            left: -41px;
-            top: 16px;
-        }
+    &__info-delivery {
         &::before {
             height: 29px;
-            background-image: url(../images/delivery-truck.svg);
-            left: -75px;
+            background-image: url(../images/icons/delivery-truck.svg);
+        }
+        &::after {
+            left: 36px;
+            top: 18px;
         }
     }
-    &__secure {
-        &::after {
-            left: -39px;
-            top: 30px;
-        }
+    &__info-secure {
         &::before {
             height: 44px;
-            background-image: url(../images/credit-card.svg);
-            left: -75px;
+            background-image: url(../images/icons/credit-card.svg);
+        }
+        &::after {
+            left: 35px;
+            top: 32px;
         }
     }
     &__title {

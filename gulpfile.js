@@ -13,28 +13,28 @@ const svgSprite    = require('gulp-svg-sprite');
 const cheerio      = require('gulp-cheerio');
 
 
-// const svgSprites = () => {
-//     return src(['app/images/**.svg'])
-//     .pipe(cheerio ({
-//         run: function($) {
-//             $('[fill]').removeAttr('fill');
-//             $('[stroke]').removeAttr('stroke');
-//             $('[style]').removeAttr('style');
-//         },
-//         parserOptions: {xmlMode: true}
-//     }))
+const svgSprites = () => {
+    return src(['app/images/icons/**.svg'])
+    .pipe(cheerio ({
+        run: function($) {
+            $('[fill]').removeAttr('fill');
+            $('[stroke]').removeAttr('stroke');
+            $('[style]').removeAttr('style');
+        },
+        parserOptions: {xmlMode: true}
+    }))
 
-//     .pipe(replace('&gt;', '>'))
+    .pipe(replace('&gt;', '>'))
 
-//     .pipe(svgSprite({
-//         mode: {
-//             stack: {
-//                 sprite: "../sprite.svg"
-//             }
-//         },
-//     }))
-//     .pipe(dest('app/images'));
-// }
+    .pipe(svgSprite({
+        mode: {
+            stack: {
+                sprite: "../sprite.svg"
+            }
+        },
+    }))
+    .pipe(dest('app/images'));
+}
 
 
 
@@ -124,11 +124,11 @@ function watching () {
     watch(['app/**/*.html']).on('change', browserSync.reload);
     watch(['app/scss/**/*.scss']).on('change', browserSync.reload);
     watch(['app/html/**/*.html'], htmlInclude);
-    // watch(['app/images/**.svg'], svgSprites);
+    watch(['app/images/icons/**.svg'], svgSprites);
 }
 
 exports.htmlInclude = htmlInclude;
-// exports.svgSprites = svgSprites;
+exports.svgSprites = svgSprites;
 exports.styles = styles;
 exports.scripts = scripts;
 exports.browsersync = browsersync;
@@ -136,5 +136,4 @@ exports.watching = watching;
 exports.images = images;
 exports.cleanDist = cleanDist;
 exports.build = series(cleanDist, images, build);
-
-exports.default = parallel(styles, scripts, browsersync, watching, htmlInclude);
+exports.default = parallel(styles, scripts, browsersync, watching, svgSprites, htmlInclude);

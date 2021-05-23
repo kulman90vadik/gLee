@@ -1,21 +1,25 @@
-@import './companents/fonts';
-@import './companents/vars';
-@import './companents/reset';
-@import './companents/libs';
-@import './companents/global';
-@import './companents/header';
-@import './companents/home-page/products-slider';
-@import './companents/product-card';
-@import './companents/home-page/services';
-@import './companents/home-page/products-week';
-@import './companents/home-page/cards';
-@import './companents/home-page/desing';
-@import './companents/home-page/popup';
-@import './companents/home-page/insights';
-@import './companents/home-page/article-card';
-@import './companents/home-page/logos-partner';
+@import './components/settings/fonts';
+@import './components/settings/vars';
+@import './components/settings/reset';
+@import './components/settings/libs';
+@import './components/settings/_global';
 
-@import './companents/footer';
+@import './components/header';
+@import './components/home-page/products-slider';
+@import './components/product-card';
+@import './components/home-page/services';
+@import './components/home-page/products-week';
+
+@import './components/product-fillter';
+
+@import './components/home-page/cards';
+@import './components/home-page/desing';
+@import './components/home-page/popup';
+@import './components/home-page/insights';
+@import './components/home-page/article-card';
+@import './components/home-page/logos-partner';
+
+@import './components/footer';
 
 
 
