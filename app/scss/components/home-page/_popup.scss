@@ -1,15 +1,18 @@
 .popup {
     position: relative;
+    display: block;
     height: 500px;
     @include bg;
     margin-bottom: 110px;
-    &__link {
+    &__btn {
         position: absolute;
         display: flex;
         width: 98px;
         height: 98px;
+        border: none;
         border-radius: 50%;
         background-color: $gray;
+        cursor: pointer;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -37,6 +40,7 @@
         outline: transparent;
         width: 22px;
         height: 25px;
+        cursor: pointer;
         &:focus {
             background-color: $gray000;
         }

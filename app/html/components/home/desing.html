@@ -1,8 +1,27 @@
 <section class="desing">
     <div class="container">
         <h2 class="title">New Design</h2>
-        @include('../product-fillter.html')
-        <ul class="desing__inner">
+        <!-- @include('../product-fillter.html') -->
+
+        <ul class="product-fillter">
+            <li class="product-fillter__item">                                
+                <button class="product-fillter__btn filter-2" type="button" data-filter="alll">All</button>
+            </li>
+            <li class="product-fillter__item">
+                <button class="product-fillter__btn filter-2" type="button" data-filter=".product-1">Furnitures</button>
+            </li>
+            <li class="product-fillter__item">
+                <button class="product-fillter__btn filter-2" type="button" data-filter=".product-2">Chairs</button>
+            </li>
+            <li class="product-fillter__item">
+                <button class="product-fillter__btn filter-2" type="button" data-filter=".product-3">Lighting</button>
+            </li>
+            <li class="product-fillter__item">
+                <button class="product-fillter__btn filter-2" type="button" data-filter=".product-4">Decor</button>
+            </li>
+        </ul>
+
+        <ul class="desing__inner" id="desing__inner">
             <li class="desing__block mix alll product-1">
                 <div class="desing__info">
                     <h3 class="desing__title">Beat Flat Pendant Black</h3>

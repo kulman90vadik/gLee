@@ -1,5 +1,5 @@
 .desing {
-    margin-bottom: 85px;
+    margin-bottom: 83px;
     &__inner {
         display: flex;
         flex-wrap: wrap;
@@ -17,12 +17,16 @@
         padding-bottom: 40px;
         background-color: $fff400;
         overflow: hidden;
+        transition: background-color .3s ease-in;
+        &:hover {
+            background-color: $orange;
+        }
     }
     &__info {
         position: absolute;
         max-width: 172px;
         top: 35px;
-        left: 30px;
+        left: 38px;
         font-family: $DmSans;
         font-weight: $fw700;
     }
@@ -47,10 +51,14 @@
     &__title {
         font-size: 20px;
         color: $title300;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
+        @include lineClamp;
+        -webkit-line-clamp: 2;
+        
     }
     &__classic {
         color: $gray;
     }
 }
 
+// @import './components/product-fillter';

@@ -147,7 +147,7 @@
                 <li class="services__item">
                     <div class="services__info services__info-delivery">
                         <h3 class="services__title">Delivery.</h3>
-                        <div class="services__text">
+                        <div class="services__text services__text--delivery">
                             <p>
                                 Free shipping on all US order.
                             </p>
@@ -171,24 +171,28 @@
         <section class="products-week">
     <div class="container">
         <h2 class="title products-week__title">Products of the week</h2>
+        
+
         <ul class="product-fillter">
-    <li class="product-fillter__item">                                
-        <button class="product-fillter__btn" type="button" data-filter="all">All</button>
-    </li>
-    <li class="product-fillter__item">
-        <button class="product-fillter__btn" type="button" data-filter=".furnitures">Furnitures</button>
-    </li>
-    <li class="product-fillter__item">
-        <button class="product-fillter__btn" type="button" data-filter=".chairs">Chairs</button>
-    </li>
-    <li class="product-fillter__item">
-        <button class="product-fillter__btn" type="button" data-filter=".lighting">Lighting</button>
-    </li>
-    <li class="product-fillter__item">
-        <button class="product-fillter__btn" type="button" data-filter=".decor">Decor</button>
-    </li>
-</ul>
-        <ul class="products-week__inner">
+            <li class="product-fillter__item">                                
+                <button class="product-fillter__btn filter" type="button" data-filter="all">All</button>
+            </li>
+            <li class="product-fillter__item">
+                <button class="product-fillter__btn filter" type="button" data-filter=".furnitures">Furnitures</button>
+            </li>
+            <li class="product-fillter__item">
+                <button class="product-fillter__btn filter" type="button" data-filter=".chairs">Chairs</button>
+            </li>
+            <li class="product-fillter__item">
+                <button class="product-fillter__btn filter" type="button" data-filter=".lighting">Lighting</button>
+            </li>
+            <li class="product-fillter__item">
+                <button class="product-fillter__btn filter" type="button" data-filter=".decor">Decor</button>
+            </li>
+        </ul>
+
+
+        <ul class="products-week__inner" id="products-week__inner">
             <li class="products-week__block mix all furnitures">
                 <article class="product-card">
                     <img class="product-card__photo" src="images/products-1.png" alt="photo Wooden radio" width="186" height="195">
@@ -531,24 +535,27 @@
         <section class="desing">
     <div class="container">
         <h2 class="title">New Design</h2>
+        
+
         <ul class="product-fillter">
-    <li class="product-fillter__item">                                
-        <button class="product-fillter__btn" type="button" data-filter="all">All</button>
-    </li>
-    <li class="product-fillter__item">
-        <button class="product-fillter__btn" type="button" data-filter=".furnitures">Furnitures</button>
-    </li>
-    <li class="product-fillter__item">
-        <button class="product-fillter__btn" type="button" data-filter=".chairs">Chairs</button>
-    </li>
-    <li class="product-fillter__item">
-        <button class="product-fillter__btn" type="button" data-filter=".lighting">Lighting</button>
-    </li>
-    <li class="product-fillter__item">
-        <button class="product-fillter__btn" type="button" data-filter=".decor">Decor</button>
-    </li>
-</ul>
-        <ul class="desing__inner">
+            <li class="product-fillter__item">                                
+                <button class="product-fillter__btn filter-2" type="button" data-filter="alll">All</button>
+            </li>
+            <li class="product-fillter__item">
+                <button class="product-fillter__btn filter-2" type="button" data-filter=".product-1">Furnitures</button>
+            </li>
+            <li class="product-fillter__item">
+                <button class="product-fillter__btn filter-2" type="button" data-filter=".product-2">Chairs</button>
+            </li>
+            <li class="product-fillter__item">
+                <button class="product-fillter__btn filter-2" type="button" data-filter=".product-3">Lighting</button>
+            </li>
+            <li class="product-fillter__item">
+                <button class="product-fillter__btn filter-2" type="button" data-filter=".product-4">Decor</button>
+            </li>
+        </ul>
+
+        <ul class="desing__inner" id="desing__inner">
             <li class="desing__block mix alll product-1">
                 <div class="desing__info">
                     <h3 class="desing__title">Beat Flat Pendant Black</h3>
@@ -594,17 +601,16 @@
         </ul>
     </div>
 </section>     
-        <div class="popup" style="background-image: url(images/video-popup.jpg);">
-    <!-- меняю на тэг a, сам popup и линк куда то сваливает!!!! -->
-    <a class="popup__link" data-fancybox href="https://www.youtube.com/watch?v=Ampv89rAblQ">
+        <a class="popup" href="https://www.youtube.com/watch?v=Ampv89rAblQ" data-fancybox style="background-image: url(images/video-popup.jpg);">
+    <button class="popup__btn" type="button">
         <svg class="popup__play">
             <use xlink:href="images/sprite.svg#play"></use>
         </svg>
         <span class="visually-hidden">
             the icon that starts the video when clicked.
         </span>
-    </a>
-</div>
+    </button>
+</a>
     
         <section class="insights">
     <div class="container">
@@ -638,7 +644,7 @@
                                     <svg class="article-card__calendar">
                                         <use xlink:href="images/sprite.svg#calendar"></use>
                                     </svg>
-                                    28 January, 2020
+                                    <time class="article-card__time" datetime="28.01.2020">28 January, 2020</time>
                                 </div>
                                 <div class="article-card__author">
                                     <span class="visually-hidden">
@@ -669,7 +675,7 @@
                                     <svg class="article-card__calendar">
                                         <use xlink:href="images/sprite.svg#calendar"></use>
                                     </svg>
-                                    28 January, 2020
+                                    <time class="article-card__time" datetime="28.01.2020">28 January, 2020</time> 
                                 </div>
                                 <div class="article-card__author">
                                     <span class="visually-hidden">
@@ -699,7 +705,7 @@
                                     <svg class="article-card__calendar">
                                         <use xlink:href="images/sprite.svg#calendar"></use>
                                     </svg>
-                                    28 January, 2020
+                                    <time class="article-card__time" datetime="28.01.2020">28 January, 2020</time>
                                 </div>
                                 <div class="article-card__author">
                                     <span class="visually-hidden">

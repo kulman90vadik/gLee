@@ -1,25 +1,25 @@
 
 .cards {
-    margin-bottom: 100px;
+    margin-bottom: 94px;
     display: flex;
     justify-content: space-between;
     &__card {
         max-width: 49%;
         width: 100%;
         background-color: $fff000;
-        padding: 100px 0 100px 135px;
+        padding: 90px 0 82px 152px;
         display: flex;
     }
     &__photo--big {
         width: 233px;
         height: 405px;
-        margin: -200px 15px 0 0;
+        margin: -186px 3px 0 0;
 
     }
     &__photo--small {
         width: 222px;
         height: 399px;
-        margin: -200px 55px 0 0;
+        margin: -181px 55px 0 0;
     }
     &__info {
         max-width: 346px;
@@ -36,13 +36,15 @@
     &__text {
         line-height: 1.8;
         margin-bottom: 20px;
+        @include lineClamp;
+        -webkit-line-clamp: 2;
     }
     &__link {
         display: inline-block;
         font-family: $Rubik;
         font-weight: $fw500;
         font-size: 15px;
-        padding: 20px 15px;
+        padding: 19px 21px;
         border: 1px solid rgba(67, 99, 114, 0.4);
         border-radius: 5px;
         outline: transparent;
