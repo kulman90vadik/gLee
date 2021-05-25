@@ -26,6 +26,9 @@ body {
     color: $global;
     display: flex;
     flex-direction: column;
+    @include max($lg) {
+        line-height: 1.5;
+    }
 }
 
 .container {
@@ -34,6 +37,9 @@ body {
     margin: 0 auto;
     &--fluid {
         max-width: 1800px;
+        @include max($sm) {
+            padding: 0 5px;
+        }
     }
 }
 
@@ -45,8 +51,16 @@ body {
     }
     &__images {
         object-fit: cover;
+        @include max($sm) {
+            width: 100px;
+            object-fit: contain;
+            height: 30px;
+        }
     }
 }
+
+
+
 
 .title {
     font-family: $DmSans;
@@ -55,4 +69,13 @@ body {
     font-size: 36px;
     color: $title300;
     margin-bottom: 23px;
+    @include max($sm) {         
+        font-size: 30px;
+    }
+    @include max($md) {         
+        margin-bottom: 10px;
+    }
+    @include max($s) {         
+        font-size: 26px;
+    }
 }

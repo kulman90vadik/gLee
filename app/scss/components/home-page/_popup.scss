@@ -4,6 +4,12 @@
     height: 500px;
     @include bg;
     margin-bottom: 110px;
+    &:hover .popup__btn{
+        background-color: rgba($gray, 0.9);
+    }
+    &:hover .popup__play{
+        fill: $orange;
+    }
     &__btn {
         position: absolute;
         display: flex;
@@ -24,14 +30,13 @@
             background-color: $gray000;
             box-shadow: none;
         }
-        &:hover {
-            background-color: rgba($gray, 0.9);
-        }
-        &:hover .popup__play{
-            fill: $orange;
-        }
         &:active {
             box-shadow: none;
+        }
+        @include max($md) {
+            height: 74px;
+            width: 74px;
+            box-shadow: 0px 0px 0px 8px rgba(163, 187, 200, 0.4);
         }
     }
     &__play {
@@ -44,5 +49,15 @@
         &:focus {
             background-color: $gray000;
         }
+    }
+    @include max($xl) {
+        margin-bottom: 50px;
+    }
+    @include max($lg) {
+        height: 350px;
+    }
+    @include max($md) {
+        height: 250px;
+        margin-bottom: 30px;
     }
 }
