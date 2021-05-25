@@ -1,5 +1,5 @@
 
-.cards {
+.lamp-cards {
     margin-bottom: 94px;
     display: flex;
     justify-content: space-between;
@@ -32,6 +32,8 @@
         font-weight: $fw700;
         margin-bottom: 25px;
         display: block;
+        @include lineClamp;
+        -webkit-line-clamp: 2;
     }
     &__text {
         line-height: 1.8;

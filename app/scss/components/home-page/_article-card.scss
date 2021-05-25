@@ -1,14 +1,15 @@
 .article-card {
     overflow: hidden;
-    // height: 100%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
     &__info {
         padding: 31px 30px 25px;
         background-color: #fff;
         position: relative;
         height: 100%;
     }
-    &__link {
-        margin-bottom: 15px;
+    &__title {
+        padding-bottom: 15px;
         display: flex;
         font-size: 18px;
         line-height: 1.2;
@@ -17,40 +18,42 @@
         color: $bl000;
         @include lineClamp;
         -webkit-line-clamp: 3;
-        outline: transparent;
-        transition: color .3s ease-in;
-        &:hover,
-        &:focus {
-            color: $orange100;
-        }
-        &:active {
-            color: $bl000;
-        }
+        border-bottom: 1px solid #e0e0e0;
+        margin-bottom: 20px;
     }
     &__publication {
-        border-top: 1px solid #e0e0e0;
-        padding-top: 20px;
         text-transform: uppercase;
         font-size: 12px;
         color: $bl100;
         display: flex;
-        margin-top: auto;
-    }
-    &__date {
-        margin-right: 25px;
-        display: flex;
         align-items: center;
+    }
+    &__author,
+    &__time {
+        position: relative;
+        padding-left: 15px;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            @include bg;
+            background-size: contain;
+            width: 12px;
+            height: 10px;
+        }
+    }
+    &__time {
+        margin-right: 25px;
+        &::before {
+            background-image: url(../images/icons/calendar.svg);
+        }
     }
     &__author {
-        display: flex;
-        align-items: center;
-    }
-    &__user,
-    &__calendar {
-        width: 10px;
-        height: 10px;
-        fill: $bl100;
-        margin-right: 5px;
+        &::before {
+            background-image: url(../images/icons/date.svg);
+        }
     }
     &__news {
         text-transform: uppercase;
@@ -71,5 +74,12 @@
         &:hover {
             transform: scale(1.1);
         }
+    }
+    &__link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
     }
 }

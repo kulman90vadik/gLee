@@ -32,6 +32,21 @@ $bl100: #222933;
     overflow: hidden;
 }
 
+
+@mixin max($width) {
+    @media only screen and (max-width: $width+ "px") {
+        @content;
+    }
+}
+
+$xl: 1200;
+$lg: 990;
+$md: 720;
+$sm: 540;
+$s: 400;
+
+
+
 $DmSans: 'DMSans', sans-serif;
 $Rubik: 'Rubik', sans-serif;
 $Poppins: 'Poppins', sans-serif;
@@ -40,8 +55,9 @@ $fw500: 500;
 $fw400: 400;
 
 @function max($numbers...) {
-@return m#{a}x(#{$numbers});
+    @return m#{a}x(#{$numbers});
 }
+
 @function min($numbers...) {
-@return m#{i}n(#{$numbers});
+    @return m#{i}n(#{$numbers});
 }

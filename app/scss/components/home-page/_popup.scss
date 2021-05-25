@@ -4,6 +4,12 @@
     height: 500px;
     @include bg;
     margin-bottom: 110px;
+    &:hover .popup__btn{
+        background-color: rgba($gray, 0.9);
+    }
+    &:hover .popup__play{
+        fill: $orange;
+    }
     &__btn {
         position: absolute;
         display: flex;
@@ -23,12 +29,6 @@
         &:focus {
             background-color: $gray000;
             box-shadow: none;
-        }
-        &:hover {
-            background-color: rgba($gray, 0.9);
-        }
-        &:hover .popup__play{
-            fill: $orange;
         }
         &:active {
             box-shadow: none;
