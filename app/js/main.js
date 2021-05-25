@@ -9,12 +9,33 @@ $(function(){
         slidesToShow: 5,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000
+        autoplaySpeed: 2000,
+        responsive: [
+            {
+                breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 720,
+                    settings: {
+                        slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 540,
+                    settings: {
+                        slidesToShow: 1
+                }
+            }
+        ]
     })
 
     $('.menu-btn').on('click', function(){
         $('.menu').toggleClass('menu--active');
         $('.menu-btn__item').toggleClass('menu-btn__item--active');
+        $(this).toggleClass('menu-btn--active');
     });
 
 

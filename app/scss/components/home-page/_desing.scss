@@ -4,6 +4,10 @@
         display: flex;
         flex-wrap: wrap;
         margin-right: -30px;
+        @include max($xl) {         
+            margin-right: 0;
+            justify-content: center;
+        }
     }
     &__block {
         position: relative;
@@ -21,6 +25,12 @@
         &:hover {
             background-color: $orange;
         }
+        @include max($xl) {         
+            margin: 15px;
+        }
+        @include max($sm) {         
+            margin: 10px 0;
+        }
     }
     &__info {
         position: absolute;
@@ -29,6 +39,10 @@
         left: 38px;
         font-family: $DmSans;
         font-weight: $fw700;
+        @include max($sm) {         
+            top: 10px;
+            left: 10px;
+        }
     }
     &__product-1 {
         margin-right: -75px;
@@ -54,10 +68,22 @@
         margin-bottom: 10px;
         @include lineClamp;
         -webkit-line-clamp: 2;
+        @include max($sm) {         
+            margin-bottom: 0;
+        }
         
     }
     &__classic {
         color: $gray;
+    }
+    &--hidden {
+        overflow: hidden;
+        @include max($xl) {         
+            overflow: visible;
+        }
+    }
+    @include max($xl) {         
+        margin-bottom: 30px;
     }
 }
 

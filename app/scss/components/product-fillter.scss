@@ -4,6 +4,12 @@
     margin-bottom: 77px;
     &__item:not(:last-child) {
         margin-right: 30px;
+        @include max($sm) {         
+            margin-right: 15px;
+        }
+        @include max($s) {         
+            margin-right: 7px;
+        }
     }
     &__btn {
         padding: 0;
@@ -20,6 +26,9 @@
         &:focus {
             color: #191919;
         }
+    }
+    @include max($lg) {         
+        margin-bottom: 30px;
     }
 }
 

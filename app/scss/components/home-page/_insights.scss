@@ -4,12 +4,21 @@
         justify-content: space-between;
         align-items: center;
         margin-bottom: 43px;
+        @include max($lg) {
+            margin-bottom: 20px;
+        }
     }
     &__inner {
         margin-bottom: -169px;
+        @include max($lg) {
+            margin-bottom: 20px;
+        }
     }
     &__title {
         margin-bottom: 0;
+        @include max($sm) {
+            font-size: 24px;
+        }
     }
     &__link {
         color: $bl000;
@@ -27,11 +36,21 @@
         &:active .insights__view {
             color: $orange;
         }
+        @include max($s) {
+            display: flex;
+            align-items: center;
+        }
     }
     &__view{
         margin-right: 15px;
         display: inline-block;
         transition: color .3s ease-in;
+        @include max($md) {
+            margin-right: 5px;
+        }
+        @include max($s) {
+            white-space: nowrap;
+        }
     }
     &__icon {
         fill: $bl000;
@@ -46,9 +65,22 @@
     &__list {
         display: flex;
         justify-content: space-between;
+        @include max($lg) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
     &__item {
         max-width: 370px;
         width: 100%;
+        &:not(:last-child) {
+            @include max($xl) {
+                margin-right: 15px;
+            }
+            @include max($lg) {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+        }
     }
 }

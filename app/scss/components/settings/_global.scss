@@ -26,6 +26,9 @@ body {
     color: $global;
     display: flex;
     flex-direction: column;
+    @include max($lg) {
+        line-height: 1.5;
+    }
 }
 
 .container {
@@ -66,4 +69,13 @@ body {
     font-size: 36px;
     color: $title300;
     margin-bottom: 23px;
+    @include max($sm) {         
+        font-size: 30px;
+    }
+    @include max($md) {         
+        margin-bottom: 10px;
+    }
+    @include max($s) {         
+        font-size: 26px;
+    }
 }

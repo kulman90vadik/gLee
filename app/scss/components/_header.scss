@@ -238,9 +238,9 @@
     }
     &--active {
         transform: translateY(0);
+        position: fixed;
     }
 }
-
 
 .menu-btn {
     width: 48px;
@@ -297,5 +297,10 @@
     @include max($sm) {
         width: 35px;
         height: 35px;
+    }
+    &--active {
+        position: fixed;
+        top: 15px;
+        right: 15px;
     }
 }

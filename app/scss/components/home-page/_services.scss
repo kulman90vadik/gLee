@@ -44,6 +44,9 @@
             left: 0;
             top: 0;
         }
+        @include max($sm) {
+            padding-left: 65px;
+        }
     }
     &__info-support {
         &::before {
@@ -83,6 +86,9 @@
         line-height: 1;
         color: $suptitle;
         margin-bottom: 12px;
+        @include max($s) {
+            margin-bottom: 5px;
+        }
     }
     &__text {
         font-family: $DmSans;
@@ -92,6 +98,9 @@
         -webkit-line-clamp: 2;
         @include max($lg) {
             -webkit-line-clamp: 1;
+        }
+        @include max($s) {
+            -webkit-line-clamp: 2;
         }
     }
     &__text--delivery,
