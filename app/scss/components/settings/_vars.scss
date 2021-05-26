@@ -19,6 +19,7 @@ $fff000: #feefe2;
 $title300: #191919;
 $bl000: #262626;
 $bl100: #222933;
+$fff500: #888c91;
 
 @mixin bg {
     background-repeat: no-repeat;
@@ -71,6 +72,7 @@ $Poppins: 'Poppins', sans-serif;
 $fw700: 700;
 $fw500: 500;
 $fw400: 400;
+$fw300: 300;
 
 @function max($numbers...) {
     @return m#{a}x(#{$numbers});

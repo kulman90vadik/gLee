@@ -1,0 +1,39 @@
+.breamcrams {
+    display: flex;
+    justify-content: center;
+    &__item {
+        padding-right: 15px;
+        position: relative;
+        color: $fff500;
+        &::after {
+            position: absolute;
+            content: '/';
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &:not(:last-child) {
+            margin-right: 7px;
+        }
+        &:last-child {
+            &::after {
+                display: none;
+            }
+        }
+    }
+    &__link {
+        font-size: 14px;
+        line-height: 2;
+        transition: color .3s ease-in;
+        outline: transparent;
+        &:hover {
+            color: $bl100;
+        }
+        &:focus {
+            color: $title300;
+        }
+        &:active {
+            color: $orange100;
+        }
+    }
+}

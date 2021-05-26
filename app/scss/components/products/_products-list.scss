@@ -1,0 +1,14 @@
+.products-list {
+    padding: 25px 0;
+    background-color: $fff100;
+    margin-bottom: 120px;
+    &__title {
+        text-align: center;
+        font-family: $Rubik;
+        font-weight: $fw300;
+        font-size: 36px;
+        color: $bl100;
+        line-height: 1;
+        margin-bottom: 15px;
+    }
+}
