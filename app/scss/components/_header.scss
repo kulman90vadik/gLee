@@ -201,11 +201,15 @@
             }
         }
         @include max($lg) {
-            margin: 15px 0;
+            margin: 8px 0;
+            width: 100%;
+            text-align: center;
+        }    
+        @include max($md) {
+            margin: 5px 0;
         }    
     }
     &__link {
-        font-family: $Rubik;
         font-weight: $fw500;
         font-size: 15px;
         line-height: 1;
@@ -219,8 +223,13 @@
             color: $orange;
         }
         @include max($lg) {
-            padding: 8px 0;
+            display: block;
+            width: 100%;
+            padding: 10px 0;
             font-size: 20px;
+        }
+        @include max($md) {
+            padding: 10px 0;
         }
     }
     @include max($lg) {
@@ -297,10 +306,5 @@
     @include max($sm) {
         width: 35px;
         height: 35px;
-    }
-    &--active {
-        position: fixed;
-        top: 15px;
-        right: 15px;
     }
 }

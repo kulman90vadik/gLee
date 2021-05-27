@@ -22,7 +22,11 @@
         @include max($lg) {
             max-width: 100%;
             width: 100%;
-            padding: 15px 0;
+            padding: 15px 0 15px 20px;
+            justify-content: start;
+        }
+        @include max($sm) {
+            padding: 10px 0 10px 10px;
         }
     }
     &__info {
@@ -99,7 +103,7 @@
         @include max($lg) {
             -webkit-line-clamp: 1;
         }
-        @include max($s) {
+        @include max($sm) {
             -webkit-line-clamp: 2;
         }
     }

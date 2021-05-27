@@ -72,6 +72,9 @@
         transform: translate(-50%, -50%);
         opacity: 0;
         transition: opacity .2s ease-in-out;
+        @include max($lg) {
+            opacity: 1;
+        }
     }
     &__heart,
     &__corb,

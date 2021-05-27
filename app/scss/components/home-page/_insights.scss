@@ -73,6 +73,9 @@
     &__item {
         max-width: 370px;
         width: 100%;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        overflow: hidden;
         &:not(:last-child) {
             @include max($xl) {
                 margin-right: 15px;

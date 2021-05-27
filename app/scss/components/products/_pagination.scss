@@ -1,0 +1,33 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__item {
+        color: $title;
+    }
+    &__item:not(:last-child) {
+        margin-right: 12px;
+    }
+    &__link {
+        display: block;
+        padding: 15px 20px;
+        border: 1px solid $gray;
+        color: inherit;
+        transition: background-color .2s ease-in, color .2s ease-in, border-color .2s ease-in;
+        &:hover {
+            background-color: $title;
+            color: #fff;
+            border-color: $title;
+        }
+    }
+    &__link--active {
+        color: #fff;
+        background-color: $gray;
+        border-color: $gray;
+        &:hover {
+            color: #fff;
+            background-color: $gray;
+            border-color: $gray;
+        }
+    }
+}

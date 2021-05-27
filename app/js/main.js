@@ -35,7 +35,6 @@ $(function(){
     $('.menu-btn').on('click', function(){
         $('.menu').toggleClass('menu--active');
         $('.menu-btn__item').toggleClass('menu-btn__item--active');
-        $(this).toggleClass('menu-btn--active');
     });
 
 

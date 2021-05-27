@@ -34,21 +34,24 @@ $fff500: #888c91;
 }
 
 
-// @mixin line-clamp(
-// 	$font-size,
-// 	$line-height,
-// 	$lines-to-show
-// ) {
-// 	display: block; // Fallback for non-webkit browsers
-// 	display: -webkit-box;
-// 	font-size: rem($font-size);
-// 	max-height: rem(($font-size * $line-height * $lines-to-show)); // Fallback for non-webkit browsers
-// 	line-height: $line-height;
-// 	overflow: hidden;
-// 	text-overflow: ellipsis;
-// 	-webkit-box-orient: vertical;
-// 	-webkit-line-clamp: $lines-to-show;
-// }
+@mixin line-clamp(
+    $font-size,
+    $line-height,
+    $lines-to-show) {
+    @if unitless($line-height)==false {
+        $line-height: create-unitless-line-height($font-size, $line-height);
+    }
+
+    display: block;
+    display: -webkit-box;
+    font-size: $font-size;
+    max-height: ($font-size * $line-height * $lines-to-show);
+    line-height: $line-height;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $lines-to-show;
+}
 
 
 
