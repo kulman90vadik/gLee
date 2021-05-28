@@ -5,10 +5,7 @@
     &__item:not(:last-child) {
         margin-right: 30px;
         @include max($sm) {         
-            margin-right: 15px;
-        }
-        @include max($s) {         
-            margin-right: 7px;
+            margin-right: 0;
         }
     }
     &__btn {
@@ -29,6 +26,9 @@
     }
     @include max($lg) {         
         margin-bottom: 30px;
+    }
+    @include max($sm) {         
+        justify-content: space-between;
     }
 }
 

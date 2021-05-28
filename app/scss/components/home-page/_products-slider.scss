@@ -44,19 +44,12 @@
         font-family: $Rubik;
         font-weight: $fw500;
         color: $title;
-        font-size: 72px;
-        line-height: 1;
         text-transform: uppercase;
         max-width: 445px;
         margin-bottom: 35px;
-        @include lineClamp;
+        font-size: 72px;
+        line-height: 1;
         -webkit-line-clamp: 2;
-
-   
-        @include line-clamp (
-            $font-size: 72px,
-            $line-height: 1,
-            $lines-to-show: 2);
         @include max($xl) {
             font-size: 55px;
         }
@@ -69,15 +62,15 @@
         }
         @include max($s) {
             font-size: 26px;
+            -webkit-line-clamp: 3;
         }
     }
     &__text {
-        font-size: 18px;
-        line-height: 1.6;
         max-width: 350px;
         margin-bottom: 35px;
-        @include lineClamp;
-        -webkit-line-clamp: 2;
+        font-size: 18px;
+        line-height: 1.6;
+        -webkit-line-clamp: 2;    
         @include max($lg) {
             max-width: 345px;
             margin-bottom: 10px;
@@ -87,7 +80,6 @@
         }
         @include max($s) {
             font-size: 16px;
-            -webkit-line-clamp: 3;
         }
     }
     &__link {

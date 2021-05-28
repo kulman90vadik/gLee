@@ -24,6 +24,9 @@
             max-width: 99%;
             margin-bottom: 10px;
         }
+        @include max($s) {
+            margin-bottom: 5px;
+        }
     }
     &__logo {
         display: block;
