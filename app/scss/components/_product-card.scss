@@ -14,6 +14,11 @@
         margin-top: auto;
         display: block;
     }
+    &__photo--big {
+        position: absolute;
+        right: 0;
+        top: 80px;
+    }
     &__name {
         color: $title;
         font-family: $DmSans;
@@ -23,6 +28,9 @@
         @include lineClamp;
         -webkit-line-clamp: 1;
         font-size: 16px;
+    }
+    &__name--big {
+        margin-top: auto;
     }
     &__price {
         color: $gray;
@@ -64,6 +72,9 @@
         transform: translate(-50%, -50%);
         opacity: 0;
         transition: opacity .2s ease-in-out;
+        @include max($lg) {
+            opacity: 1;
+        }
     }
     &__heart,
     &__corb,

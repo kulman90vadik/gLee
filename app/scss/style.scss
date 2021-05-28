@@ -1,8 +1,8 @@
-@import './components/settings/fonts';
-@import './components/settings/vars';
-@import './components/settings/reset';
-@import './components/settings/libs';
-@import './components/settings/_global';
+@import './settings/fonts';
+@import './settings/vars';
+@import './settings/reset';
+@import './settings/libs';
+@import './settings/global';
 
 @import './components/header';
 @import './components/home-page/products-slider';
@@ -21,7 +21,13 @@
 
 @import './components/footer';
 
-
+@import './components/products/products-list';
+@import './components/breamcrams';
+@import './components/products/catalog';
+@import './components/products/_catalog-filter';
+@import './components/products/_catalog-sort';
+@import './components/products/catalog-cards';
+@import './components/products/pagination';
 
 
 

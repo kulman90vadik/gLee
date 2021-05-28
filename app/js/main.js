@@ -35,10 +35,31 @@ $(function(){
     $('.menu-btn').on('click', function(){
         $('.menu').toggleClass('menu--active');
         $('.menu-btn__item').toggleClass('menu-btn__item--active');
-        $(this).toggleClass('menu-btn--active');
     });
 
 
+
+    $('.catalog-filter__input').ionRangeSlider({
+        type: "double",
+        // prefix: "$",
+        onStart: function (data) {
+            $('.catalog-filter__min').text(data.from);
+            $('.catalog-filter__max').text(data.to);
+        },
+        onChange: function (data) {
+            $('.catalog-filter__min').text(data.from);
+            $('.catalog-filter__max').text(data.to);
+        }
+    });
+
+
+    $('.catalog-filter__star').rateYo({
+        starWidth: "11px",
+        normalFill: "#d6d6d6",
+        ratedFill: "#ffcc00",
+        readOnly: true,
+        spacing: "7px"
+    });
 
     var containerEl1 = document.querySelector('[data-ref="container-1"]');
     var containerEl2 = document.querySelector('[data-ref="container-2"]');

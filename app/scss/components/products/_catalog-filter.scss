@@ -1,0 +1,148 @@
+.catalog-filter {
+    max-width: 270px;
+    width: 100%;
+    margin-right: 30px;
+    &__block {
+        &:not(:last-child) {
+            margin-bottom: 55px;
+        }
+    }    
+    &__title {
+        text-transform: uppercase;
+        color: $title;
+        font-size: 18px;
+        font-family: $DmSans;
+        font-weight: $fw700;
+        position: relative;
+        display: inline-block;
+        margin-bottom: 25px;
+        &::after {
+            position: absolute;
+            content: '';
+            right: -50px;
+            background-color: $blue;
+            width: 40px;
+            height: 3px;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-bottom: 25px;
+            }
+        }
+    &__btn {
+        border: none;
+        width: 100%;
+        border-radius: 5px;
+        background-color: #fff;
+        color: $title;
+        padding: 13px 20px 13px 14px;
+        text-align: left;
+        position: relative;
+        transition: background-color .3s ease-in;
+        cursor: pointer;
+        outline: transparent;
+        &::after {
+            position: absolute;
+            content: '';
+            width: 5px;
+            height: 10px;
+            background-image: url(../images/icons/arrow-filter.svg);
+            @include bg;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-size: contain;
+        }
+        &:hover {
+            background-color: $fff100;
+        }
+        &:focus {
+            background-color: $gray;
+        }
+        &:active {
+            background-color: $orange;
+        }
+    }
+    &__price {
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        color: $title;
+    }
+    .irs--flat {
+        height: 15px;
+        margin-bottom: 20px;
+    }
+    .irs--flat .irs-line {
+        top: 6px;
+        height: 3px;
+        background-color: #c2d2db;
+        border-radius: 0;
+    }
+    .irs--flat .irs-bar {
+        top: 5px;
+        height: 5px;
+        background-color: $gray;
+    }
+    .irs--flat .irs-handle {
+        cursor: pointer;
+        top: 0;
+        width: 15px;
+        height: 15px;
+        background-color: $gray;
+    }
+    .irs--flat .irs-handle>i:first-child,
+    .irs--flat .irs-min, .irs--flat .irs-max,
+    .irs-from, .irs-to, .irs-single {
+        display: none;
+    }
+    &__button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &::after {
+            display: none;
+        }
+        &:hover {
+            .filter__number {
+                color: $title;
+            }
+        }
+    }
+    &__number {
+        color: #b3b3b3;
+        transition: color .3s ease-in;
+    }
+    &__items {
+        display: flex;
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+    &__images {
+        width: 67px;
+        height: 67px;
+        border: 2px solid #f7f7f7;
+        display: flex;
+        margin-right: 16px;
+    }
+    &__photo {
+        margin: auto;
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #333;
+        padding: 3px 0;
+    }
+    &__name {
+        font-size: 14px;
+        line-height: 1;
+    }
+    &__star {
+        padding: 0;
+    }
+    &__cost {
+        font-size: 15px;
+    }
+}

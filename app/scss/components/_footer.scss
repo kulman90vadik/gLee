@@ -24,6 +24,9 @@
             max-width: 99%;
             margin-bottom: 10px;
         }
+        @include max($s) {
+            margin-bottom: 5px;
+        }
     }
     &__logo {
         display: block;
@@ -45,15 +48,22 @@
     }
     &__suptitle {
         text-transform: uppercase;
+        @include max($lg) {
+            color: $vio;
+            font-weight: $fw700;
+        }
     }
     &__descr{
         transition: color .3s ease-in;
         outline: transparent;
         &:hover {
-            color: $title;
+            color: $orange100;
         }
         &:focus {
             color: $vio;
+        }
+        @include max($lg) {
+            color: #fff;
         }
     }
     &__name {
@@ -88,16 +98,22 @@
         transition: color .2s ease-in;
         outline-color: transparent;
         &:hover {
-            color: $title;
+            color: $orange100;
         }
         &:focus {
             color: $vio;
+        }
+        @include max($lg) {
+            color: #fff;
         }
     } 
     &__text {
         margin-bottom: 35px;
         p {
             line-height: 1.7;
+            @include max($lg) {
+                color: #fff;
+            }
         }
         @include max($md) {
             margin-bottom: 15px;
@@ -159,7 +175,7 @@
             justify-content: center;
         }
     }
-    &__copy-text {
+    &__txt {
         color: $text;
         line-height: 1;
         font-size: 14px;

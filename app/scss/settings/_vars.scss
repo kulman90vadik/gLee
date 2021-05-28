@@ -1,0 +1,82 @@
+
+$global: #436372;
+$title: #243f4d;
+$suptitle: #414141;
+$gray: #a3bbc8;
+$gray100: #585858;
+$vio: #1f2044;
+$text: #7b7b7b;
+$orange: #fcd7b6;
+$orange100: #f39747;
+$btn-color: #8b8b8b;
+$fff100: #edf1f4;
+$gray000: #2c2c2c;
+$fff200: #6c7074;
+$fff300: #fef7f0;
+$fff400: #f8f8f8;
+$blue: #a3bac7;
+$fff000: #feefe2;
+$title300: #191919;
+$bl000: #262626;
+$bl100: #222933;
+$fff500: #888c91;
+
+$xl: 1200;
+$lg: 990;
+$md: 720;
+$sm: 540;
+$s: 400;
+
+$DmSans: 'DMSans', sans-serif;
+$Rubik: 'Rubik', sans-serif;
+$Poppins: 'Poppins', sans-serif;
+$fw700: 700;
+$fw500: 500;
+$fw400: 400;
+$fw300: 300;
+
+@function max($numbers...) {
+    @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+    @return m#{i}n(#{$numbers});
+}
+
+@mixin bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin lineClamp {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+@mixin max($width) {
+    @media only screen and (max-width: $width+ "px") {
+        @content;
+    }
+}
+
+// @mixin line-clamp(
+//     $font-size,
+//     $line-height,
+//     $lines-to-show) {
+//     @if unitless($line-height)==false {
+//         $line-height: create-unitless-line-height($font-size, $line-height);
+//     }
+
+//     display: block;
+//     display: -webkit-box;
+//     font-size: $font-size;
+//     max-height: ($font-size * $line-height * $lines-to-show);
+//     line-height: $line-height;
+//     overflow: hidden;
+//     text-overflow: ellipsis;
+//     -webkit-box-orient: vertical;
+//     -webkit-line-clamp: $lines-to-show;
+//     text-overflow: ellipsis;
+// }
