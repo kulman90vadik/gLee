@@ -6,6 +6,10 @@
     width: 100%;
     height: 100%;
     padding: 27px 40px 35px 35px;
+    &--big {
+        padding-right: 0;
+        padding-left: 0;
+    }
     &:hover .product-card__icons{
         opacity: 1;
     }
@@ -14,10 +18,8 @@
         margin-top: auto;
         display: block;
     }
-    &__photo--big {
-        position: absolute;
-        right: 0;
-        top: 80px;
+    &__images--big {
+        margin-left: auto;
     }
     &__name {
         color: $title;
@@ -36,6 +38,8 @@
         color: $gray;
         font-family: $DmSans;
         font-weight: $fw700;
+        display: flex;
+        justify-content: center;
     }
     &__link {
         border: none;

@@ -6,20 +6,23 @@
     &__items {
         margin-right: 15px;
     }
-    &__block {
+    &__grid {
         width: 15px;
         height: 15px;
-        fill: $title;
-        transition: fill .2s ease-in;
-        &:hover {
-            fill: $orange100;
-        }
     }
     &__line {
         width: 20px;
         height: 15px;
+    }
+    &__icon {
         fill: $title;
         transition: fill .2s ease-in;
+        &:hover {
+            fill: $fff500;
+        }
+    } 
+    &__icon--active {
+        fill: $orange100;
         &:hover {
             fill: $orange100;
         }
