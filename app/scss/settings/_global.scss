@@ -38,9 +38,6 @@ body {
     margin: 0 auto;
     &--fluid {
         max-width: 1800px;
-        @include max($sm) {
-            padding: 0 5px;
-        }
     }
     @include max($s) {
         padding: 0 10px;
@@ -63,9 +60,6 @@ body {
     }
 }
 
-
-
-
 .title {
     font-family: $DmSans;
     font-weight: $fw700;
@@ -73,13 +67,22 @@ body {
     font-size: 36px;
     color: $title300;
     margin-bottom: 23px;
+    @include max($lg) {         
+        margin-bottom: 10px;
+    }
     @include max($sm) {         
         font-size: 30px;
-    }
-    @include max($md) {         
-        margin-bottom: 10px;
     }
     @include max($s) {         
         font-size: 26px;
     }
+}
+
+.btn-circle {
+    width: 48px;
+    height: 48px;
+    border: none;
+    padding: 0;
+    border-radius: 50%;
+    background-color: $fff100;
 }
