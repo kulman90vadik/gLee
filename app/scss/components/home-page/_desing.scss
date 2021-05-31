@@ -10,12 +10,13 @@
         }
     }
     &__box {
-        position: relative;
-        display: flex;
-        align-items: flex-end;
-        justify-content: flex-end;
-        max-width: 370px;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: flex-end;
+        // justify-content: flex-end;
+
         height: 246px;
+        max-width: 370px;
         width: 100%;
         margin: 0 30px 35px 0;
         padding-bottom: 40px;
@@ -76,12 +77,12 @@
     &__classic {
         color: $gray;
     }
-    &--hidden {
-        overflow: hidden;
-        @include max($xl) {         
-            overflow: visible;
-        }
-    }
+    // &--hidden {
+    //     overflow: hidden;
+    //     @include max($xl) {         
+    //         overflow: visible;
+    //     }
+    // }
     @include max($xl) {         
         margin-bottom: 30px;
     }

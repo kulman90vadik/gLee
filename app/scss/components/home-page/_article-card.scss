@@ -1,15 +1,18 @@
 .article-card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
     &__info {
         padding: 31px 30px 25px;
         background-color: #fff;
         position: relative;
         height: 100%;
-        @include max($xl) {
-            padding: 31px 15px 25px;
-        }
     }
     &__title {
-        display: block;
         font-size: 18px;
         line-height: 1.2;
         font-family: $DmSans;
@@ -74,5 +77,12 @@
         &:hover {
             transform: scale(1.1);
         }
+    }
+    &__link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
     }
 }

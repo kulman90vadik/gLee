@@ -50,6 +50,17 @@ $(function(){
         $('.catalog-cards__items').removeClass('catalog-cards__items--line');
     });
 
+    $('.catalog-sort__items--filter').on('click', function(){
+        $('.catalog-filter').toggleClass('catalog-filter--active');
+        $('.catalog-filter__close').toggleClass('catalog-filter__close--active');
+    });
+
+    $('.catalog-filter__close').on('click', function(){
+        $('.catalog-filter').removeClass('catalog-filter--active');
+        $(this).removeClass('catalog-filter__close--active');
+    });
+
+
 
     $('.catalog-filter__input').ionRangeSlider({
         type: "double",

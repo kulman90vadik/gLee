@@ -98,13 +98,15 @@
         font-family: $DmSans;
         color: $gray100;
         line-height: 1.8;
-        @include lineClamp;
-        -webkit-line-clamp: 2;
-        @include max($lg) {
-            -webkit-line-clamp: 1;
-        }
-        @include max($sm) {
+        p {
+            @include lineClamp;
             -webkit-line-clamp: 2;
+            @include max($lg) {
+                -webkit-line-clamp: 1;
+            }
+            @include max($sm) {
+                -webkit-line-clamp: 2;
+            }
         }
     }
     &__text--delivery,

@@ -11,4 +11,7 @@
         line-height: 1;
         margin-bottom: 15px;
     }
+    @include max($lg) {
+        margin-bottom: 30px;
+    }
 }

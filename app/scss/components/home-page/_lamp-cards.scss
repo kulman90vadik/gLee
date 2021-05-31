@@ -7,7 +7,7 @@
         max-width: 49%;
         width: 100%;
         background-color: $fff000;
-        padding: 90px 0 82px 0px;
+        padding: 90px 0 82px;
         display: flex;
         justify-content: center;
         @include max($xl) {         
@@ -16,17 +16,18 @@
             padding: 90px 10px 82px;
         }
         @include max($lg) {         
-            padding: 90px 10px 30px;
+            padding-bottom: 30px;
         }
         @include max($md) {         
             max-width: 100%;
+            padding-top: 120px;
         }
         &:not(:last-child) {
             @include max($md) {         
-                margin-bottom: 120px;
+                margin-bottom: 90px;
             }
             @include max($s) {         
-                margin-bottom: 90px;
+                margin-bottom: 45px;
             }
         }
     }
@@ -38,17 +39,13 @@
             width: 190px;
             height: 340px;
         }
-        @include max($sm) {         
-            width: 160px;
-            height: 310px;
+        @include max($md) {         
+            width: 112px;
+            height: 198px;
         }
         @include max($s) {         
-            width: 110px;
-            height: 250px;
             margin: -140px 3px 0 0;
         }
-        
-
     }
     &__photo--small {
         width: 222px;
@@ -61,14 +58,13 @@
             width: 180px;
             height: 296px;
         }
-        @include max($sm) {         
-            width: 150px;
-            height: 266px;
+        @include max($md) {         
+            width: 100px;
+            height: 190px;
         }
         @include max($s) {         
-            width: 100px;
-            height: 216px;
-            margin: -140px 3px 0 0;
+            margin-top: -140px;
+            margin-right: 3px;
         }
     }
     &__photo {
@@ -94,8 +90,10 @@
         }
     }
     &__text {
-        @include lineClamp;
-        -webkit-line-clamp: 3;
+        p {
+            @include lineClamp;
+            -webkit-line-clamp: 3;
+        }
         line-height: 1.8;
         margin-bottom: 20px;
         hyphens: auto;
@@ -116,18 +114,22 @@
         transition: background-color .3s ease-in;
         &:hover,
         &:focus {
-            background-color: $btn-color;
+            background-color: #fff;
         }
         &:active {
             background-color: $vio;
         }
-        @include max($sm) {         
-            padding: 11px 15px;
+        @include max($md) {         
+            padding: 9px 10px;
+
         }
     }
     &__more {
         margin-right: 40px;
         display: inline-block;
+        @include max($md) {         
+            margin-right: 10px;
+        }
     }
     &__arrow {
         fill: $global;

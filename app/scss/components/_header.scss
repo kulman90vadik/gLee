@@ -15,12 +15,6 @@
     display: flex;
     align-items: center;
     &__search {
-        width: 48px;
-        height: 48px;
-        border: none;
-        padding: 0;
-        border-radius: 50%;
-        background-color: $fff100;
         display: flex;
         cursor: pointer;
         transition: background-color .3s ease-in;
@@ -148,11 +142,6 @@
     }
     &__burger-menu {
         display: flex;
-        width: 48px;
-        height: 48px;
-        border: none;
-        padding: 0;
-        border-radius: 50%;
         cursor: pointer;
         background-color: $gray;
         transition: background-color .3s ease-in;
@@ -242,12 +231,11 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        z-index: 4;
+        z-index: 100;
         transform: translateY(-150%);
     }
     &--active {
         transform: translateY(0);
-        position: fixed;
     }
 }
 
@@ -301,7 +289,7 @@
     }
     @include max($lg) {
         display: flex;
-        z-index: 5;
+        z-index: 111;
     }
     @include max($sm) {
         width: 35px;

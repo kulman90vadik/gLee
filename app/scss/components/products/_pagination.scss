@@ -19,6 +19,9 @@
             color: #fff;
             border-color: $title;
         }
+        @include max($lg) {
+            padding: 7px 14px;
+        }
     }
     &__link--active {
         color: #fff;
