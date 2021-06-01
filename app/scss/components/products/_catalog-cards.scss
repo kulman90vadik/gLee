@@ -56,48 +56,52 @@
                 margin-left: 0;
                 justify-content: flex-end;
             }
-            .product-card__photo {
-                margin-bottom: auto;
-            }
             .product-card__photo--one {
-                max-width: 323px;
-                max-height: 328px;
+                width: 323px;
+                height: 338px;
             }
             .product-card__photo--two {
-                max-width: 249px;
-                max-height: 347px;
+                width: 249px;
+                height: 347px;
             }
             .product-card__photo--three {
-                max-width: 298px;
-                max-height: 234px;
+                width: 298px;
+                height: 234px;
             }
             .product-card__photo--four {
-                max-width: 299px;
-                max-height: 188px;
+                width: 299px;
+                height: 188px;
             }
             .product-card__photo--five {
-                max-width: 288px;
-                max-height: 231px;
+                width: 288px;
+                height: 231px;
             }
             .product-card__photo--six {
-                max-width: 288px;
-                max-height: 231px;
+                width: 288px;
+                height: 231px;
             }
             .product-card__photo--eight {
-                max-width: 288px;
-                max-height: 231px;
+                width: 288px;
+                height: 231px;
             }
             .product-card__photo--nine {
-                max-width: 288px;
-                max-height: 231px;
+                width: 288px;
+                height: 231px;
             }
             .product-card__photo--ten {
-                max-width: 288px;
-                max-height: 231px;
+                width: 288px;
+                height: 231px;
             }
             .product-card__photo--big {
-                max-width: 319px;
-                max-height: 151px;
+                width: 319px;
+                height: 151px;
+            }
+            .product-card__photo {
+                margin-bottom: auto;
+                @include max($xl) {
+                    width: auto;
+                    height: auto;
+                }
             }
             .product-card__name {
                 color: #333;

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="shortcut icon" href="images/logo-title.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    @include('./components/header.html')
+    <main class="main">
+        <section class="page-list">
+            <div class="container">
+                <h1 class="page-list__title">About Us</h1>
+                <ul class="breamcrams">
+                    <li class="breamcrams__item">
+                        <a class="breamcrams__link" href="#">Home</a>
+                    </li>
+                    <li class="breamcrams__item">
+                        <span class="breamcrams__link">About Us</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        @include('./components/about/work.html')
+        @include('./components/about/statistics.html')
+        @include('./components/about/team.html')
+        @include('./components/insights.html')
+    </main>
+    @include('./components/footer.html')
+        
+
+
+    <script src="js/main.min.js"></script>
+</body>
+</html>
