@@ -1,0 +1,102 @@
+.work {
+    margin-bottom: 120px;
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+    &__photo {
+        max-width: 570px;
+        margin-right: 45px;
+    }
+    &__content {
+        max-width: 560px;
+        width: 100%;
+    }
+    &__head {
+        display: flex;
+        margin-bottom: 30px;
+        align-items: flex-end;
+    }
+    &__num {
+        font-size: 140px;
+        font-weight: $fw700;
+        color: $gray;
+        line-height: 1;
+        margin-right: 25px;
+    }
+    &__descr {
+        max-width: 90px;
+        line-height: 1.7;
+        margin-bottom: 12px;
+        @include lineClamp;
+        -webkit-line-clamp: 3;
+    }
+    &__title {
+        text-align: left;
+        margin-bottom: 30px;
+        color: $title;
+    }
+    &__text {
+        color: $title;
+        line-height: 1.8;
+        padding-bottom: 50px;
+        border-bottom: 2px solid #e6eaf0;
+        margin-bottom: 30px;
+        p {
+            @include lineClamp;
+            -webkit-line-clamp: 4;
+        }
+    }
+    &__list {
+        display: flex;
+    }
+    &__items {
+        padding-right: 25px;
+        &:not(:last-child) {
+            border-right: 1px solid #e6eaf0;
+            margin-right: 25px;
+        }
+    }
+    &__info {
+        padding-left: 59px;
+        color: $title;
+        font-size: 36px;
+        font-weight: $fw700;
+        text-transform: uppercase;
+        position: relative;
+    }
+    &__info--projects::after,
+    &__info--revenue::after,
+    &__info--awards::after {
+        position: absolute;
+        content: '';
+        display: block;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        @include bg;
+    }
+    &__info--projects::after {
+        width: 36px;
+        height: 38px;
+        background-image: url(../images/icons/work-icon-1.svg);
+    }
+    &__info--revenue::after {
+        width: 43px;
+        height: 39px;
+        background-image: url(../images/icons/work-icon-2.svg);
+    }
+    &__info--awards::after {
+        width: 42px;
+        height: 40px;
+        background-image: url(../images/icons/work-icon-3.svg);
+    }
+    &__projects {
+        display: block;
+        color: #4c4c4c;
+        line-height: 1.1;
+        font-size: 16px;
+        text-transform: capitalize;
+        font-weight: $fw400;
+    }
+}
