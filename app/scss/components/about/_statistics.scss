@@ -5,6 +5,10 @@
     &__list {
         display: flex;
         justify-content: space-between;
+        @include max($lg) {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
     }
     &__item {
         max-width: 23%;
@@ -13,6 +17,16 @@
         flex-direction: column;
         align-items: center;
         color: $title;
+        @include max($lg) {
+            max-width: 35%;
+            margin-bottom: 15px;
+        }
+        @include max($md) {
+            max-width: 49%;
+        }
+        @include max($s) {
+            max-width: 100%;
+        }
     }
     &__number {
         padding-top: 80px;
@@ -38,12 +52,31 @@
             height: 35px;
             border-radius: 50%;
             background-color: rgba(163, 187, 200, 0.9);
+            @include max($sm) {
+                width: 30px;
+                height: 30px;
+                right: -11px;
+                top: 34px;
+            }
+        }
+        @include max($lg) {
+            margin-bottom: 0;
+        }
+        @include max($md) {
+            font-size: 31px;
+            padding-top: 69px;
+        }
+        @include max($sm) {
+            font-size: 25px;
         }
     }
     &__text {
         font-size: 18px;
         @include lineClamp;
         -webkit-line-clamp: 1;
+        @include max($md) {
+            font-size: 16px;
+        }
     }
     &__number--clients::after {
         width: 64px;
@@ -69,9 +102,24 @@
     &__number--products::before {
         right: 19px;
         top: 28px;
+        @include max($sm) {
+            right: 5px;
+            top: 31px;
+        }
     }
     &__number--brands::before {
         right: 12px;
         top: 33px;
+        @include max($sm) {
+            right: 2px;
+            top: 41px;
+        }
+    }
+    @include max($lg) {
+        padding: 30px 0;
+        margin-bottom: 30px;
+    }
+    @include max($sm) {
+        padding: 20px 0 15px;
     }
 }

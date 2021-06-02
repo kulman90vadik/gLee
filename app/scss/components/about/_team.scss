@@ -3,16 +3,29 @@
     &__inner {
         display: flex;
         justify-content: space-between;
+        @include max($xl) {
+            flex-direction: column;
+        }
     }
     &__content {
         max-width: 305px;
         width: 100%;
         margin-right: 10px;
+        @include max($xl) {
+            margin: 0 auto 15px;
+            max-width: 630px;
+        }
     }
     &__title {
         text-align: left;
         color: $title;
         margin-bottom: 19px;
+        @include max($md) {
+            margin-bottom: 5px;
+        }
+        @include max($sm) {
+            font-size: 24px;
+        }
     }
     &__text {
         color: $title;
@@ -21,6 +34,9 @@
         p {
             @include lineClamp;
             -webkit-line-clamp: 9; 
+        }
+        @include max($md) {
+            margin-bottom: 10px;
         }
     }
     &__join {
@@ -42,6 +58,9 @@
         &:focus {
             outline: 1px solid $title;
         }
+        &:active {
+            background-color: $orange100;
+        }
         &::after {
             position: absolute;
             content: '';
@@ -60,11 +79,30 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        @include max($xl) {
+            margin: 0 auto;
+        }
+        @include max($md) {
+            justify-content: center;
+        }
     }
     &__items {
         position: relative;
         max-width: 370px;
         margin-bottom: 100px;
+        @include max($lg) {
+            max-width: 325px;
+            margin-bottom: 80px;
+        }
+        @include max($md) {
+            max-width: 370px;
+        }
+        @include max($md) {
+            margin-bottom: 15px;
+        }
+    }
+    &__images {
+        object-fit: cover;
     }
     &__info {
         display: flex;
@@ -78,12 +116,25 @@
         left: 0;
         bottom: -64px;
         box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+        @include max($lg) {
+            max-width: 290px;
+            padding: 20px;
+            bottom: -45px;
+        }
+        @include max($md) {
+            max-width: 255px;
+            padding: 10px;
+            bottom: 0px;
+        }
     }
     &__name {
         font-size: 22px;
         line-height: 1.2;
         margin-bottom: 7px;
         display: block;
+        @include max($s) {
+            margin-bottom: 0;
+        }
     }
     &__profession {
         display: block;
@@ -128,5 +179,8 @@
     &__google {
         width: 23px;
         height: 14px;
+    }
+    @include max($lg) {
+        margin-bottom: 30px;
     }
 }
