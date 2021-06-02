@@ -5,18 +5,19 @@
         justify-content: space-between;
     }
     &__content {
-        max-width: 300px;
+        max-width: 305px;
         width: 100%;
         margin-right: 10px;
     }
     &__title {
         text-align: left;
         color: $title;
+        margin-bottom: 19px;
     }
     &__text {
         color: $title;
-        line-height: 1.7;
-        margin-bottom: 35px;
+        line-height: 1.9;
+        margin-bottom: 32px;
         p {
             @include lineClamp;
             -webkit-line-clamp: 9; 
@@ -25,12 +26,13 @@
     &__join {
         display: inline-block;
         border-radius: 5px;
+        border-radius: 5px;
         background-color: $gray;
         color: #fff;
         font-size: 15px;
         font-family: $Poppins;
         font-weight: $fw600;
-        padding: 15px 55px 15px 15px;
+        padding: 14px 56px 14px 16px;
         position: relative;
         transition: background-color .3s ease-in;
         outline: transparent;
@@ -71,16 +73,16 @@
         position: absolute;
         max-width: 325px;
         width: 100%;
-        padding: 25px 20px;
+        padding: 26px 23px;
         background-color: #fff;
         left: 0;
-        bottom: -60px;
+        bottom: -64px;
         box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
     }
     &__name {
         font-size: 22px;
         line-height: 1.2;
-        margin-bottom: 10px;
+        margin-bottom: 7px;
         display: block;
     }
     &__profession {

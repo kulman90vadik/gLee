@@ -1,5 +1,5 @@
 .work {
-    margin-bottom: 120px;
+    margin-bottom: 127px;
     &__inner {
         display: flex;
         align-items: center;
@@ -13,7 +13,7 @@
     }
     &__photo {
         max-width: 570px;
-        margin-right: 45px;
+        margin-right: 49px;
         @include max($lg) {
             margin-right: 0;
         }
@@ -22,7 +22,7 @@
         height: auto;
     }
     &__content {
-        max-width: 560px;
+        max-width: 553px;
         width: 100%;
         @include max($lg) {
             padding: 5px;
@@ -119,7 +119,8 @@
         padding-right: 25px;
         &:not(:last-child) {
             border-right: 1px solid #e6eaf0;
-            margin-right: 25px;
+            // margin-right: 25px;
+            margin-right: 18px;
             @include max($md) {
                 margin-right: 15px;
             }
