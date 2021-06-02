@@ -160,6 +160,10 @@
         &:focus {
             outline: 1px solid $vio;
         }
+        &:active {
+            background-color: $orange100;
+            color: #fff;
+        }
         @include max($lg) {
             padding: 15px;
         }

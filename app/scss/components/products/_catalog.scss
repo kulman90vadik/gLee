@@ -1,6 +1,9 @@
 .catalog {
     &__wrapper {
         display: flex;
+        @include max($lg) {
+            justify-content: center;
+        }
     }
     &__inner {
         max-width: 870px;

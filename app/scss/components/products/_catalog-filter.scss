@@ -3,13 +3,14 @@
     width: 100%;
     margin-right: 30px;
     &__block {
+        overflow: hidden;
         &:not(:last-child) {
-            margin-bottom: 55px;
+            margin-bottom: 49px;
             @include max($lg) {
                 margin-bottom: 15px;
             }
         }
-    }    
+    }   
     &__title {
         text-transform: uppercase;
         color: $title;
@@ -19,6 +20,8 @@
         position: relative;
         display: inline-block;
         margin-bottom: 25px;
+        cursor: pointer;
+        transition: color .2s ease-in;
         &::after {
             position: absolute;
             content: '';
@@ -29,22 +32,37 @@
             top: 50%;
             transform: translateY(-50%);
             margin-bottom: 25px;
-            @include max($lg) {
-                display: none;
-            }
         }
         @include max($lg) {
             margin-bottom: 10px;
             font-size: 17px;
         }
+        &:hover {
+            color: $orange100;
+        }
+        &:hover::after {
+            background-color: $orange100;
+        }
+        &:active {
+            color: $vio;
+        }
+        &:active::after {
+            background-color: $vio;
+        }
     }   
+    &__title--active {
+        color: $orange100;
+        &::after {
+            background-color: $orange100;
+        }
+    }
     &__btn {
         border: none;
         width: 100%;
         border-radius: 5px;
         background-color: #fff;
         color: $title;
-        padding: 13px 20px 13px 14px;
+        padding: 12px 20px 12px 14px;
         text-align: left;
         position: relative;
         transition: background-color .3s ease-in;
@@ -80,6 +98,10 @@
         justify-content: space-between;
         font-size: 14px;
         color: $title;
+        margin-bottom: 90px;
+        @include max($lg) {
+            margin-bottom: 30px;
+        }
     }
     .irs--flat {
         height: 15px;
@@ -124,10 +146,17 @@
         transition: color .3s ease-in;
     }
     &__items {
-        display: flex;
+        transition: transform .3s ease-in;
         &:not(:last-child) {
             margin-bottom: 20px;
         }
+        &:hover {
+            transform: translateY(-4px);
+        }
+    }
+    &__link {
+        display: flex;
+        
     }
     &__images {
         width: 67px;
@@ -156,19 +185,14 @@
     &__cost {
         font-size: 15px;
     }
-    @include max($md) {
-        max-width: 166px;
-        width: 100%;
-        margin-right: 10px;
-    }
-    @include max($sm) {
+    @include max($lg) {
         display: none;
     }
     &--active {
         position: absolute;
         display: block;
         max-width: 100%;
-        background-color:$orange;
+        background-color: #191919;
         top: 0;
         right: 0;
         left: 0;
@@ -198,6 +222,6 @@
     &__close--active {
         display: block;
         cursor: pointer;
-        z-index: 9999;
+        z-index: 99999;
     }
 }
