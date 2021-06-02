@@ -17,17 +17,20 @@
         }
         @include max($lg) {         
             padding-bottom: 30px;
+            position: relative;
+            padding-top: 50px;
         }
         @include max($md) {         
             max-width: 100%;
-            padding-top: 120px;
+            align-items: start;
+        }
+        @include max($s) {         
+            padding-left: 5px;
+            padding-right: 5px;
         }
         &:not(:last-child) {
             @include max($md) {         
-                margin-bottom: 90px;
-            }
-            @include max($s) {         
-                margin-bottom: 45px;
+                margin-bottom: 15px;
             }
         }
     }
@@ -38,13 +41,6 @@
         @include max($lg) {         
             width: 190px;
             height: 340px;
-        }
-        @include max($md) {         
-            width: 112px;
-            height: 198px;
-        }
-        @include max($s) {         
-            margin: -140px 3px 0 0;
         }
     }
     &__photo--small {
@@ -58,23 +54,48 @@
             width: 180px;
             height: 296px;
         }
-        @include max($md) {         
-            width: 100px;
-            height: 190px;
-        }
-        @include max($s) {         
-            margin-top: -140px;
-            margin-right: 3px;
-        }
     }
     &__photo {
         @include max($xl) {         
             margin-bottom: 15px;
         }
+        @include max($lg) {         
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            width: 43%;
+            height: 86%;
+            margin: 0;
+        }
+        @include max($md) {         
+            bottom: 20px;
+            right: 40px;
+            width: 22%;
+            height: 81%;
+        }
+        @include max($sm) {         
+            bottom: 20px;
+            right: 21px;
+            width: 26%;
+            height: 79%;
+        }
+        @include max($s) {         
+            width: 36%;
+            height: 79%;
+        }
     }
     &__info {
         max-width: 340px;
         color: $title;
+        @include max($lg) {         
+            background-color: rgba(#fff, 0.8);
+            padding: 10px;
+            position: relative;
+            z-index: 3;
+        }
+        @include max($s) {         
+            padding: 5px;
+        }
     }
     &__subtitle {
         font-family: $DmSans;
@@ -118,6 +139,7 @@
         }
         &:active {
             background-color: $vio;
+            color: #fff;
         }
         @include max($md) {         
             padding: 9px 10px;

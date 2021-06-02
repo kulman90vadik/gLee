@@ -26,7 +26,6 @@
         &:hover{
             background-color: rgba($orange, 0.5);
         }
-        &:active,
         &:focus {
             outline: 1px solid $title;
         }
@@ -40,6 +39,9 @@
         @include max($s) {
             display: none;
         }
+        &:active {
+            background-color: $blue;
+        }
     }
 
     &__icons {
@@ -50,12 +52,14 @@
         cursor: pointer;
         border: none;
         transition: background-color .3s ease-in;
-        &:active,
         &:focus {
             outline: 1px solid $title;
         }
         &:hover {
             background-color: rgba($orange, 0.5); 
+        }
+        &:active {
+            background-color: $btn-color;
         }
     }
     &__icons-corb {
@@ -150,9 +154,11 @@
         &:hover {
             background-color: $btn-color;
         }
-        &:active,
         &:focus {
             outline: 1px solid $title;
+        }
+        &:active {
+            background-color: $blue;
         }
         @include max($sm) {
             width: 35px;

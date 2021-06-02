@@ -32,6 +32,11 @@ $(function(){
         ]
     })
 
+    $('.catalog-filter__title').on('click', function(){
+        $(this).next('.catalog-filter__inner').slideToggle();
+        $(this).toggleClass('catalog-filter__title--active');
+    });
+
     $('.menu-btn').on('click', function(){
         $('.menu').toggleClass('menu--active');
         $('.menu-btn__item').toggleClass('menu-btn__item--active');
@@ -59,7 +64,6 @@ $(function(){
         $('.catalog-filter').removeClass('catalog-filter--active');
         $(this).removeClass('catalog-filter__close--active');
     });
-
 
 
     $('.catalog-filter__input').ionRangeSlider({

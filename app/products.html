@@ -96,143 +96,166 @@
     </div>
 </section>
         <section class="catalog">
-    <h2 class="visually-hidden">Сatalog of online furniture store</h2>
-    <div class="container">
-        <div class="catalog__wrapper">
-            <div class="catalog-filter">
-                <!-- сделал бы через ul но тогда не знаю куда поставить __close -->
-                <div class="catalog-filter__block">
-                    <h3 class="catalog-filter__title">Category</h3>
-                    <ul class="catalog-filter__list">
+   <h2 class="visually-hidden">Сatalog of online furniture store</h2>
+   <div class="container">
+      <div class="catalog__wrapper">
+         <button class="catalog-filter__close">
+            <span class="visually-hidden">
+               clicking on this button will close the filter
+            </span>
+         </button>
+         <!-- или нужно было блок asid-ом обозвать, а внутри тоже aside? -->
+         <div class="catalog-filter">
+            <span class="visually-hidden">
+               A block with filters where you can select products by category
+            </span>
+            <aside class="catalog-filter__block">
+                  <h2 class="catalog-filter__title">Category</h2>
+                  <div class="catalog-filter__inner">
+                     <ul class="catalog-filter__list">
                         <li class="catalog-filter__item">
-                            <button class="catalog-filter__btn" type="button">Chair</button>
+                           <button class="catalog-filter__btn" type="button">Chair</button>
                         </li>
                         <li class="catalog-filter__item">
-                            <button class="catalog-filter__btn" type="button">Table</button>
+                           <button class="catalog-filter__btn" type="button">Table</button>
                         </li>
                         <li class="catalog-filter__item">
-                            <button class="catalog-filter__btn" type="button">Lamp</button>
+                           <button class="catalog-filter__btn" type="button">Lamp</button>
                         </li>
                         <li class="catalog-filter__item">
-                            <button class="catalog-filter__btn" type="button">Watch</button>
+                           <button class="catalog-filter__btn" type="button">Watch</button>
                         </li>
                         <li class="catalog-filter__item">
-                            <button class="catalog-filter__btn" type="button">Clock</button>
+                           <button class="catalog-filter__btn" type="button">Clock</button>
                         </li>
-                    </ul>
-                </div>
-                <div class="catalog-filter__block">
-                    <h3 class="catalog-filter__title">Price</h3>
-                    <form class="catalog-filter__form">
+                     </ul>
+                  </div>   
+            </aside>
+            <aside class="catalog-filter__block">
+                  <h2 class="catalog-filter__title">Price</h2>
+                  <div class="catalog-filter__inner">
+
+                     <form class="catalog-filter__form">
                         <label class="catalog-filter__label visually-hidden" for="range">
-                            price selection filter
+                           price selection filter
                         </label>
                         <input class="catalog-filter__input" type="text" id="range" name="range"
-                            data-min="0"
-                            data-max="1000.00"
-                            data-from="100.00"
-                            data-to="500.00"
+                           data-min="0"
+                           data-max="1000.00"
+                           data-from="100.00"
+                           data-to="500.00"
                         >
-                    </form>
-                <div class="catalog-filter__price">
-                   <div class="catalog-filter__left">
-                      <span>$</span>
-                      <span class="catalog-filter__min"></span>
-                   </div>
-                   <div class="catalog-filter__right">
-                      <span>$</span>
-                      <span class="catalog-filter__max"></span>
-                   </div>
-                </div>
-                </div>
-                <div class="catalog-filter__block">
-                <h3 class="catalog-filter__title">Brand</h3>
-                <ul class="catalog-filter__list">
-                   <li class="catalog-filter__item">
-                      <button class="catalog-filter__btn catalog-filter__button" type="button">
-                      RFL
-                      <span class="catalog-filter__number">(10)</span>
-                      </button>
-                   </li>
-                   <li class="catalog-filter__item">
-                      <button class="catalog-filter__btn catalog-filter__button" type="button">
-                      Brothers
-                      <span class="catalog-filter__number">(21)</span>
-                      </button>
-                   </li>
-                   <li class="catalog-filter__item">
-                      <button class="catalog-filter__btn catalog-filter__button" type="button">
-                      Regal
-                      <span class="catalog-filter__number">(3)</span>
-                      </button>
-                   </li>
-                   <li class="catalog-filter__item">
-                      <button class="catalog-filter__btn catalog-filter__button" type="button">
-                      Nadia
-                      <span class="catalog-filter__number">(14)</span>
-                      </button>
-                   </li>
-                   <li class="catalog-filter__item">
-                      <button class="catalog-filter__btn catalog-filter__button" type="button">
-                      Otobi
-                      <span class="catalog-filter__number">(6)</span>
-                      </button>
-                   </li>
-                </ul>
-                </div>
-                <div class="catalog-filter__block">
-                <h3 class="catalog-filter__title">Recent products</h3>
-                <ul class="catalog-filter__holder">
-                   <li class="catalog-filter__items">
-                      <div class="catalog-filter__images">
-                         <img class="catalog-filter__photo" src="images/lamp-1.png" alt="product lamp" width="55" height="61">
-                      </div>
-                      <div class="catalog-filter__info">
-                         <span class="catalog-filter__name">Pendant lamp</span>
-                         <div class="catalog-filter__star" data-rateyo-rating="4"></div>
-                         <span class="catalog-filter__cost">
-                         23
-                         <span>$</span>
-                         </span>
-                      </div>
-                   </li>
-                   <li class="catalog-filter__items">
-                      <div class="catalog-filter__images">
-                         <img class="catalog-filter__photo" src="images/lamp-2.png" alt="product lamp" width="37" height="60">
-                      </div>
-                      <div class="catalog-filter__info">
-                         <span class="catalog-filter__name">Pendant lamp</span>
-                         <div class="catalog-filter__star" data-rateyo-rating="4"></div>
-                         <span class="catalog-filter__cost">
-                         23
-                         <span>$</span>
-                         </span>
-                      </div>
-                   </li>
-                   <li class="catalog-filter__items">
-                      <div class="catalog-filter__images">
-                         <img class="catalog-filter__photo" src="images/lamp-3.png" alt="product lamp" width="29" height="60">
-                      </div>
-                      <div class="catalog-filter__info">
-                         <span class="catalog-filter__name">Pendant lamp</span>
-                         <div class="catalog-filter__star" data-rateyo-rating="4"></div>
-                         <span class="catalog-filter__cost">
-                         23
-                         <span>$</span>
-                         </span>
-                      </div>
-                   </li>
-                </ul>
-                </div>
-                <button class="catalog-filter__close">
-                    <span class="visually-hidden">
-                        clicking on this button will close the filter
-                    </span>
-                </button>
-            </div>
-            <div class="catalog__inner">
+                     </form>
+                     <div class="catalog-filter__price">
+                        <div class="catalog-filter__left">
+                           <span>$</span>
+                           <span class="catalog-filter__min"></span>
+                        </div>
+                        <div class="catalog-filter__right">
+                           <span>$</span>
+                           <span class="catalog-filter__max"></span>
+                        </div>
+                     </div>
+                  </div>
 
-                <ul class="catalog-sort">
+            </aside>
+            <aside class="catalog-filter__block">
+                <h2 class="catalog-filter__title">Brand</h2>
+                <div class="catalog-filter__inner">
+
+                   <ul class="catalog-filter__list">
+                      <li class="catalog-filter__item">
+                         <button class="catalog-filter__btn catalog-filter__button" type="button">
+                         RFL
+                         <span class="catalog-filter__number">(10)</span>
+                         </button>
+                      </li>
+                      <li class="catalog-filter__item">
+                         <button class="catalog-filter__btn catalog-filter__button" type="button">
+                         Brothers
+                         <span class="catalog-filter__number">(21)</span>
+                         </button>
+                      </li>
+                      <li class="catalog-filter__item">
+                         <button class="catalog-filter__btn catalog-filter__button" type="button">
+                         Regal
+                         <span class="catalog-filter__number">(3)</span>
+                         </button>
+                      </li>
+                      <li class="catalog-filter__item">
+                         <button class="catalog-filter__btn catalog-filter__button" type="button">
+                         Nadia
+                         <span class="catalog-filter__number">(14)</span>
+                         </button>
+                      </li>
+                      <li class="catalog-filter__item">
+                         <button class="catalog-filter__btn catalog-filter__button" type="button">
+                         Otobi
+                         <span class="catalog-filter__number">(6)</span>
+                         </button>
+                      </li>
+                   </ul>
+                </div>
+            </aside>
+            <aside class="catalog-filter__block">
+                  <h2 class="catalog-filter__title">Recent products</h2>
+                  <div class="catalog-filter__inner">
+                     
+                     <ul class="catalog-filter__holder">
+                        <li class="catalog-filter__items">
+                          <a class="catalog-filter__link" href="#">
+                             <div class="catalog-filter__images">
+                                <img class="catalog-filter__photo" src="images/lamp-1.png" alt="product lamp" width="55" height="61">
+                             </div>
+                             <div class="catalog-filter__info">
+                                <span class="catalog-filter__name">Pendant lamp</span>
+                                <div class="catalog-filter__star" data-rateyo-rating="4"></div>
+                                <span class="catalog-filter__cost">
+                                23
+                                <span>$</span>
+                                </span>
+                             </div>
+                          </a>
+     
+                        </li>
+                        <li class="catalog-filter__items">
+                          <a class="catalog-filter__link" href="#">
+                           <div class="catalog-filter__images">
+                              <img class="catalog-filter__photo" src="images/lamp-2.png" alt="product lamp" width="37" height="60">
+                           </div>
+                           <div class="catalog-filter__info">
+                              <span class="catalog-filter__name">Pendant lamp</span>
+                              <div class="catalog-filter__star" data-rateyo-rating="4"></div>
+                              <span class="catalog-filter__cost">
+                              23
+                              <span>$</span>
+                              </span>
+                           </div>
+                          </a>
+                        </li>
+                        <li class="catalog-filter__items">
+                          <a class="catalog-filter__link" href="#">
+                           <div class="catalog-filter__images">
+                              <img class="catalog-filter__photo" src="images/lamp-3.png" alt="product lamp" width="29" height="60">
+                           </div>
+                           <div class="catalog-filter__info">
+                              <span class="catalog-filter__name">Pendant lamp</span>
+                              <div class="catalog-filter__star" data-rateyo-rating="4"></div>
+                              <span class="catalog-filter__cost">
+                              23
+                              <span>$</span>
+                              </span>
+                           </div>
+                          </a>
+                        </li>
+                     </ul>
+                  </div>
+            </aside>
+         </div>
+
+         <section class="catalog-shop">
+
+            <ul class="catalog-sort">
                     <li class="catalog-sort__items">
                         <button class="catalog-sort__btn" type="button">
                             <svg class="catalog-sort__grid catalog-sort__icon catalog-sort__icon--active">
@@ -259,10 +282,10 @@
                             when you click on the button, a product filter will appear
                         </span>
                     </li>
-                </ul>
+            </ul>
 
-                <ul class="catalog-cards">
-                <li class="catalog-cards__items">
+            <ul class="catalog-cards">
+               <li class="catalog-cards__items">
                    <article class="product-card">
                       <div class="product-card__images">
                          <img class="product-card__photo product-card__photo--one" src="images/products-1.png" alt="photo Wooden radio" width="186" height="195">
@@ -270,10 +293,17 @@
                       <div class="product-card__content">
                          <h3 class="product-card__name">Wooden radio</h3>
                          <div class="catalog-filter__star" data-rateyo-rating="4"></div>
-                         <span class="product-card__price">
-                         <span>$</span>
-                         29.00
-                         </span>
+                        <span class="product-card__price">
+                           <span>$</span>
+                           29.00
+                        </span>
+                        <span class="product-card__price--line">
+                           23
+                           <span>$</span>
+                        </span>
+
+
+
                          <div class="product-card__text">
                             <p>
                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -312,8 +342,8 @@
                       </span> 
                       </a>
                    </article>
-                </li>
-                <li class="catalog-cards__items">
+               </li>
+               <li class="catalog-cards__items">
                    <article class="product-card">
                       <div class="product-card__images">
                          <img class="product-card__photo product-card__photo--two" src="images/products-2.png" alt="photo Wooden radio" width="148" height="206">
@@ -325,6 +355,10 @@
                          <span>$</span>
                          29.00
                          </span>
+                         <span class="product-card__price--line">
+                           23
+                           <span>$</span>
+                        </span>
                          <div class="product-card__text">
                             <p>
                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -363,8 +397,8 @@
                       </span> 
                       </a>
                    </article>
-                </li>
-                <li class="catalog-cards__items">
+               </li>
+               <li class="catalog-cards__items">
                    <article class="product-card">
                       <div class="product-card__images">
                          <img class="product-card__photo product-card__photo--three" src="images/products-3.png" alt="photo Wooden radio" width="208" height="164">
@@ -376,6 +410,10 @@
                          <span>$</span>
                          29.00
                          </span>
+                         <span class="product-card__price--line">
+                           23
+                           <span>$</span>
+                        </span>
                          <div class="product-card__text">
                             <p>
                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -414,8 +452,8 @@
                       </span> 
                       </a>
                    </article>
-                </li>
-                <li class="catalog-cards__items">
+               </li>
+               <li class="catalog-cards__items">
                    <article class="product-card">
                       <div class="product-card__images">
                          <img class="product-card__photo product-card__photo--four" src="images/products-4.png" alt="photo Wooden radio" width="224" height="135">
@@ -427,6 +465,10 @@
                          <span>$</span>
                          29.00
                          </span>
+                         <span class="product-card__price--line">
+                           23
+                           <span>$</span>
+                        </span>
                          <div class="product-card__text">
                             <p>
                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -465,8 +507,8 @@
                       </span> 
                       </a>
                    </article>
-                </li>
-                <li class="catalog-cards__items">
+               </li>
+               <li class="catalog-cards__items">
                    <article class="product-card">
                       <div class="product-card__images">
                          <img class="product-card__photo product-card__photo--five" src="images/products-5.png" alt="photo Wooden radio" width="236" height="162">
@@ -478,6 +520,10 @@
                          <span>$</span>
                          29.00
                          </span>
+                         <span class="product-card__price--line">
+                           23
+                           <span>$</span>
+                        </span>
                          <div class="product-card__text">
                             <p>
                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -516,8 +562,8 @@
                       </span> 
                       </a>
                    </article>
-                </li>
-                <li class="catalog-cards__items">
+               </li>
+               <li class="catalog-cards__items">
                    <article class="product-card">
                       <div class="product-card__images">
                          <img class="product-card__photo product-card__photo--six" src="images/products-6.png" alt="photo Wooden radio" width="230" height="170">
@@ -529,6 +575,10 @@
                          <span>$</span>
                          29.00
                          </span>
+                         <span class="product-card__price--line">
+                           23
+                           <span>$</span>
+                        </span>
                          <div class="product-card__text">
                             <p>
                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -567,8 +617,8 @@
                       </span> 
                       </a>
                    </article>
-                </li>
-                <li class="catalog-cards__items">
+               </li>
+               <li class="catalog-cards__items">
                    <article class="product-card">
                       <div class="product-card__images">
                          <img class="product-card__photo product-card__photo--eight" src="images/products-7.png" alt="photo Wooden radio" width="232" height="167">
@@ -580,6 +630,10 @@
                          <span>$</span>
                          29.00
                          </span>
+                         <span class="product-card__price--line">
+                           23
+                           <span>$</span>
+                        </span>
                          <div class="product-card__text">
                             <p>
                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -618,8 +672,8 @@
                       </span> 
                       </a>
                    </article>
-                </li>
-                <li class="catalog-cards__items">
+               </li>
+               <li class="catalog-cards__items">
                    <article class="product-card">
                       <div class="product-card__images">
                          <img class="product-card__photo product-card__photo--nine" src="images/products-8.png" alt="photo Wooden radio" width="238" height="153">
@@ -631,6 +685,10 @@
                          <span>$</span>
                          29.00
                          </span>
+                         <span class="product-card__price--line">
+                           23
+                           <span>$</span>
+                        </span>
                          <div class="product-card__text">
                             <p>
                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -669,7 +727,7 @@
                       </span> 
                       </a>
                    </article>
-                </li>
+               </li>
                 <li class="catalog-cards__items">
                    <article class="product-card">
                       <div class="product-card__images">
@@ -682,6 +740,10 @@
                          <span>$</span>
                          29.00
                          </span>
+                         <span class="product-card__price--line">
+                           23
+                           <span>$</span>
+                        </span>
                          <div class="product-card__text">
                             <p>
                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -733,6 +795,10 @@
                          <span>$</span>
                          29.00
                          </span>
+                         <span class="product-card__price--line">
+                           23
+                           <span>$</span>
+                        </span>
                          <div class="product-card__text">
                             <p>
                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -784,6 +850,10 @@
                          <span>$</span>
                          29.00
                          </span>
+                         <span class="product-card__price--line">
+                           23
+                           <span>$</span>
+                        </span>
                          <div class="product-card__text">
                             <p>
                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -835,6 +905,10 @@
                          <span>$</span>
                          29.00
                          </span>
+                         <span class="product-card__price--line">
+                           23
+                           <span>$</span>
+                        </span>
                          <div class="product-card__text">
                             <p>
                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -874,9 +948,9 @@
                       </a>
                    </article>
                 </li>
-                </ul>
+            </ul>
 
-                <ul class="pagination">
+            <ul class="pagination">
                 <li class="pagination__item">
                    <span class="pagination__link pagination__link--active">1</span>
                 </li>
@@ -889,13 +963,13 @@
                 <li class="pagination__item">
                    <a class="pagination__link" href="#">Next</a>
                 </li>
-                </ul>
+            </ul>
 
-            </div>
-        </div>
-    </div>
+         </section>
+      </div>
+   </div>
 
-    <div class="partners catalog__slider">
+   <div class="partners catalog__slider">
        <div class="container">
           <ul class="partners-slider">
              <li class="partners-slider__slide">
@@ -930,12 +1004,12 @@
              </li>
              <li class="partners-slider__slide">
                 <a class="partners-slider__link" href="#"></a>
-                <img class="partners-slider__images" src="images/logo-slide-3.png" alt="vintage" width="87" height="66">
+                <img class="partners-slider__images" src="images/logo-slide-3.png" alt="vintage" width="150" height="77">
                 </a>
              </li>
           </ul>
        </div>
-    </div>
+   </div>
 
 </section>
 

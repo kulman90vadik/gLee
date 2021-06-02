@@ -3,19 +3,49 @@
     &__inner {
         display: flex;
         align-items: center;
+        @include max($lg) {
+            flex-direction: column;
+            position: relative;
+        }
+        @include max($sm) {
+            position: static;
+        }
     }
     &__photo {
         max-width: 570px;
         margin-right: 45px;
+        @include max($lg) {
+            margin-right: 0;
+        }
+    }
+    &__images {
+        height: auto;
     }
     &__content {
         max-width: 560px;
         width: 100%;
+        @include max($lg) {
+            padding: 5px;
+            position: absolute;
+            background-color: rgba(#fff, 0.8);
+            bottom: 5px;
+        }
+        @include max($sm) {
+            position: static;
+            bottom: auto;
+            background-color: none;
+        }
     }
     &__head {
         display: flex;
         margin-bottom: 30px;
         align-items: flex-end;
+        @include max($lg) {
+            margin-bottom: 10px;
+        }
+        @include max($sm) {
+            margin-bottom: 0;
+        }
     }
     &__num {
         font-size: 140px;
@@ -23,6 +53,12 @@
         color: $gray;
         line-height: 1;
         margin-right: 25px;
+        @include max($xl) {
+            font-size: 100px;
+        }
+        @include max($sm) {
+            font-size: 90px;
+        }
     }
     &__descr {
         max-width: 90px;
@@ -30,11 +66,24 @@
         margin-bottom: 12px;
         @include lineClamp;
         -webkit-line-clamp: 3;
+        @include max($sm) {
+            line-height: 1.5;
+            margin-bottom: 5px;
+        }
     }
     &__title {
         text-align: left;
         margin-bottom: 30px;
         color: $title;
+        @include max($xl) {
+            margin-bottom: 10px;
+        }
+        @include max($lg) {
+            font-size: 30px;
+        }
+        @include max($sm) {
+            font-size: 24px;
+        }
     }
     &__text {
         color: $title;
@@ -46,15 +95,45 @@
             @include lineClamp;
             -webkit-line-clamp: 4;
         }
+        @include max($xl) {
+            padding-bottom: 10px;
+            margin-bottom: 18px;
+        }
+        @include max($md) {
+            line-height: 1.5;
+        }
     }
     &__list {
         display: flex;
+        @include max($lg) {
+            padding-bottom: 20px;
+            justify-content: center;
+        }
+        @include max($sm) {
+            flex-direction: column;
+            align-items: center;
+
+        }
     }
     &__items {
         padding-right: 25px;
         &:not(:last-child) {
             border-right: 1px solid #e6eaf0;
             margin-right: 25px;
+            @include max($md) {
+                margin-right: 15px;
+            }
+            @include max($sm) {
+                border-right: none;
+                margin-right: 0;
+                margin-bottom: 13px;
+            }
+        }
+        @include max($md) {
+            padding-right: 15px;
+        }
+        @include max($sm) {
+            padding-right: 0;
         }
     }
     &__info {
@@ -64,6 +143,9 @@
         font-weight: $fw700;
         text-transform: uppercase;
         position: relative;
+        @include max($lg) {
+            font-size: 25px;
+        }
     }
     &__info--projects::after,
     &__info--revenue::after,
@@ -98,5 +180,11 @@
         font-size: 16px;
         text-transform: capitalize;
         font-weight: $fw400;
+    }
+    @include max($xl) {
+        margin-bottom: 60px;
+    }
+    @include max($lg) {
+        margin-bottom: 25px;
     }
 }

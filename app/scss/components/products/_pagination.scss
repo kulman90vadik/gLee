@@ -4,9 +4,9 @@
     align-items: center;
     &__item {
         color: $title;
-    }
-    &__item:not(:last-child) {
-        margin-right: 12px;
+        &:not(:last-child) {
+            margin-right: 12px;
+        }
     }
     &__link {
         display: block;
