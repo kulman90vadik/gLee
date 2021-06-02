@@ -10,7 +10,7 @@
         transition: transform .3s ease-in;
         .product-card__price--line,
         .product-card__text,
-        .catalog-filter__star {
+        .seitbar__star {
             display: none;
         }
         .product-card__images {
@@ -127,7 +127,7 @@
             .product-card__links {
                 display: none;
             }
-            .catalog-filter__star {
+            .seitbar__star {
                 display: block;
                 margin-bottom: 15px;
                 @include max($lg) {

@@ -2,117 +2,117 @@
    <h2 class="visually-hidden">Сatalog of online furniture store</h2>
    <div class="container">
       <div class="catalog__wrapper">
-         <button class="catalog-filter__close">
+         <button class="seitbar__close">
             <span class="visually-hidden">
                clicking on this button will close the filter
             </span>
          </button>
          <!-- или нужно было блок asid-ом обозвать, а внутри тоже aside? -->
-         <div class="catalog-filter">
+         <div class="seitbar">
             <span class="visually-hidden">
                A block with filters where you can select products by category
             </span>
-            <aside class="catalog-filter__block">
-                  <h2 class="catalog-filter__title">Category</h2>
-                  <div class="catalog-filter__inner">
-                     <ul class="catalog-filter__list">
-                        <li class="catalog-filter__item">
-                           <button class="catalog-filter__btn" type="button">Chair</button>
+            <aside class="seitbar__block">
+                  <h2 class="seitbar__title">Category</h2>
+                  <div class="seitbar__inner">
+                     <ul class="seitbar__list">
+                        <li class="seitbar__item">
+                           <button class="seitbar__btn" type="button">Chair</button>
                         </li>
-                        <li class="catalog-filter__item">
-                           <button class="catalog-filter__btn" type="button">Table</button>
+                        <li class="seitbar__item">
+                           <button class="seitbar__btn" type="button">Table</button>
                         </li>
-                        <li class="catalog-filter__item">
-                           <button class="catalog-filter__btn" type="button">Lamp</button>
+                        <li class="seitbar__item">
+                           <button class="seitbar__btn" type="button">Lamp</button>
                         </li>
-                        <li class="catalog-filter__item">
-                           <button class="catalog-filter__btn" type="button">Watch</button>
+                        <li class="seitbar__item">
+                           <button class="seitbar__btn" type="button">Watch</button>
                         </li>
-                        <li class="catalog-filter__item">
-                           <button class="catalog-filter__btn" type="button">Clock</button>
+                        <li class="seitbar__item">
+                           <button class="seitbar__btn" type="button">Clock</button>
                         </li>
                      </ul>
                   </div>   
             </aside>
-            <aside class="catalog-filter__block">
-                  <h2 class="catalog-filter__title">Price</h2>
-                  <div class="catalog-filter__inner">
+            <aside class="seitbar__block">
+                  <h2 class="seitbar__title">Price</h2>
+                  <div class="seitbar__inner">
 
-                     <form class="catalog-filter__form">
-                        <label class="catalog-filter__label visually-hidden" for="range">
+                     <form class="seitbar__form">
+                        <label class="seitbar__label visually-hidden" for="range">
                            price selection filter
                         </label>
-                        <input class="catalog-filter__input" type="text" id="range" name="range"
+                        <input class="seitbar__input" type="text" id="range" name="range"
                            data-min="0"
                            data-max="1000.00"
                            data-from="100.00"
                            data-to="500.00"
                         >
                      </form>
-                     <div class="catalog-filter__price">
-                        <div class="catalog-filter__left">
+                     <div class="seitbar__price">
+                        <div class="seitbar__left">
                            <span>$</span>
-                           <span class="catalog-filter__min"></span>
+                           <span class="seitbar__min"></span>
                         </div>
-                        <div class="catalog-filter__right">
+                        <div class="seitbar__right">
                            <span>$</span>
-                           <span class="catalog-filter__max"></span>
+                           <span class="seitbar__max"></span>
                         </div>
                      </div>
                   </div>
 
             </aside>
-            <aside class="catalog-filter__block">
-                <h2 class="catalog-filter__title">Brand</h2>
-                <div class="catalog-filter__inner">
+            <aside class="seitbar__block">
+                <h2 class="seitbar__title">Brand</h2>
+                <div class="seitbar__inner">
 
-                   <ul class="catalog-filter__list">
-                      <li class="catalog-filter__item">
-                         <button class="catalog-filter__btn catalog-filter__button" type="button">
+                   <ul class="seitbar__list">
+                      <li class="seitbar__item">
+                         <button class="seitbar__btn seitbar__button" type="button">
                          RFL
-                         <span class="catalog-filter__number">(10)</span>
+                         <span class="seitbar__number">(10)</span>
                          </button>
                       </li>
-                      <li class="catalog-filter__item">
-                         <button class="catalog-filter__btn catalog-filter__button" type="button">
+                      <li class="seitbar__item">
+                         <button class="seitbar__btn seitbar__button" type="button">
                          Brothers
-                         <span class="catalog-filter__number">(21)</span>
+                         <span class="seitbar__number">(21)</span>
                          </button>
                       </li>
-                      <li class="catalog-filter__item">
-                         <button class="catalog-filter__btn catalog-filter__button" type="button">
+                      <li class="seitbar__item">
+                         <button class="seitbar__btn seitbar__button" type="button">
                          Regal
-                         <span class="catalog-filter__number">(3)</span>
+                         <span class="seitbar__number">(3)</span>
                          </button>
                       </li>
-                      <li class="catalog-filter__item">
-                         <button class="catalog-filter__btn catalog-filter__button" type="button">
+                      <li class="seitbar__item">
+                         <button class="seitbar__btn seitbar__button" type="button">
                          Nadia
-                         <span class="catalog-filter__number">(14)</span>
+                         <span class="seitbar__number">(14)</span>
                          </button>
                       </li>
-                      <li class="catalog-filter__item">
-                         <button class="catalog-filter__btn catalog-filter__button" type="button">
+                      <li class="seitbar__item">
+                         <button class="seitbar__btn seitbar__button" type="button">
                          Otobi
-                         <span class="catalog-filter__number">(6)</span>
+                         <span class="seitbar__number">(6)</span>
                          </button>
                       </li>
                    </ul>
                 </div>
             </aside>
-            <aside class="catalog-filter__block">
-                  <h2 class="catalog-filter__title">Recent products</h2>
-                  <div class="catalog-filter__inner">
-                     <ul class="catalog-filter__holder">
-                        <li class="catalog-filter__items">
-                          <a class="catalog-filter__link" href="#">
-                             <div class="catalog-filter__images">
-                                <img class="catalog-filter__photo" src="images/lamp-1.png" alt="product lamp" width="55" height="61">
+            <aside class="seitbar__block">
+                  <h2 class="seitbar__title">Recent products</h2>
+                  <div class="seitbar__inner">
+                     <ul class="seitbar__holder">
+                        <li class="seitbar__items">
+                          <a class="seitbar__link" href="#">
+                             <div class="seitbar__images">
+                                <img class="seitbar__photo" src="images/lamp-1.png" alt="product lamp" width="55" height="61">
                              </div>
-                             <div class="catalog-filter__info">
-                                <span class="catalog-filter__name">Pendant lamp</span>
-                                <div class="catalog-filter__star" data-rateyo-rating="4"></div>
-                                <span class="catalog-filter__cost">
+                             <div class="seitbar__info">
+                                <span class="seitbar__name">Pendant lamp</span>
+                                <div class="seitbar__star" data-rateyo-rating="4"></div>
+                                <span class="seitbar__cost">
                                 23
                                 <span>$</span>
                                 </span>
@@ -120,30 +120,30 @@
                           </a>
      
                         </li>
-                        <li class="catalog-filter__items">
-                          <a class="catalog-filter__link" href="#">
-                           <div class="catalog-filter__images">
-                              <img class="catalog-filter__photo" src="images/lamp-2.png" alt="product lamp" width="37" height="60">
+                        <li class="seitbar__items">
+                          <a class="seitbar__link" href="#">
+                           <div class="seitbar__images">
+                              <img class="seitbar__photo" src="images/lamp-2.png" alt="product lamp" width="37" height="60">
                            </div>
-                           <div class="catalog-filter__info">
-                              <span class="catalog-filter__name">Pendant lamp</span>
-                              <div class="catalog-filter__star" data-rateyo-rating="4"></div>
-                              <span class="catalog-filter__cost">
+                           <div class="seitbar__info">
+                              <span class="seitbar__name">Pendant lamp</span>
+                              <div class="seitbar__star" data-rateyo-rating="4"></div>
+                              <span class="seitbar__cost">
                               23
                               <span>$</span>
                               </span>
                            </div>
                           </a>
                         </li>
-                        <li class="catalog-filter__items">
-                          <a class="catalog-filter__link" href="#">
-                           <div class="catalog-filter__images">
-                              <img class="catalog-filter__photo" src="images/lamp-3.png" alt="product lamp" width="29" height="60">
+                        <li class="seitbar__items">
+                          <a class="seitbar__link" href="#">
+                           <div class="seitbar__images">
+                              <img class="seitbar__photo" src="images/lamp-3.png" alt="product lamp" width="29" height="60">
                            </div>
-                           <div class="catalog-filter__info">
-                              <span class="catalog-filter__name">Pendant lamp</span>
-                              <div class="catalog-filter__star" data-rateyo-rating="4"></div>
-                              <span class="catalog-filter__cost">
+                           <div class="seitbar__info">
+                              <span class="seitbar__name">Pendant lamp</span>
+                              <div class="seitbar__star" data-rateyo-rating="4"></div>
+                              <span class="seitbar__cost">
                               23
                               <span>$</span>
                               </span>
@@ -194,7 +194,7 @@
                       </div>
                       <div class="product-card__content">
                          <h3 class="product-card__name">Wooden radio</h3>
-                         <div class="catalog-filter__star" data-rateyo-rating="4"></div>
+                         <div class="seitbar__star" data-rateyo-rating="4"></div>
                         <span class="product-card__price">
                            <span>$</span>
                            29.00
@@ -249,7 +249,7 @@
                       </div>
                       <div class="product-card__content">
                          <h3 class="product-card__name">Wooden chair</h3>
-                         <div class="catalog-filter__star" data-rateyo-rating="4"></div>
+                         <div class="seitbar__star" data-rateyo-rating="4"></div>
                          <span class="product-card__price">
                          <span>$</span>
                          29.00
@@ -304,7 +304,7 @@
                       </div>
                       <div class="product-card__content">
                          <h3 class="product-card__name">Pendant lamp</h3>
-                         <div class="catalog-filter__star" data-rateyo-rating="4"></div>
+                         <div class="seitbar__star" data-rateyo-rating="4"></div>
                          <span class="product-card__price">
                          <span>$</span>
                          29.00
@@ -359,7 +359,7 @@
                       </div>
                       <div class="product-card__content">
                          <h3 class="product-card__name">Retro table</h3>
-                         <div class="catalog-filter__star" data-rateyo-rating="4"></div>
+                         <div class="seitbar__star" data-rateyo-rating="4"></div>
                          <span class="product-card__price">
                          <span>$</span>
                          29.00
@@ -414,7 +414,7 @@
                       </div>
                       <div class="product-card__content">
                          <h3 class="product-card__name">Wooden radio</h3>
-                         <div class="catalog-filter__star" data-rateyo-rating="4"></div>
+                         <div class="seitbar__star" data-rateyo-rating="4"></div>
                          <span class="product-card__price">
                          <span>$</span>
                          29.00
@@ -469,7 +469,7 @@
                       </div>
                       <div class="product-card__content">
                          <h3 class="product-card__name">Wooden chair</h3>
-                         <div class="catalog-filter__star" data-rateyo-rating="4"></div>
+                         <div class="seitbar__star" data-rateyo-rating="4"></div>
                          <span class="product-card__price">
                          <span>$</span>
                          29.00
@@ -524,7 +524,7 @@
                       </div>
                       <div class="product-card__content">
                          <h3 class="product-card__name">Wooden chair</h3>
-                         <div class="catalog-filter__star" data-rateyo-rating="4"></div>
+                         <div class="seitbar__star" data-rateyo-rating="4"></div>
                          <span class="product-card__price">
                          <span>$</span>
                          29.00
@@ -579,7 +579,7 @@
                       </div>
                       <div class="product-card__content">
                          <h3 class="product-card__name">Retro table</h3>
-                         <div class="catalog-filter__star" data-rateyo-rating="4"></div>
+                         <div class="seitbar__star" data-rateyo-rating="4"></div>
                          <span class="product-card__price">
                          <span>$</span>
                          29.00
@@ -634,7 +634,7 @@
                       </div>
                       <div class="product-card__content">
                          <h3 class="product-card__name">Retro table</h3>
-                         <div class="catalog-filter__star" data-rateyo-rating="4"></div>
+                         <div class="seitbar__star" data-rateyo-rating="4"></div>
                          <span class="product-card__price">
                          <span>$</span>
                          29.00
@@ -689,7 +689,7 @@
                       </div>
                       <div class="product-card__content">
                          <h3 class="product-card__name">Retro table</h3>
-                         <div class="catalog-filter__star" data-rateyo-rating="4"></div>
+                         <div class="seitbar__star" data-rateyo-rating="4"></div>
                          <span class="product-card__price">
                          <span>$</span>
                          29.00
@@ -744,7 +744,7 @@
                       </div>
                       <div class="product-card__content">
                          <h3 class="product-card__name">Retro table</h3>
-                         <div class="catalog-filter__star" data-rateyo-rating="4"></div>
+                         <div class="seitbar__star" data-rateyo-rating="4"></div>
                          <span class="product-card__price">
                          <span>$</span>
                          29.00
@@ -799,7 +799,7 @@
                       </div>
                       <div class="product-card__content">
                          <h3 class="product-card__name">Retro table</h3>
-                         <div class="catalog-filter__star" data-rateyo-rating="4"></div>
+                         <div class="seitbar__star" data-rateyo-rating="4"></div>
                          <span class="product-card__price">
                          <span>$</span>
                          29.00
