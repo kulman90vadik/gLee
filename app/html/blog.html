@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="shortcut icon" href="images/logo-title.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    @include('./components/header.html')
+    <main class="main">
+        <section class="page-list">
+            <div class="container">
+                <h1 class="page-list__title">Blog</h1>
+                <ul class="breamcrams">
+                    <li class="breamcrams__item">
+                        <a class="breamcrams__link" href="#">Home</a>
+                    </li>
+                    <li class="breamcrams__item">
+                        <span class="breamcrams__link">Blog</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- @include('./components/about/work.html') -->
+        <div class="partners">
+            <div class="container">
+                <ul class="partners-slider">
+                    <li class="partners-slider__slide">
+                        <a class="partners-slider__link" href="#">
+                            <img class="partners-slider__images" src="images/logo-slide-1.png" alt="peterson" width="82" height="84">
+                        </a>
+                    </li>
+                    <li class="partners-slider__slide">
+                        <a class="partners-slider__link" href="#">
+                            <img class="partners-slider__images" src="images/logo-slide-2.png" alt="kmn colsalting" width="151" height="48">
+                        </a>
+                    </li>
+                    <li class="partners-slider__slide">
+                        <a class="partners-slider__link" href="#">
+                            <img class="partners-slider__images" src="images/logo-slide-3.png" alt="chainforce" width="150" height="77">
+                        </a>
+                    </li>
+                    <li class="partners-slider__slide">
+                        <a class="partners-slider__link" href="#">
+                            <img class="partners-slider__images" src="images/logo-slide-4.png" alt="next" width="167" height="52">
+                        </a>  
+                    </li>
+                    <li class="partners-slider__slide">
+                        <a class="partners-slider__link" href="#"> 
+                            <img class="partners-slider__images" src="images/logo-slide-5.png" alt="vintage" width="87" height="66">
+                        </a>
+                    </li>
+                    <li class="partners-slider__slide">
+                        <a class="partners-slider__link" href="#">
+                            <img class="partners-slider__images" src="images/logo-slide-4.png" alt="next" width="167" height="52">
+                        </a>
+                    </li>
+                    <li class="partners-slider__slide">
+                        <a class="partners-slider__link" href="#"></a>
+                            <img class="partners-slider__images" src="images/logo-slide-3.png" alt="vintage" width="150" height="77">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    @include('./components/footer.html')
+        
+
+
+    <script src="js/main.min.js"></script>
+</body>
+</html>

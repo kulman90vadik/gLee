@@ -1,4 +1,4 @@
-.catalog-filter {
+.seitbar {
     max-width: 270px;
     width: 100%;
     margin-right: 30px;
@@ -139,7 +139,7 @@
         &::after {
             display: none;
         }
-        &:hover .catalog-filter__number {
+        &:hover .seitbar__number {
             color: $title;
         }
     }
