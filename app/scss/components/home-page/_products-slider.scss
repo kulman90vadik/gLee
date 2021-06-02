@@ -110,9 +110,11 @@
         &:hover {
             background-color: $vio;
         }
-        &:active,
         &:focus {
             outline: 1px solid $vio;
+        }
+        &:active {
+            background-color: $fff500;
         }
         @include max($lg) {
             padding: 15px 55px 15px 20px;

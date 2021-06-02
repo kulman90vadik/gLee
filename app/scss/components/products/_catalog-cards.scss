@@ -7,6 +7,7 @@
         max-width: 270px;
         width: 100%;
         margin-bottom: 20px;
+        transition: transform .3s ease-in;
         .product-card__price--line,
         .product-card__text,
         .catalog-filter__star {
@@ -15,11 +16,16 @@
         .product-card__images {
             margin-top: auto;
         }
-        
+        &:hover {
+            transform: translateY(-5px);
+        }
         &.catalog-cards__items--line {
             box-shadow: none;
             max-width: 100%;
             margin-bottom: 32px; 
+            &:hover {
+                transform: translateY(0);
+            }
             .product-card {
                 flex-direction: row;
                 padding: 0;

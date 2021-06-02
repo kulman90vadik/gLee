@@ -7,9 +7,13 @@
                clicking on this button will close the filter
             </span>
          </button>
-         <ul class="catalog-filter">
-            <li class="catalog-filter__block">
-                  <h3 class="catalog-filter__title">Category</h3>
+         <!-- или нужно было блок asid-ом обозвать, а внутри тоже aside? -->
+         <div class="catalog-filter">
+            <span class="visually-hidden">
+               A block with filters where you can select products by category
+            </span>
+            <aside class="catalog-filter__block">
+                  <h2 class="catalog-filter__title">Category</h2>
                   <div class="catalog-filter__inner">
                      <ul class="catalog-filter__list">
                         <li class="catalog-filter__item">
@@ -29,9 +33,9 @@
                         </li>
                      </ul>
                   </div>   
-            </li>
-            <li class="catalog-filter__block">
-                  <h3 class="catalog-filter__title">Price</h3>
+            </aside>
+            <aside class="catalog-filter__block">
+                  <h2 class="catalog-filter__title">Price</h2>
                   <div class="catalog-filter__inner">
 
                      <form class="catalog-filter__form">
@@ -57,9 +61,9 @@
                      </div>
                   </div>
 
-            </li>
-            <li class="catalog-filter__block">
-                <h3 class="catalog-filter__title">Brand</h3>
+            </aside>
+            <aside class="catalog-filter__block">
+                <h2 class="catalog-filter__title">Brand</h2>
                 <div class="catalog-filter__inner">
 
                    <ul class="catalog-filter__list">
@@ -95,9 +99,9 @@
                       </li>
                    </ul>
                 </div>
-            </li>
-            <li class="catalog-filter__block">
-                  <h3 class="catalog-filter__title">Recent products</h3>
+            </aside>
+            <aside class="catalog-filter__block">
+                  <h2 class="catalog-filter__title">Recent products</h2>
                   <div class="catalog-filter__inner">
                      
                      <ul class="catalog-filter__holder">
@@ -149,10 +153,10 @@
                         </li>
                      </ul>
                   </div>
-            </li>
-         </ul>
+            </aside>
+         </div>
 
-         <div class="catalog__inner">
+         <section class="catalog-shop">
 
             <ul class="catalog-sort">
                     <li class="catalog-sort__items">
@@ -181,9 +185,9 @@
                             when you click on the button, a product filter will appear
                         </span>
                     </li>
-</ul>
+            </ul>
 
-               <ul class="catalog-cards">
+            <ul class="catalog-cards">
                <li class="catalog-cards__items">
                    <article class="product-card">
                       <div class="product-card__images">
@@ -847,9 +851,9 @@
                       </a>
                    </article>
                 </li>
-               </ul>
+            </ul>
 
-               <ul class="pagination">
+            <ul class="pagination">
                 <li class="pagination__item">
                    <span class="pagination__link pagination__link--active">1</span>
                 </li>
@@ -862,9 +866,9 @@
                 <li class="pagination__item">
                    <a class="pagination__link" href="#">Next</a>
                 </li>
-               </ul>
+            </ul>
 
-            </div>
+         </section>
       </div>
    </div>
 
@@ -903,7 +907,7 @@
              </li>
              <li class="partners-slider__slide">
                 <a class="partners-slider__link" href="#"></a>
-                <img class="partners-slider__images" src="images/logo-slide-3.png" alt="vintage" width="87" height="66">
+                <img class="partners-slider__images" src="images/logo-slide-3.png" alt="vintage" width="150" height="77">
                 </a>
              </li>
           </ul>

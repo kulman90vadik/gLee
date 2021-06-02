@@ -26,7 +26,6 @@
         &:hover{
             background-color: rgba($orange, 0.5);
         }
-        &:active,
         &:focus {
             outline: 1px solid $title;
         }
@@ -39,6 +38,9 @@
         }
         @include max($s) {
             display: none;
+        }
+        &:active {
+            background-color: $blue;
         }
     }
 
@@ -152,9 +154,11 @@
         &:hover {
             background-color: $btn-color;
         }
-        &:active,
         &:focus {
             outline: 1px solid $title;
+        }
+        &:active {
+            background-color: $blue;
         }
         @include max($sm) {
             width: 35px;

@@ -4,15 +4,7 @@
         @include max($lg) {
             justify-content: center;
         }
-    }
-    &__inner {
-        max-width: 870px;
-        width: 100%;
-        margin-bottom: 115px;
-        @include max($lg) {
-            margin-bottom: 30px;
-        }
-    }
+    } 
     &__slider {
         padding: 75px 0 85px;
         @include max($lg) {
@@ -21,12 +13,14 @@
     }
 }
 
-
-
-
-
-
-
+.catalog-shop {
+    max-width: 870px;
+    width: 100%;
+    margin-bottom: 115px;
+    @include max($lg) {
+        margin-bottom: 30px;
+    }
+}
 
 
 
