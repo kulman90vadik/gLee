@@ -30,6 +30,9 @@
         &:hover {
             fill: $fff500;
         }
+        &:active {
+            fill: $global;
+        }
     } 
     &__icon--active {
         fill: $orange100;
@@ -67,6 +70,9 @@
         }
         &:focus {
             background-color: $vio;
+        }
+        &:active {
+            background-color: #ccc;
         }
     }
     @include max($lg) {

@@ -1,3 +1,7 @@
+
+
+
+
 .catalog-cards {
     display: flex;
     flex-wrap: wrap;
@@ -10,7 +14,7 @@
         transition: transform .3s ease-in;
         .product-card__price--line,
         .product-card__text,
-        .seitbar__star {
+        .sidebar__star {
             display: none;
         }
         .product-card__images {
@@ -63,52 +67,18 @@
                 margin-left: 0;
                 justify-content: flex-end;
             }
-            .product-card__photo--one {
-                width: 323px;
-                height: 338px;
-            }
-            .product-card__photo--two {
-                width: 249px;
-                height: 347px;
-            }
-            .product-card__photo--three {
-                width: 298px;
-                height: 234px;
-            }
-            .product-card__photo--four {
-                width: 299px;
-                height: 188px;
-            }
-            .product-card__photo--five {
-                width: 288px;
-                height: 231px;
-            }
-            .product-card__photo--six {
-                width: 288px;
-                height: 231px;
-            }
-            .product-card__photo--eight {
-                width: 288px;
-                height: 231px;
-            }
-            .product-card__photo--nine {
-                width: 288px;
-                height: 231px;
-            }
-            .product-card__photo--ten {
-                width: 288px;
-                height: 231px;
-            }
-            .product-card__photo--big {
-                width: 319px;
-                height: 151px;
-            }
             .product-card__photo {
                 margin-bottom: auto;
+                width: 85%;
+                height: 66%;
                 @include max($xl) {
                     width: auto;
                     height: auto;
                 }
+            }
+            .product-card__photo--big {
+                width: 319px;
+                height: 151px;
             }
             .product-card__name {
                 color: #333;
@@ -127,7 +97,7 @@
             .product-card__links {
                 display: none;
             }
-            .seitbar__star {
+            .sidebar__star {
                 display: block;
                 margin-bottom: 15px;
                 @include max($lg) {

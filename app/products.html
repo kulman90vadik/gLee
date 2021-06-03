@@ -82,6 +82,7 @@
     </div>
 </header>
     <main class="main">
+
         <section class="page-list">
     <div class="container">
         <h1 class="page-list__title">Product list 1</h1>
@@ -95,920 +96,914 @@
         </ul>
     </div>
 </section>
-        <section class="catalog">
-   <h2 class="visually-hidden">Сatalog of online furniture store</h2>
-   <div class="container">
-      <div class="catalog__wrapper">
-         <button class="seitbar__close">
-            <span class="visually-hidden">
-               clicking on this button will close the filter
-            </span>
-         </button>
-         <!-- или нужно было блок asid-ом обозвать, а внутри тоже aside? -->
-         <div class="seitbar">
-            <span class="visually-hidden">
-               A block with filters where you can select products by category
-            </span>
-            <aside class="seitbar__block">
-                  <h2 class="seitbar__title">Category</h2>
-                  <div class="seitbar__inner">
-                     <ul class="seitbar__list">
-                        <li class="seitbar__item">
-                           <button class="seitbar__btn" type="button">Chair</button>
+
+        <div class="catalog">
+            <h2 class="visually-hidden">Сatalog of online furniture store</h2>
+            <div class="container">
+                <div class="catalog__wrapper">
+                    <button class="sidebar__close">
+                        <span class="visually-hidden">
+                            clicking on this button will close the filter
+                        </span>
+                    </button>
+
+                    <div class="sidebar">
+   <span class="visually-hidden">
+      A block with filters where you can select products by category
+   </span>
+   <aside class="sidebar__block">
+         <h2 class="sidebar__title">Category</h2>
+            <div class="sidebar__inner">
+               <ul class="sidebar__list">
+                  <li class="sidebar__item">
+                     <button class="sidebar__btn" type="button">Chair</button>
+                  </li>
+                  <li class="sidebar__item">
+                     <button class="sidebar__btn" type="button">Table</button>
+                  </li>
+                  <li class="sidebar__item">
+                     <button class="sidebar__btn" type="button">Lamp</button>
+                  </li>
+                  <li class="sidebar__item">
+                     <button class="sidebar__btn" type="button">Watch</button>
+                  </li>
+                  <li class="sidebar__item">
+                     <button class="sidebar__btn" type="button">Clock</button>
+                  </li>
+               </ul>
+            </div>   
+   </aside>
+   <aside class="sidebar__block">
+            <h2 class="sidebar__title">Price</h2>
+            <div class="sidebar__inner">
+               <form class="sidebar__form">
+                  <label class="sidebar__label visually-hidden" for="range">
+                     price selection filter
+                  </label>
+                  <input class="sidebar__input" type="text" id="range" name="range"
+                     data-min="0"
+                     data-max="1000.00"
+                     data-from="100.00"
+                     data-to="500.00"
+                  >
+               </form>
+               <div class="sidebar__price">
+                  <div class="sidebar__left">
+                     <span>$</span>
+                     <span class="sidebar__min"></span>
+                  </div>
+                  <div class="sidebar__right">
+                     <span>$</span>
+                     <span class="sidebar__max"></span>
+                  </div>
+               </div>
+            </div>
+   </aside>
+   <aside class="sidebar__block">
+            <h2 class="sidebar__title">Brand</h2>
+            <div class="sidebar__inner">
+               <ul class="sidebar__list">
+                  <li class="sidebar__item">
+                     <button class="sidebar__btn sidebar__button" type="button">
+                        RFL
+                        <span class="sidebar__number">(10)</span>
+                     </button>
+                  </li>
+                  <li class="sidebar__item">
+                     <button class="sidebar__btn sidebar__button" type="button">
+                        Brothers
+                        <span class="sidebar__number">(21)</span>
+                     </button>
+                  </li>
+                  <li class="sidebar__item">
+                     <button class="sidebar__btn sidebar__button" type="button">
+                        Regal
+                        <span class="sidebar__number">(3)</span>
+                     </button>
+                  </li>
+                  <li class="sidebar__item">
+                     <button class="sidebar__btn sidebar__button" type="button">
+                        Nadia
+                        <span class="sidebar__number">(14)</span>
+                     </button>
+                  </li>
+                  <li class="sidebar__item">
+                     <button class="sidebar__btn sidebar__button" type="button">
+                        Otobi
+                        <span class="sidebar__number">(6)</span>
+                     </button>
+                  </li>
+               </ul>
+            </div>
+   </aside>
+   <aside class="sidebar__block">
+            <h2 class="sidebar__title">Recent products</h2>
+            <div class="sidebar__inner">
+               <ul class="sidebar__holder">
+                  <li class="sidebar__items">
+                     <a class="sidebar__link" href="#">
+                        <div class="sidebar__images">
+                           <img class="sidebar__photo" src="images/lamp-1.png" alt="product lamp" width="55" height="61">
+                        </div>
+                        <div class="sidebar__info">
+                           <span class="sidebar__name">Pendant lamp</span>
+                           <div class="sidebar__star" data-rateyo-rating="4"></div>
+                           <span class="sidebar__cost">
+                              23
+                              <span>$</span>
+                           </span>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="sidebar__items">
+                     <a class="sidebar__link" href="#">
+                        <div class="sidebar__images">
+                           <img class="sidebar__photo" src="images/lamp-2.png" alt="product lamp" width="37" height="60">
+                        </div>
+                        <div class="sidebar__info">
+                           <span class="sidebar__name">Pendant lamp</span>
+                           <div class="sidebar__star" data-rateyo-rating="4"></div>
+                           <span class="sidebar__cost">
+                              23
+                              <span>$</span>
+                           </span>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="sidebar__items">
+                     <a class="sidebar__link" href="#">
+                        <div class="sidebar__images">
+                           <img class="sidebar__photo" src="images/lamp-3.png" alt="product lamp" width="29" height="60">
+                        </div>
+                        <div class="sidebar__info">
+                           <span class="sidebar__name">Pendant lamp</span>
+                           <div class="sidebar__star" data-rateyo-rating="4"></div>
+                              <span class="sidebar__cost">
+                              23
+                              <span>$</span>
+                           </span>
+                        </div>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+   </aside>
+</div>
+
+                    <section class="catalog-shop">
+                        <ul class="catalog-sort">
+                            <li class="catalog-sort__items">
+                                <button class="catalog-sort__btn" type="button">
+                                    <svg class="catalog-sort__grid catalog-sort__icon catalog-sort__icon--active">
+                                        <use xlink:href="images/sprite.svg#sort-1"></use>
+                                    </svg>
+                                    <span class="visually-hidden">
+                                        icon when clicking on which will change the layout of goods into blocks
+                                    </span>
+                                </button>
+                            </li>
+                            <li class="catalog-sort__items">
+                                <button class="catalog-sort__btn" type="button">
+                                    <svg class="catalog-sort__line catalog-sort__icon">
+                                        <use xlink:href="images/sprite.svg#sort-2"></use>
+                                    </svg>
+                                    <span class="visually-hidden">
+                                        an icon when clicking on which will change the layout of goods to linear blocks
+                                    </span>
+                                </button>
+                            </li>
+                            <li class="catalog-sort__items catalog-sort__items--filter">
+                                <button class="catalog-sort__btn catalog-sort__btn-filter" type="button">Filter</button>
+                                    <span class="visually-hidden">
+                                        when you click on the button, a product filter will appear
+                                    </span>
+                            </li>
+                    </ul>
+
+                    <ul class="catalog-cards">
+                        <li class="catalog-cards__items">
+                            <article class="product-card">
+                                <div class="product-card__images">
+                                    <img class="product-card__photo" src="images/products-1.png" alt="photo Wooden radio" width="186" height="195">
+                                </div>
+                                <div class="product-card__content">
+                                    <h3 class="product-card__name">Wooden radio</h3>
+                                    <div class="sidebar__star" data-rateyo-rating="4"></div>
+                                        <span class="product-card__price">
+                                            <span>$</span>
+                                            29.00
+                                        </span>
+                                        <span class="product-card__price--line">
+                                            23
+                                            <span>$</span>
+                                        </span>
+                                    <div class="product-card__text">
+                                        <p>
+                                            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                        </p>
+                                    </div>
+                                    <div class="product-card__icons">
+                                        <a class="btn-circle product-card__link product-card__link--line" href="#">
+                                            <svg class="product-card__search">
+                                                <use xlink:href="images/sprite.svg#search"></use>
+                                            </svg>
+                                            <span class="visually-hidden">
+                                                the search icon when you click on it will be a detailed description of the product
+                                            </span>
+                                        </a>
+                                        <button class="btn-circle product-card__link" type="button">
+                                            <svg class="product-card__corb">
+                                                <use xlink:href="images/sprite.svg#corb"></use>
+                                            </svg>
+                                            <span class="visually-hidden">
+                                                the shopping cart icon that will be added to the shopping cart when you click on it
+                                            </span>
+                                        </button>
+                                        <button class="btn-circle product-card__link" type="button">
+                                            <svg class="product-card__heart">
+                                                <use xlink:href="images/sprite.svg#heart"></use>
+                                            </svg>
+                                                <span class="visually-hidden">
+                                                    heart icon that will add the product to the list of your favorite   products when you click on it
+                                                </span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <a class="product-card__links" href="#">
+                                    <span class="visually-hidden">
+                                        a link that leads to another page, where there will be detailed information about the product        
+                                    </span> 
+                                </a>
+                            </article>
                         </li>
-                        <li class="seitbar__item">
-                           <button class="seitbar__btn" type="button">Table</button>
+                        <li class="catalog-cards__items">
+                            <article class="product-card">
+                                <div class="product-card__images">
+                                    <img class="product-card__photo" src="images/products-2.png" alt="photo Wooden radio" width="148" height="206">
+                                </div>
+                                <div class="product-card__content">
+                                    <h3 class="product-card__name">Wooden chair</h3>
+                                    <div class="sidebar__star" data-rateyo-rating="4"></div>
+                                        <span class="product-card__price">
+                                        <span>$</span>
+                                            29.00
+                                        </span>
+                                        <span class="product-card__price--line">
+                                            23
+                                        <span>$</span>
+                                    </span>
+                                    <div class="product-card__text">
+                                        <p>
+                                            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                     </p>
+                                  </div>
+                                  <div class="product-card__icons">
+                                     <a class="btn-circle product-card__link product-card__link--line" href="#">
+                                        <svg class="product-card__search">
+                                           <use xlink:href="images/sprite.svg#search"></use>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                        the search icon when you click on it will be a detailed description of the product
+                                        </span>
+                                     </a>
+                                     <button class="btn-circle product-card__link" type="button">
+                                        <svg class="product-card__corb">
+                                           <use xlink:href="images/sprite.svg#corb"></use>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                        the shopping cart icon that will be added to the shopping cart when you click on it
+                                        </span>
+                                     </button>
+                                     <button class="btn-circle product-card__link" type="button">
+                                        <svg class="product-card__heart">
+                                           <use xlink:href="images/sprite.svg#heart"></use>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                        heart icon that will add the product to the list of your favorite products when you click on it
+                                        </span>
+                                     </button>
+                                  </div>
+                               </div>
+                               <a class="product-card__links" href="#">
+                               <span class="visually-hidden">
+                               a link that leads to another page, where there will be detailed information about the product        
+                               </span> 
+                               </a>
+                            </article>
                         </li>
-                        <li class="seitbar__item">
-                           <button class="seitbar__btn" type="button">Lamp</button>
+                        <li class="catalog-cards__items">
+                            <article class="product-card">
+                               <div class="product-card__images">
+                                  <img class="product-card__photo" src="images/products-3.png" alt="photo Wooden radio" width="208" height="164">
+                               </div>
+                               <div class="product-card__content">
+                                  <h3 class="product-card__name">Pendant lamp</h3>
+                                  <div class="sidebar__star" data-rateyo-rating="4"></div>
+                                  <span class="product-card__price">
+                                  <span>$</span>
+                                  29.00
+                                  </span>
+                                  <span class="product-card__price--line">
+                                    23
+                                    <span>$</span>
+                                 </span>
+                                  <div class="product-card__text">
+                                     <p>
+                                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                     </p>
+                                  </div>
+                                  <div class="product-card__icons">
+                                     <a class="btn-circle product-card__link product-card__link--line" href="#">
+                                        <svg class="product-card__search">
+                                           <use xlink:href="images/sprite.svg#search"></use>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                        the search icon when you click on it will be a detailed description of the product
+                                        </span>
+                                     </a>
+                                     <button class="btn-circle product-card__link" type="button">
+                                        <svg class="product-card__corb">
+                                           <use xlink:href="images/sprite.svg#corb"></use>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                        the shopping cart icon that will be added to the shopping cart when you click on it
+                                        </span>
+                                     </button>
+                                     <button class="btn-circle product-card__link" type="button">
+                                        <svg class="product-card__heart">
+                                           <use xlink:href="images/sprite.svg#heart"></use>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                        heart icon that will add the product to the list of your favorite products when you click on it
+                                        </span>
+                                     </button>
+                                  </div>
+                               </div>
+                               <a class="product-card__links" href="#">
+                               <span class="visually-hidden">
+                               a link that leads to another page, where there will be detailed information about the product        
+                               </span> 
+                               </a>
+                            </article>
                         </li>
-                        <li class="seitbar__item">
-                           <button class="seitbar__btn" type="button">Watch</button>
+                        <li class="catalog-cards__items">
+                            <article class="product-card">
+                               <div class="product-card__images">
+                                  <img class="product-card__photo" src="images/products-4.png" alt="photo Wooden radio" width="224" height="135">
+                               </div>
+                               <div class="product-card__content">
+                                  <h3 class="product-card__name">Retro table</h3>
+                                  <div class="sidebar__star" data-rateyo-rating="4"></div>
+                                  <span class="product-card__price">
+                                  <span>$</span>
+                                  29.00
+                                  </span>
+                                  <span class="product-card__price--line">
+                                    23
+                                    <span>$</span>
+                                 </span>
+                                  <div class="product-card__text">
+                                     <p>
+                                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                     </p>
+                                  </div>
+                                  <div class="product-card__icons">
+                                     <a class="btn-circle product-card__link product-card__link--line" href="#">
+                                        <svg class="product-card__search">
+                                           <use xlink:href="images/sprite.svg#search"></use>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                        the search icon when you click on it will be a detailed description of the product
+                                        </span>
+                                     </a>
+                                     <button class="btn-circle product-card__link" type="button">
+                                        <svg class="product-card__corb">
+                                           <use xlink:href="images/sprite.svg#corb"></use>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                        the shopping cart icon that will be added to the shopping cart when you click on it
+                                        </span>
+                                     </button>
+                                     <button class="btn-circle product-card__link" type="button">
+                                        <svg class="product-card__heart">
+                                           <use xlink:href="images/sprite.svg#heart"></use>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                        heart icon that will add the product to the list of your favorite products when you click on it
+                                        </span>
+                                     </button>
+                                  </div>
+                               </div>
+                               <a class="product-card__links" href="#">
+                               <span class="visually-hidden">
+                               a link that leads to another page, where there will be detailed information about the product        
+                               </span> 
+                               </a>
+                            </article>
                         </li>
-                        <li class="seitbar__item">
-                           <button class="seitbar__btn" type="button">Clock</button>
+                        <li class="catalog-cards__items">
+                            <article class="product-card">
+                               <div class="product-card__images">
+                                  <img class="product-card__photo" src="images/products-5.png" alt="photo Wooden radio" width="236" height="162">
+                               </div>
+                               <div class="product-card__content">
+                                  <h3 class="product-card__name">Wooden radio</h3>
+                                  <div class="sidebar__star" data-rateyo-rating="4"></div>
+                                  <span class="product-card__price">
+                                  <span>$</span>
+                                  29.00
+                                  </span>
+                                  <span class="product-card__price--line">
+                                    23
+                                    <span>$</span>
+                                 </span>
+                                  <div class="product-card__text">
+                                     <p>
+                                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                     </p>
+                                  </div>
+                                  <div class="product-card__icons">
+                                     <a class="btn-circle product-card__link product-card__link--line" href="#">
+                                        <svg class="product-card__search">
+                                           <use xlink:href="images/sprite.svg#search"></use>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                        the search icon when you click on it will be a detailed description of the product
+                                        </span>
+                                     </a>
+                                     <button class="btn-circle product-card__link" type="button">
+                                        <svg class="product-card__corb">
+                                           <use xlink:href="images/sprite.svg#corb"></use>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                        the shopping cart icon that will be added to the shopping cart when you click on it
+                                        </span>
+                                     </button>
+                                     <button class="btn-circle product-card__link" type="button">
+                                        <svg class="product-card__heart">
+                                           <use xlink:href="images/sprite.svg#heart"></use>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                        heart icon that will add the product to the list of your favorite products when you click on it
+                                        </span>
+                                     </button>
+                                  </div>
+                               </div>
+                               <a class="product-card__links" href="#">
+                               <span class="visually-hidden">
+                               a link that leads to another page, where there will be detailed information about the product        
+                               </span> 
+                               </a>
+                            </article>
+                        </li>
+                        <li class="catalog-cards__items">
+                            <article class="product-card">
+                               <div class="product-card__images">
+                                  <img class="product-card__photo" src="images/products-6.png" alt="photo Wooden radio" width="230" height="170">
+                               </div>
+                               <div class="product-card__content">
+                                  <h3 class="product-card__name">Wooden chair</h3>
+                                  <div class="sidebar__star" data-rateyo-rating="4"></div>
+                                  <span class="product-card__price">
+                                  <span>$</span>
+                                  29.00
+                                  </span>
+                                  <span class="product-card__price--line">
+                                    23
+                                    <span>$</span>
+                                 </span>
+                                  <div class="product-card__text">
+                                     <p>
+                                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                     </p>
+                                  </div>
+                                  <div class="product-card__icons">
+                                     <a class="btn-circle product-card__link product-card__link--line" href="#">
+                                        <svg class="product-card__search">
+                                           <use xlink:href="images/sprite.svg#search"></use>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                        the search icon when you click on it will be a detailed description of the product
+                                        </span>
+                                     </a>
+                                     <button class="btn-circle product-card__link" type="button">
+                                        <svg class="product-card__corb">
+                                           <use xlink:href="images/sprite.svg#corb"></use>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                        the shopping cart icon that will be added to the shopping cart when you click on it
+                                        </span>
+                                     </button>
+                                     <button class="btn-circle product-card__link" type="button">
+                                        <svg class="product-card__heart">
+                                           <use xlink:href="images/sprite.svg#heart"></use>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                        heart icon that will add the product to the list of your favorite products when you click on it
+                                        </span>
+                                     </button>
+                                  </div>
+                               </div>
+                               <a class="product-card__links" href="#">
+                               <span class="visually-hidden">
+                               a link that leads to another page, where there will be detailed information about the product        
+                               </span> 
+                               </a>
+                            </article>
+                        </li>
+                        <li class="catalog-cards__items">
+                            <article class="product-card">
+                               <div class="product-card__images">
+                                  <img class="product-card__photo product-card__photo--eight" src="images/products-7.png" alt="photo Wooden radio" width="232" height="167">
+                               </div>
+                               <div class="product-card__content">
+                                  <h3 class="product-card__name">Wooden chair</h3>
+                                  <div class="sidebar__star" data-rateyo-rating="4"></div>
+                                  <span class="product-card__price">
+                                  <span>$</span>
+                                  29.00
+                                  </span>
+                                  <span class="product-card__price--line">
+                                    23
+                                    <span>$</span>
+                                 </span>
+                                  <div class="product-card__text">
+                                     <p>
+                                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                     </p>
+                                  </div>
+                                  <div class="product-card__icons">
+                                     <a class="btn-circle product-card__link product-card__link--line" href="#">
+                                        <svg class="product-card__search">
+                                           <use xlink:href="images/sprite.svg#search"></use>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                        the search icon when you click on it will be a detailed description of the product
+                                        </span>
+                                     </a>
+                                     <button class="btn-circle product-card__link" type="button">
+                                        <svg class="product-card__corb">
+                                           <use xlink:href="images/sprite.svg#corb"></use>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                        the shopping cart icon that will be added to the shopping cart when you click on it
+                                        </span>
+                                     </button>
+                                     <button class="btn-circle product-card__link" type="button">
+                                        <svg class="product-card__heart">
+                                           <use xlink:href="images/sprite.svg#heart"></use>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                        heart icon that will add the product to the list of your favorite products when you click on it
+                                        </span>
+                                     </button>
+                                  </div>
+                               </div>
+                               <a class="product-card__links" href="#">
+                               <span class="visually-hidden">
+                               a link that leads to another page, where there will be detailed information about the product        
+                               </span> 
+                               </a>
+                            </article>
+                        </li>
+                        <li class="catalog-cards__items">
+                            <article class="product-card">
+                               <div class="product-card__images">
+                                  <img class="product-card__photo product-card__photo--nine" src="images/products-8.png" alt="photo Wooden radio" width="238" height="153">
+                               </div>
+                               <div class="product-card__content">
+                                  <h3 class="product-card__name">Retro table</h3>
+                                  <div class="sidebar__star" data-rateyo-rating="4"></div>
+                                  <span class="product-card__price">
+                                  <span>$</span>
+                                  29.00
+                                  </span>
+                                  <span class="product-card__price--line">
+                                    23
+                                    <span>$</span>
+                                 </span>
+                                  <div class="product-card__text">
+                                     <p>
+                                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                     </p>
+                                  </div>
+                                  <div class="product-card__icons">
+                                     <a class="btn-circle product-card__link product-card__link--line" href="#">
+                                        <svg class="product-card__search">
+                                           <use xlink:href="images/sprite.svg#search"></use>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                        the search icon when you click on it will be a detailed description of the product
+                                        </span>
+                                     </a>
+                                     <button class="btn-circle product-card__link" type="button">
+                                        <svg class="product-card__corb">
+                                           <use xlink:href="images/sprite.svg#corb"></use>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                        the shopping cart icon that will be added to the shopping cart when you click on it
+                                        </span>
+                                     </button>
+                                     <button class="btn-circle product-card__link" type="button">
+                                        <svg class="product-card__heart">
+                                           <use xlink:href="images/sprite.svg#heart"></use>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                        heart icon that will add the product to the list of your favorite products when you click on it
+                                        </span>
+                                     </button>
+                                  </div>
+                               </div>
+                               <a class="product-card__links" href="#">
+                               <span class="visually-hidden">
+                               a link that leads to another page, where there will be detailed information about the product        
+                               </span> 
+                               </a>
+                            </article>
+                        </li>
+                        <li class="catalog-cards__items">
+                            <article class="product-card">
+                               <div class="product-card__images">
+                                  <img class="product-card__photo product-card__photo--ten" src="images/products-4.png" alt="photo Wooden radio" width="224" height="135">
+                               </div>
+                               <div class="product-card__content">
+                                  <h3 class="product-card__name">Retro table</h3>
+                                  <div class="sidebar__star" data-rateyo-rating="4"></div>
+                                  <span class="product-card__price">
+                                  <span>$</span>
+                                  29.00
+                                  </span>
+                                  <span class="product-card__price--line">
+                                    23
+                                    <span>$</span>
+                                 </span>
+                                  <div class="product-card__text">
+                                     <p>
+                                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                     </p>
+                                  </div>
+                                  <div class="product-card__icons">
+                                     <a class="btn-circle product-card__link product-card__link--line" href="#">
+                                        <svg class="product-card__search">
+                                           <use xlink:href="images/sprite.svg#search"></use>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                        the search icon when you click on it will be a detailed description of the product
+                                        </span>
+                                     </a>
+                                     <button class="btn-circle product-card__link" type="button">
+                                        <svg class="product-card__corb">
+                                           <use xlink:href="images/sprite.svg#corb"></use>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                        the shopping cart icon that will be added to the shopping cart when you click on it
+                                        </span>
+                                     </button>
+                                     <button class="btn-circle product-card__link" type="button">
+                                        <svg class="product-card__heart">
+                                           <use xlink:href="images/sprite.svg#heart"></use>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                        heart icon that will add the product to the list of your favorite products when you click on it
+                                        </span>
+                                     </button>
+                                  </div>
+                               </div>
+                               <a class="product-card__links" href="#">
+                               <span class="visually-hidden">
+                               a link that leads to another page, where there will be detailed information about the product        
+                               </span> 
+                               </a>
+                            </article>
+                        </li>
+                        <li class="catalog-cards__items">
+                            <article class="product-card product-card--big">
+                               <div class="product-card__images product-card__images--big">
+                                  <img class="product-card__photo product-card__photo--big" src="images/products-10.png" alt="photo Wooden radio" width="247" height="108">
+                               </div>
+                               <div class="product-card__content">
+                                  <h3 class="product-card__name">Retro table</h3>
+                                  <div class="sidebar__star" data-rateyo-rating="4"></div>
+                                  <span class="product-card__price">
+                                  <span>$</span>
+                                  29.00
+                                  </span>
+                                  <span class="product-card__price--line">
+                                    23
+                                    <span>$</span>
+                                 </span>
+                                  <div class="product-card__text">
+                                     <p>
+                                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                     </p>
+                                  </div>
+                                  <div class="product-card__icons">
+                                     <a class="btn-circle product-card__link product-card__link--line" href="#">
+                                        <svg class="product-card__search">
+                                           <use xlink:href="images/sprite.svg#search"></use>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                        the search icon when you click on it will be a detailed description of the product
+                                        </span>
+                                     </a>
+                                     <button class="btn-circle product-card__link" type="button">
+                                        <svg class="product-card__corb">
+                                           <use xlink:href="images/sprite.svg#corb"></use>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                        the shopping cart icon that will be added to the shopping cart when you click on it
+                                        </span>
+                                     </button>
+                                     <button class="btn-circle product-card__link" type="button">
+                                        <svg class="product-card__heart">
+                                           <use xlink:href="images/sprite.svg#heart"></use>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                        heart icon that will add the product to the list of your favorite products when you click on it
+                                        </span>
+                                     </button>
+                                  </div>
+                               </div>
+                               <a class="product-card__links" href="#">
+                               <span class="visually-hidden">
+                               a link that leads to another page, where there will be detailed information about the product        
+                               </span> 
+                               </a>
+                            </article>
+                        </li>
+                        <li class="catalog-cards__items">
+                            <article class="product-card">
+                               <div class="product-card__images">
+                                  <img class="product-card__photo product-card__photo--nine" src="images/products-9.png" alt="photo Wooden radio" width="142" height="178">
+                               </div>
+                               <div class="product-card__content">
+                                  <h3 class="product-card__name">Retro table</h3>
+                                  <div class="sidebar__star" data-rateyo-rating="4"></div>
+                                  <span class="product-card__price">
+                                  <span>$</span>
+                                  29.00
+                                  </span>
+                                  <span class="product-card__price--line">
+                                    23
+                                    <span>$</span>
+                                 </span>
+                                  <div class="product-card__text">
+                                     <p>
+                                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                     </p>
+                                  </div>
+                                  <div class="product-card__icons">
+                                     <a class="btn-circle product-card__link product-card__link--line" href="#">
+                                        <svg class="product-card__search">
+                                           <use xlink:href="images/sprite.svg#search"></use>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                        the search icon when you click on it will be a detailed description of the product
+                                        </span>
+                                     </a>
+                                     <button class="btn-circle product-card__link" type="button">
+                                        <svg class="product-card__corb">
+                                           <use xlink:href="images/sprite.svg#corb"></use>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                        the shopping cart icon that will be added to the shopping cart when you click on it
+                                        </span>
+                                     </button>
+                                     <button class="btn-circle product-card__link" type="button">
+                                        <svg class="product-card__heart">
+                                           <use xlink:href="images/sprite.svg#heart"></use>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                        heart icon that will add the product to the list of your favorite products when you click on it
+                                        </span>
+                                     </button>
+                                  </div>
+                               </div>
+                               <a class="product-card__links" href="#">
+                               <span class="visually-hidden">
+                               a link that leads to another page, where there will be detailed information about the product        
+                               </span> 
+                               </a>
+                            </article>
+                        </li>
+                        <li class="catalog-cards__items">
+                            <article class="product-card product-card--big">
+                               <div class="product-card__images product-card__images--big">
+                                  <img class="product-card__photo product-card__photo--big" src="images/products-11.png" alt="photo Wooden radio" width="242" height="137">
+                               </div>
+                               <div class="product-card__content">
+                                  <h3 class="product-card__name">Retro table</h3>
+                                  <div class="sidebar__star" data-rateyo-rating="4"></div>
+                                  <span class="product-card__price">
+                                  <span>$</span>
+                                  29.00
+                                  </span>
+                                  <span class="product-card__price--line">
+                                    23
+                                    <span>$</span>
+                                 </span>
+                                  <div class="product-card__text">
+                                     <p>
+                                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                     </p>
+                                  </div>
+                                  <div class="product-card__icons">
+                                     <a class="btn-circle product-card__link product-card__link--line" href="#">
+                                        <svg class="product-card__search">
+                                           <use xlink:href="images/sprite.svg#search"></use>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                        the search icon when you click on it will be a detailed description of the product
+                                        </span>
+                                     </a>
+                                     <button class="btn-circle product-card__link" type="button">
+                                        <svg class="product-card__corb">
+                                           <use xlink:href="images/sprite.svg#corb"></use>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                        the shopping cart icon that will be added to the shopping cart when you click on it
+                                        </span>
+                                     </button>
+                                     <button class="btn-circle product-card__link" type="button">
+                                        <svg class="product-card__heart">
+                                           <use xlink:href="images/sprite.svg#heart"></use>
+                                        </svg>
+                                        <span class="visually-hidden">
+                                        heart icon that will add the product to the list of your favorite products when you click on it
+                                        </span>
+                                     </button>
+                                  </div>
+                               </div>
+                               <a class="product-card__links" href="#">
+                               <span class="visually-hidden">
+                               a link that leads to another page, where there will be detailed information about the product        
+                               </span> 
+                               </a>
+                            </article>
                         </li>
                      </ul>
-                  </div>   
-            </aside>
-            <aside class="seitbar__block">
-                  <h2 class="seitbar__title">Price</h2>
-                  <div class="seitbar__inner">
-
-                     <form class="seitbar__form">
-                        <label class="seitbar__label visually-hidden" for="range">
-                           price selection filter
-                        </label>
-                        <input class="seitbar__input" type="text" id="range" name="range"
-                           data-min="0"
-                           data-max="1000.00"
-                           data-from="100.00"
-                           data-to="500.00"
-                        >
-                     </form>
-                     <div class="seitbar__price">
-                        <div class="seitbar__left">
-                           <span>$</span>
-                           <span class="seitbar__min"></span>
-                        </div>
-                        <div class="seitbar__right">
-                           <span>$</span>
-                           <span class="seitbar__max"></span>
-                        </div>
-                     </div>
-                  </div>
-
-            </aside>
-            <aside class="seitbar__block">
-                <h2 class="seitbar__title">Brand</h2>
-                <div class="seitbar__inner">
-
-                   <ul class="seitbar__list">
-                      <li class="seitbar__item">
-                         <button class="seitbar__btn seitbar__button" type="button">
-                         RFL
-                         <span class="seitbar__number">(10)</span>
-                         </button>
-                      </li>
-                      <li class="seitbar__item">
-                         <button class="seitbar__btn seitbar__button" type="button">
-                         Brothers
-                         <span class="seitbar__number">(21)</span>
-                         </button>
-                      </li>
-                      <li class="seitbar__item">
-                         <button class="seitbar__btn seitbar__button" type="button">
-                         Regal
-                         <span class="seitbar__number">(3)</span>
-                         </button>
-                      </li>
-                      <li class="seitbar__item">
-                         <button class="seitbar__btn seitbar__button" type="button">
-                         Nadia
-                         <span class="seitbar__number">(14)</span>
-                         </button>
-                      </li>
-                      <li class="seitbar__item">
-                         <button class="seitbar__btn seitbar__button" type="button">
-                         Otobi
-                         <span class="seitbar__number">(6)</span>
-                         </button>
-                      </li>
-                   </ul>
+         
+                     <ul class="pagination">
+                         <li class="pagination__item">
+                            <span class="pagination__link pagination__link--active">1</span>
+                         </li>
+                         <li class="pagination__item">
+                            <a class="pagination__link" href="#">2</a>
+                         </li>
+                         <li class="pagination__item">
+                            <a class="pagination__link" href="#">3</a>
+                         </li>
+                         <li class="pagination__item">
+                            <a class="pagination__link" href="#">Next</a>
+                         </li>
+                     </ul>
+         
+                    </section>
                 </div>
-            </aside>
-            <aside class="seitbar__block">
-                  <h2 class="seitbar__title">Recent products</h2>
-                  <div class="seitbar__inner">
-                     <ul class="seitbar__holder">
-                        <li class="seitbar__items">
-                          <a class="seitbar__link" href="#">
-                             <div class="seitbar__images">
-                                <img class="seitbar__photo" src="images/lamp-1.png" alt="product lamp" width="55" height="61">
-                             </div>
-                             <div class="seitbar__info">
-                                <span class="seitbar__name">Pendant lamp</span>
-                                <div class="seitbar__star" data-rateyo-rating="4"></div>
-                                <span class="seitbar__cost">
-                                23
-                                <span>$</span>
-                                </span>
-                             </div>
-                          </a>
-     
-                        </li>
-                        <li class="seitbar__items">
-                          <a class="seitbar__link" href="#">
-                           <div class="seitbar__images">
-                              <img class="seitbar__photo" src="images/lamp-2.png" alt="product lamp" width="37" height="60">
-                           </div>
-                           <div class="seitbar__info">
-                              <span class="seitbar__name">Pendant lamp</span>
-                              <div class="seitbar__star" data-rateyo-rating="4"></div>
-                              <span class="seitbar__cost">
-                              23
-                              <span>$</span>
-                              </span>
-                           </div>
-                          </a>
-                        </li>
-                        <li class="seitbar__items">
-                          <a class="seitbar__link" href="#">
-                           <div class="seitbar__images">
-                              <img class="seitbar__photo" src="images/lamp-3.png" alt="product lamp" width="29" height="60">
-                           </div>
-                           <div class="seitbar__info">
-                              <span class="seitbar__name">Pendant lamp</span>
-                              <div class="seitbar__star" data-rateyo-rating="4"></div>
-                              <span class="seitbar__cost">
-                              23
-                              <span>$</span>
-                              </span>
-                           </div>
-                          </a>
-                        </li>
-                     </ul>
-                  </div>
-            </aside>
-         </div>
+            </div>
 
-         <section class="catalog-shop">
-
-            <ul class="catalog-sort">
-               <li class="catalog-sort__items">
-                  <button class="catalog-sort__btn" type="button">
-                     <svg class="catalog-sort__grid catalog-sort__icon catalog-sort__icon--active">
-                        <use xlink:href="images/sprite.svg#sort-1"></use>
-                     </svg>
-                     <span class="visually-hidden">
-                        icon when clicking on which will change the layout of goods into blocks
-                     </span>
-                  </button>
-               </li>
-               <li class="catalog-sort__items">
-                  <button class="catalog-sort__btn" type="button">
-                     <svg class="catalog-sort__line catalog-sort__icon">
-                        <use xlink:href="images/sprite.svg#sort-2"></use>
-                     </svg>
-                     <span class="visually-hidden">
-                        an icon when clicking on which will change the layout of goods to linear blocks
-                     </span>
-                  </button>
-               </li>
-               <li class="catalog-sort__items catalog-sort__items--filter">
-                  <button class="catalog-sort__btn catalog-sort__btn-filter" type="button">Filter</button>
-                  <span class="visually-hidden">
-                     when you click on the button, a product filter will appear
-                  </span>
-               </li>
-            </ul>
-
-            <ul class="catalog-cards">
-               <li class="catalog-cards__items">
-                   <article class="product-card">
-                      <div class="product-card__images">
-                         <img class="product-card__photo product-card__photo--one" src="images/products-1.png" alt="photo Wooden radio" width="186" height="195">
-                      </div>
-                      <div class="product-card__content">
-                         <h3 class="product-card__name">Wooden radio</h3>
-                         <div class="seitbar__star" data-rateyo-rating="4"></div>
-                        <span class="product-card__price">
-                           <span>$</span>
-                           29.00
-                        </span>
-                        <span class="product-card__price--line">
-                           23
-                           <span>$</span>
-                        </span>
-                         <div class="product-card__text">
-                            <p>
-                               consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            </p>
-                         </div>
-                         <div class="product-card__icons">
-                            <a class="btn-circle product-card__link product-card__link--line" href="#">
-                               <svg class="product-card__search">
-                                  <use xlink:href="images/sprite.svg#search"></use>
-                               </svg>
-                               <span class="visually-hidden">
-                               the search icon when you click on it will be a detailed description of the product
-                               </span>
-                            </a>
-                            <button class="btn-circle product-card__link" type="button">
-                               <svg class="product-card__corb">
-                                  <use xlink:href="images/sprite.svg#corb"></use>
-                               </svg>
-                               <span class="visually-hidden">
-                               the shopping cart icon that will be added to the shopping cart when you click on it
-                               </span>
-                            </button>
-                            <button class="btn-circle product-card__link" type="button">
-                               <svg class="product-card__heart">
-                                  <use xlink:href="images/sprite.svg#heart"></use>
-                               </svg>
-                               <span class="visually-hidden">
-                               heart icon that will add the product to the list of your favorite products when you click on it
-                               </span>
-                            </button>
-                         </div>
-                      </div>
-                      <a class="product-card__links" href="#">
-                      <span class="visually-hidden">
-                      a link that leads to another page, where there will be detailed information about the product        
-                      </span> 
-                      </a>
-                   </article>
-               </li>
-               <li class="catalog-cards__items">
-                   <article class="product-card">
-                      <div class="product-card__images">
-                         <img class="product-card__photo product-card__photo--two" src="images/products-2.png" alt="photo Wooden radio" width="148" height="206">
-                      </div>
-                      <div class="product-card__content">
-                         <h3 class="product-card__name">Wooden chair</h3>
-                         <div class="seitbar__star" data-rateyo-rating="4"></div>
-                         <span class="product-card__price">
-                         <span>$</span>
-                         29.00
-                         </span>
-                         <span class="product-card__price--line">
-                           23
-                           <span>$</span>
-                        </span>
-                         <div class="product-card__text">
-                            <p>
-                               consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            </p>
-                         </div>
-                         <div class="product-card__icons">
-                            <a class="btn-circle product-card__link product-card__link--line" href="#">
-                               <svg class="product-card__search">
-                                  <use xlink:href="images/sprite.svg#search"></use>
-                               </svg>
-                               <span class="visually-hidden">
-                               the search icon when you click on it will be a detailed description of the product
-                               </span>
-                            </a>
-                            <button class="btn-circle product-card__link" type="button">
-                               <svg class="product-card__corb">
-                                  <use xlink:href="images/sprite.svg#corb"></use>
-                               </svg>
-                               <span class="visually-hidden">
-                               the shopping cart icon that will be added to the shopping cart when you click on it
-                               </span>
-                            </button>
-                            <button class="btn-circle product-card__link" type="button">
-                               <svg class="product-card__heart">
-                                  <use xlink:href="images/sprite.svg#heart"></use>
-                               </svg>
-                               <span class="visually-hidden">
-                               heart icon that will add the product to the list of your favorite products when you click on it
-                               </span>
-                            </button>
-                         </div>
-                      </div>
-                      <a class="product-card__links" href="#">
-                      <span class="visually-hidden">
-                      a link that leads to another page, where there will be detailed information about the product        
-                      </span> 
-                      </a>
-                   </article>
-               </li>
-               <li class="catalog-cards__items">
-                   <article class="product-card">
-                      <div class="product-card__images">
-                         <img class="product-card__photo product-card__photo--three" src="images/products-3.png" alt="photo Wooden radio" width="208" height="164">
-                      </div>
-                      <div class="product-card__content">
-                         <h3 class="product-card__name">Pendant lamp</h3>
-                         <div class="seitbar__star" data-rateyo-rating="4"></div>
-                         <span class="product-card__price">
-                         <span>$</span>
-                         29.00
-                         </span>
-                         <span class="product-card__price--line">
-                           23
-                           <span>$</span>
-                        </span>
-                         <div class="product-card__text">
-                            <p>
-                               consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            </p>
-                         </div>
-                         <div class="product-card__icons">
-                            <a class="btn-circle product-card__link product-card__link--line" href="#">
-                               <svg class="product-card__search">
-                                  <use xlink:href="images/sprite.svg#search"></use>
-                               </svg>
-                               <span class="visually-hidden">
-                               the search icon when you click on it will be a detailed description of the product
-                               </span>
-                            </a>
-                            <button class="btn-circle product-card__link" type="button">
-                               <svg class="product-card__corb">
-                                  <use xlink:href="images/sprite.svg#corb"></use>
-                               </svg>
-                               <span class="visually-hidden">
-                               the shopping cart icon that will be added to the shopping cart when you click on it
-                               </span>
-                            </button>
-                            <button class="btn-circle product-card__link" type="button">
-                               <svg class="product-card__heart">
-                                  <use xlink:href="images/sprite.svg#heart"></use>
-                               </svg>
-                               <span class="visually-hidden">
-                               heart icon that will add the product to the list of your favorite products when you click on it
-                               </span>
-                            </button>
-                         </div>
-                      </div>
-                      <a class="product-card__links" href="#">
-                      <span class="visually-hidden">
-                      a link that leads to another page, where there will be detailed information about the product        
-                      </span> 
-                      </a>
-                   </article>
-               </li>
-               <li class="catalog-cards__items">
-                   <article class="product-card">
-                      <div class="product-card__images">
-                         <img class="product-card__photo product-card__photo--four" src="images/products-4.png" alt="photo Wooden radio" width="224" height="135">
-                      </div>
-                      <div class="product-card__content">
-                         <h3 class="product-card__name">Retro table</h3>
-                         <div class="seitbar__star" data-rateyo-rating="4"></div>
-                         <span class="product-card__price">
-                         <span>$</span>
-                         29.00
-                         </span>
-                         <span class="product-card__price--line">
-                           23
-                           <span>$</span>
-                        </span>
-                         <div class="product-card__text">
-                            <p>
-                               consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            </p>
-                         </div>
-                         <div class="product-card__icons">
-                            <a class="btn-circle product-card__link product-card__link--line" href="#">
-                               <svg class="product-card__search">
-                                  <use xlink:href="images/sprite.svg#search"></use>
-                               </svg>
-                               <span class="visually-hidden">
-                               the search icon when you click on it will be a detailed description of the product
-                               </span>
-                            </a>
-                            <button class="btn-circle product-card__link" type="button">
-                               <svg class="product-card__corb">
-                                  <use xlink:href="images/sprite.svg#corb"></use>
-                               </svg>
-                               <span class="visually-hidden">
-                               the shopping cart icon that will be added to the shopping cart when you click on it
-                               </span>
-                            </button>
-                            <button class="btn-circle product-card__link" type="button">
-                               <svg class="product-card__heart">
-                                  <use xlink:href="images/sprite.svg#heart"></use>
-                               </svg>
-                               <span class="visually-hidden">
-                               heart icon that will add the product to the list of your favorite products when you click on it
-                               </span>
-                            </button>
-                         </div>
-                      </div>
-                      <a class="product-card__links" href="#">
-                      <span class="visually-hidden">
-                      a link that leads to another page, where there will be detailed information about the product        
-                      </span> 
-                      </a>
-                   </article>
-               </li>
-               <li class="catalog-cards__items">
-                   <article class="product-card">
-                      <div class="product-card__images">
-                         <img class="product-card__photo product-card__photo--five" src="images/products-5.png" alt="photo Wooden radio" width="236" height="162">
-                      </div>
-                      <div class="product-card__content">
-                         <h3 class="product-card__name">Wooden radio</h3>
-                         <div class="seitbar__star" data-rateyo-rating="4"></div>
-                         <span class="product-card__price">
-                         <span>$</span>
-                         29.00
-                         </span>
-                         <span class="product-card__price--line">
-                           23
-                           <span>$</span>
-                        </span>
-                         <div class="product-card__text">
-                            <p>
-                               consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            </p>
-                         </div>
-                         <div class="product-card__icons">
-                            <a class="btn-circle product-card__link product-card__link--line" href="#">
-                               <svg class="product-card__search">
-                                  <use xlink:href="images/sprite.svg#search"></use>
-                               </svg>
-                               <span class="visually-hidden">
-                               the search icon when you click on it will be a detailed description of the product
-                               </span>
-                            </a>
-                            <button class="btn-circle product-card__link" type="button">
-                               <svg class="product-card__corb">
-                                  <use xlink:href="images/sprite.svg#corb"></use>
-                               </svg>
-                               <span class="visually-hidden">
-                               the shopping cart icon that will be added to the shopping cart when you click on it
-                               </span>
-                            </button>
-                            <button class="btn-circle product-card__link" type="button">
-                               <svg class="product-card__heart">
-                                  <use xlink:href="images/sprite.svg#heart"></use>
-                               </svg>
-                               <span class="visually-hidden">
-                               heart icon that will add the product to the list of your favorite products when you click on it
-                               </span>
-                            </button>
-                         </div>
-                      </div>
-                      <a class="product-card__links" href="#">
-                      <span class="visually-hidden">
-                      a link that leads to another page, where there will be detailed information about the product        
-                      </span> 
-                      </a>
-                   </article>
-               </li>
-               <li class="catalog-cards__items">
-                   <article class="product-card">
-                      <div class="product-card__images">
-                         <img class="product-card__photo product-card__photo--six" src="images/products-6.png" alt="photo Wooden radio" width="230" height="170">
-                      </div>
-                      <div class="product-card__content">
-                         <h3 class="product-card__name">Wooden chair</h3>
-                         <div class="seitbar__star" data-rateyo-rating="4"></div>
-                         <span class="product-card__price">
-                         <span>$</span>
-                         29.00
-                         </span>
-                         <span class="product-card__price--line">
-                           23
-                           <span>$</span>
-                        </span>
-                         <div class="product-card__text">
-                            <p>
-                               consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            </p>
-                         </div>
-                         <div class="product-card__icons">
-                            <a class="btn-circle product-card__link product-card__link--line" href="#">
-                               <svg class="product-card__search">
-                                  <use xlink:href="images/sprite.svg#search"></use>
-                               </svg>
-                               <span class="visually-hidden">
-                               the search icon when you click on it will be a detailed description of the product
-                               </span>
-                            </a>
-                            <button class="btn-circle product-card__link" type="button">
-                               <svg class="product-card__corb">
-                                  <use xlink:href="images/sprite.svg#corb"></use>
-                               </svg>
-                               <span class="visually-hidden">
-                               the shopping cart icon that will be added to the shopping cart when you click on it
-                               </span>
-                            </button>
-                            <button class="btn-circle product-card__link" type="button">
-                               <svg class="product-card__heart">
-                                  <use xlink:href="images/sprite.svg#heart"></use>
-                               </svg>
-                               <span class="visually-hidden">
-                               heart icon that will add the product to the list of your favorite products when you click on it
-                               </span>
-                            </button>
-                         </div>
-                      </div>
-                      <a class="product-card__links" href="#">
-                      <span class="visually-hidden">
-                      a link that leads to another page, where there will be detailed information about the product        
-                      </span> 
-                      </a>
-                   </article>
-               </li>
-               <li class="catalog-cards__items">
-                   <article class="product-card">
-                      <div class="product-card__images">
-                         <img class="product-card__photo product-card__photo--eight" src="images/products-7.png" alt="photo Wooden radio" width="232" height="167">
-                      </div>
-                      <div class="product-card__content">
-                         <h3 class="product-card__name">Wooden chair</h3>
-                         <div class="seitbar__star" data-rateyo-rating="4"></div>
-                         <span class="product-card__price">
-                         <span>$</span>
-                         29.00
-                         </span>
-                         <span class="product-card__price--line">
-                           23
-                           <span>$</span>
-                        </span>
-                         <div class="product-card__text">
-                            <p>
-                               consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            </p>
-                         </div>
-                         <div class="product-card__icons">
-                            <a class="btn-circle product-card__link product-card__link--line" href="#">
-                               <svg class="product-card__search">
-                                  <use xlink:href="images/sprite.svg#search"></use>
-                               </svg>
-                               <span class="visually-hidden">
-                               the search icon when you click on it will be a detailed description of the product
-                               </span>
-                            </a>
-                            <button class="btn-circle product-card__link" type="button">
-                               <svg class="product-card__corb">
-                                  <use xlink:href="images/sprite.svg#corb"></use>
-                               </svg>
-                               <span class="visually-hidden">
-                               the shopping cart icon that will be added to the shopping cart when you click on it
-                               </span>
-                            </button>
-                            <button class="btn-circle product-card__link" type="button">
-                               <svg class="product-card__heart">
-                                  <use xlink:href="images/sprite.svg#heart"></use>
-                               </svg>
-                               <span class="visually-hidden">
-                               heart icon that will add the product to the list of your favorite products when you click on it
-                               </span>
-                            </button>
-                         </div>
-                      </div>
-                      <a class="product-card__links" href="#">
-                      <span class="visually-hidden">
-                      a link that leads to another page, where there will be detailed information about the product        
-                      </span> 
-                      </a>
-                   </article>
-               </li>
-               <li class="catalog-cards__items">
-                   <article class="product-card">
-                      <div class="product-card__images">
-                         <img class="product-card__photo product-card__photo--nine" src="images/products-8.png" alt="photo Wooden radio" width="238" height="153">
-                      </div>
-                      <div class="product-card__content">
-                         <h3 class="product-card__name">Retro table</h3>
-                         <div class="seitbar__star" data-rateyo-rating="4"></div>
-                         <span class="product-card__price">
-                         <span>$</span>
-                         29.00
-                         </span>
-                         <span class="product-card__price--line">
-                           23
-                           <span>$</span>
-                        </span>
-                         <div class="product-card__text">
-                            <p>
-                               consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            </p>
-                         </div>
-                         <div class="product-card__icons">
-                            <a class="btn-circle product-card__link product-card__link--line" href="#">
-                               <svg class="product-card__search">
-                                  <use xlink:href="images/sprite.svg#search"></use>
-                               </svg>
-                               <span class="visually-hidden">
-                               the search icon when you click on it will be a detailed description of the product
-                               </span>
-                            </a>
-                            <button class="btn-circle product-card__link" type="button">
-                               <svg class="product-card__corb">
-                                  <use xlink:href="images/sprite.svg#corb"></use>
-                               </svg>
-                               <span class="visually-hidden">
-                               the shopping cart icon that will be added to the shopping cart when you click on it
-                               </span>
-                            </button>
-                            <button class="btn-circle product-card__link" type="button">
-                               <svg class="product-card__heart">
-                                  <use xlink:href="images/sprite.svg#heart"></use>
-                               </svg>
-                               <span class="visually-hidden">
-                               heart icon that will add the product to the list of your favorite products when you click on it
-                               </span>
-                            </button>
-                         </div>
-                      </div>
-                      <a class="product-card__links" href="#">
-                      <span class="visually-hidden">
-                      a link that leads to another page, where there will be detailed information about the product        
-                      </span> 
-                      </a>
-                   </article>
-               </li>
-               <li class="catalog-cards__items">
-                   <article class="product-card">
-                      <div class="product-card__images">
-                         <img class="product-card__photo product-card__photo--ten" src="images/products-4.png" alt="photo Wooden radio" width="224" height="135">
-                      </div>
-                      <div class="product-card__content">
-                         <h3 class="product-card__name">Retro table</h3>
-                         <div class="seitbar__star" data-rateyo-rating="4"></div>
-                         <span class="product-card__price">
-                         <span>$</span>
-                         29.00
-                         </span>
-                         <span class="product-card__price--line">
-                           23
-                           <span>$</span>
-                        </span>
-                         <div class="product-card__text">
-                            <p>
-                               consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            </p>
-                         </div>
-                         <div class="product-card__icons">
-                            <a class="btn-circle product-card__link product-card__link--line" href="#">
-                               <svg class="product-card__search">
-                                  <use xlink:href="images/sprite.svg#search"></use>
-                               </svg>
-                               <span class="visually-hidden">
-                               the search icon when you click on it will be a detailed description of the product
-                               </span>
-                            </a>
-                            <button class="btn-circle product-card__link" type="button">
-                               <svg class="product-card__corb">
-                                  <use xlink:href="images/sprite.svg#corb"></use>
-                               </svg>
-                               <span class="visually-hidden">
-                               the shopping cart icon that will be added to the shopping cart when you click on it
-                               </span>
-                            </button>
-                            <button class="btn-circle product-card__link" type="button">
-                               <svg class="product-card__heart">
-                                  <use xlink:href="images/sprite.svg#heart"></use>
-                               </svg>
-                               <span class="visually-hidden">
-                               heart icon that will add the product to the list of your favorite products when you click on it
-                               </span>
-                            </button>
-                         </div>
-                      </div>
-                      <a class="product-card__links" href="#">
-                      <span class="visually-hidden">
-                      a link that leads to another page, where there will be detailed information about the product        
-                      </span> 
-                      </a>
-                   </article>
-               </li>
-               <li class="catalog-cards__items">
-                   <article class="product-card product-card--big">
-                      <div class="product-card__images product-card__images--big">
-                         <img class="product-card__photo product-card__photo--big" src="images/products-10.png" alt="photo Wooden radio" width="247" height="108">
-                      </div>
-                      <div class="product-card__content">
-                         <h3 class="product-card__name">Retro table</h3>
-                         <div class="seitbar__star" data-rateyo-rating="4"></div>
-                         <span class="product-card__price">
-                         <span>$</span>
-                         29.00
-                         </span>
-                         <span class="product-card__price--line">
-                           23
-                           <span>$</span>
-                        </span>
-                         <div class="product-card__text">
-                            <p>
-                               consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            </p>
-                         </div>
-                         <div class="product-card__icons">
-                            <a class="btn-circle product-card__link product-card__link--line" href="#">
-                               <svg class="product-card__search">
-                                  <use xlink:href="images/sprite.svg#search"></use>
-                               </svg>
-                               <span class="visually-hidden">
-                               the search icon when you click on it will be a detailed description of the product
-                               </span>
-                            </a>
-                            <button class="btn-circle product-card__link" type="button">
-                               <svg class="product-card__corb">
-                                  <use xlink:href="images/sprite.svg#corb"></use>
-                               </svg>
-                               <span class="visually-hidden">
-                               the shopping cart icon that will be added to the shopping cart when you click on it
-                               </span>
-                            </button>
-                            <button class="btn-circle product-card__link" type="button">
-                               <svg class="product-card__heart">
-                                  <use xlink:href="images/sprite.svg#heart"></use>
-                               </svg>
-                               <span class="visually-hidden">
-                               heart icon that will add the product to the list of your favorite products when you click on it
-                               </span>
-                            </button>
-                         </div>
-                      </div>
-                      <a class="product-card__links" href="#">
-                      <span class="visually-hidden">
-                      a link that leads to another page, where there will be detailed information about the product        
-                      </span> 
-                      </a>
-                   </article>
-               </li>
-               <li class="catalog-cards__items">
-                   <article class="product-card">
-                      <div class="product-card__images">
-                         <img class="product-card__photo product-card__photo--nine" src="images/products-9.png" alt="photo Wooden radio" width="142" height="178">
-                      </div>
-                      <div class="product-card__content">
-                         <h3 class="product-card__name">Retro table</h3>
-                         <div class="seitbar__star" data-rateyo-rating="4"></div>
-                         <span class="product-card__price">
-                         <span>$</span>
-                         29.00
-                         </span>
-                         <span class="product-card__price--line">
-                           23
-                           <span>$</span>
-                        </span>
-                         <div class="product-card__text">
-                            <p>
-                               consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            </p>
-                         </div>
-                         <div class="product-card__icons">
-                            <a class="btn-circle product-card__link product-card__link--line" href="#">
-                               <svg class="product-card__search">
-                                  <use xlink:href="images/sprite.svg#search"></use>
-                               </svg>
-                               <span class="visually-hidden">
-                               the search icon when you click on it will be a detailed description of the product
-                               </span>
-                            </a>
-                            <button class="btn-circle product-card__link" type="button">
-                               <svg class="product-card__corb">
-                                  <use xlink:href="images/sprite.svg#corb"></use>
-                               </svg>
-                               <span class="visually-hidden">
-                               the shopping cart icon that will be added to the shopping cart when you click on it
-                               </span>
-                            </button>
-                            <button class="btn-circle product-card__link" type="button">
-                               <svg class="product-card__heart">
-                                  <use xlink:href="images/sprite.svg#heart"></use>
-                               </svg>
-                               <span class="visually-hidden">
-                               heart icon that will add the product to the list of your favorite products when you click on it
-                               </span>
-                            </button>
-                         </div>
-                      </div>
-                      <a class="product-card__links" href="#">
-                      <span class="visually-hidden">
-                      a link that leads to another page, where there will be detailed information about the product        
-                      </span> 
-                      </a>
-                   </article>
-               </li>
-               <li class="catalog-cards__items">
-                   <article class="product-card product-card--big">
-                      <div class="product-card__images product-card__images--big">
-                         <img class="product-card__photo product-card__photo--big" src="images/products-11.png" alt="photo Wooden radio" width="242" height="137">
-                      </div>
-                      <div class="product-card__content">
-                         <h3 class="product-card__name">Retro table</h3>
-                         <div class="seitbar__star" data-rateyo-rating="4"></div>
-                         <span class="product-card__price">
-                         <span>$</span>
-                         29.00
-                         </span>
-                         <span class="product-card__price--line">
-                           23
-                           <span>$</span>
-                        </span>
-                         <div class="product-card__text">
-                            <p>
-                               consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            </p>
-                         </div>
-                         <div class="product-card__icons">
-                            <a class="btn-circle product-card__link product-card__link--line" href="#">
-                               <svg class="product-card__search">
-                                  <use xlink:href="images/sprite.svg#search"></use>
-                               </svg>
-                               <span class="visually-hidden">
-                               the search icon when you click on it will be a detailed description of the product
-                               </span>
-                            </a>
-                            <button class="btn-circle product-card__link" type="button">
-                               <svg class="product-card__corb">
-                                  <use xlink:href="images/sprite.svg#corb"></use>
-                               </svg>
-                               <span class="visually-hidden">
-                               the shopping cart icon that will be added to the shopping cart when you click on it
-                               </span>
-                            </button>
-                            <button class="btn-circle product-card__link" type="button">
-                               <svg class="product-card__heart">
-                                  <use xlink:href="images/sprite.svg#heart"></use>
-                               </svg>
-                               <span class="visually-hidden">
-                               heart icon that will add the product to the list of your favorite products when you click on it
-                               </span>
-                            </button>
-                         </div>
-                      </div>
-                      <a class="product-card__links" href="#">
-                      <span class="visually-hidden">
-                      a link that leads to another page, where there will be detailed information about the product        
-                      </span> 
-                      </a>
-                   </article>
-               </li>
-            </ul>
-
-            <ul class="pagination">
-                <li class="pagination__item">
-                   <span class="pagination__link pagination__link--active">1</span>
-                </li>
-                <li class="pagination__item">
-                   <a class="pagination__link" href="#">2</a>
-                </li>
-                <li class="pagination__item">
-                   <a class="pagination__link" href="#">3</a>
-                </li>
-                <li class="pagination__item">
-                   <a class="pagination__link" href="#">Next</a>
-                </li>
-            </ul>
-
-         </section>
-      </div>
-   </div>
-
-   <div class="partners catalog__slider">
-      <div class="container">
-         <ul class="partners-slider">
-            <li class="partners-slider__slide">
-               <a class="partners-slider__link" href="#">
-                  <img class="partners-slider__images" src="images/logo-slide-1.png" alt="peterson" width="82" height="84">
-               </a>
-            </li>
-            <li class="partners-slider__slide">
-               <a class="partners-slider__link" href="#">
-                  <img class="partners-slider__images" src="images/logo-slide-2.png" alt="kmn colsalting" width="151" height="48">
-               </a>
-            </li>
-            <li class="partners-slider__slide">
-               <a class="partners-slider__link" href="#">
-                  <img class="partners-slider__images" src="images/logo-slide-3.png" alt="chainforce" width="150" height="77">
-               </a>
-            </li>
-            <li class="partners-slider__slide">
-               <a class="partners-slider__link" href="#">
-                  <img class="partners-slider__images" src="images/logo-slide-4.png" alt="next" width="167" height="52">
-               </a>  
-            </li>
-            <li class="partners-slider__slide">
-               <a class="partners-slider__link" href="#"> 
-                  <img class="partners-slider__images" src="images/logo-slide-5.png" alt="vintage" width="87" height="66">
-               </a>
-            </li>
-            <li class="partners-slider__slide">
-               <a class="partners-slider__link" href="#">
-                  <img class="partners-slider__images" src="images/logo-slide-4.png" alt="next" width="167" height="52">
-               </a>
-            </li>
-            <li class="partners-slider__slide">
-               <a class="partners-slider__link" href="#"></a>
-                  <img class="partners-slider__images" src="images/logo-slide-3.png" alt="vintage" width="150" height="77">
-               </a>
-            </li>
-         </ul>
-      </div>
-   </div>
-
-</section>
-
+            <div class="partners catalog__slider">
+               <div class="container">
+                  <ul class="partners-slider">
+                     <li class="partners-slider__slide">
+                        <a class="partners-slider__link" href="#">
+                           <img class="partners-slider__images" src="images/logo-slide-1.png" alt="peterson">
+                        </a>
+                     </li>
+                     <li class="partners-slider__slide">
+                        <a class="partners-slider__link" href="#">
+                           <img class="partners-slider__images" src="images/logo-slide-2.png" alt="kmn colsalting">
+                        </a>
+                     </li>
+                     <li class="partners-slider__slide">
+                        <a class="partners-slider__link" href="#">
+                           <img class="partners-slider__images" src="images/logo-slide-3.png" alt="chainforce">
+                        </a>
+                     </li>
+                     <li class="partners-slider__slide">
+                        <a class="partners-slider__link" href="#">
+                           <img class="partners-slider__images" src="images/logo-slide-4.png" alt="next">
+                        </a>  
+                     </li>
+                     <li class="partners-slider__slide">
+                        <a class="partners-slider__link" href="#"> 
+                           <img class="partners-slider__images" src="images/logo-slide-5.png" alt="vintage">
+                        </a>
+                     </li>
+                     <li class="partners-slider__slide">
+                        <a class="partners-slider__link" href="#">
+                           <img class="partners-slider__images" src="images/logo-slide-4.png" alt="next">
+                        </a>
+                     </li>
+                     <li class="partners-slider__slide">
+                        <a class="partners-slider__link" href="#"></a>
+                           <img class="partners-slider__images" src="images/logo-slide-3.png" alt="vintage">
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
     <div class="container">

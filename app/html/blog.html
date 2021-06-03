@@ -24,43 +24,84 @@
                 </ul>
             </div>
         </section>
-        <!-- @include('./components/about/work.html') -->
+
+
+
+        <div class="blog-page">
+            <div class="container">
+                <div class="blog-page__inner">
+                    @include('./components/blog/articles.html')
+
+                    <div class="sidebar">
+                        <span class="visually-hidden">
+                            A block with filters where you can select articles by category
+                        </span>
+                        <aside class="sidebar__block">
+                            <h2 class="sidebar__title">Category</h2>
+                            <div class="sidebar__inner">
+                                <ul class="sidebar__list">
+                                    <li class="sidebar__item">
+                                        <button class="sidebar__btn" type="button">Chair</button>
+                                    </li>
+                                    <li class="sidebar__item">
+                                        <button class="sidebar__btn" type="button">Table</button>
+                                    </li>
+                                    <li class="sidebar__item">
+                                        <button class="sidebar__btn" type="button">Lamp</button>
+                                    </li>
+                                    <li class="sidebar__item">
+                                        <button class="sidebar__btn" type="button">Watch</button>
+                                    </li>
+                                    <li class="sidebar__item">
+                                        <button class="sidebar__btn" type="button">Clock</button>
+                                    </li>
+                                </ul>
+                            </div>   
+                        </aside>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+
         <div class="partners">
             <div class="container">
                 <ul class="partners-slider">
                     <li class="partners-slider__slide">
                         <a class="partners-slider__link" href="#">
-                            <img class="partners-slider__images" src="images/logo-slide-1.png" alt="peterson" width="82" height="84">
+                            <img class="partners-slider__images" src="images/logo-slide-1.png" alt="peterson">
                         </a>
                     </li>
                     <li class="partners-slider__slide">
                         <a class="partners-slider__link" href="#">
-                            <img class="partners-slider__images" src="images/logo-slide-2.png" alt="kmn colsalting" width="151" height="48">
+                            <img class="partners-slider__images" src="images/logo-slide-2.png" alt="kmn colsalting">
                         </a>
                     </li>
                     <li class="partners-slider__slide">
                         <a class="partners-slider__link" href="#">
-                            <img class="partners-slider__images" src="images/logo-slide-3.png" alt="chainforce" width="150" height="77">
+                            <img class="partners-slider__images" src="images/logo-slide-3.png" alt="chainforce">
                         </a>
                     </li>
                     <li class="partners-slider__slide">
                         <a class="partners-slider__link" href="#">
-                            <img class="partners-slider__images" src="images/logo-slide-4.png" alt="next" width="167" height="52">
+                            <img class="partners-slider__images" src="images/logo-slide-4.png" alt="next">
                         </a>  
                     </li>
                     <li class="partners-slider__slide">
                         <a class="partners-slider__link" href="#"> 
-                            <img class="partners-slider__images" src="images/logo-slide-5.png" alt="vintage" width="87" height="66">
+                            <img class="partners-slider__images" src="images/logo-slide-5.png" alt="vintage">
                         </a>
                     </li>
                     <li class="partners-slider__slide">
                         <a class="partners-slider__link" href="#">
-                            <img class="partners-slider__images" src="images/logo-slide-4.png" alt="next" width="167" height="52">
+                            <img class="partners-slider__images" src="images/logo-slide-4.png" alt="next">
                         </a>
                     </li>
                     <li class="partners-slider__slide">
                         <a class="partners-slider__link" href="#"></a>
-                            <img class="partners-slider__images" src="images/logo-slide-3.png" alt="vintage" width="150" height="77">
+                            <img class="partners-slider__images" src="images/logo-slide-3.png" alt="vintage">
                         </a>
                     </li>
                 </ul>
