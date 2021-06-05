@@ -3,6 +3,9 @@
     &__inner {
         display: flex;
         align-items: center;
+        @include max($xl) {
+            justify-content: center;
+        }
         @include max($lg) {
             flex-direction: column;
             position: relative;
@@ -13,13 +16,23 @@
     }
     &__photo {
         max-width: 570px;
+        width: 100%;
+        min-height: 767px;
         margin-right: 49px;
+        @include bg;
+        @include max($xl) {
+            margin-right: 23px;
+            min-height: 476px;
+            max-width: 367px;
+        }
         @include max($lg) {
             margin-right: 0;
+            min-height: 404px;
+            max-width: 570px;
         }
-    }
-    &__images {
-        height: auto;
+        @include max($sm) {
+            display: none;
+        }
     }
     &__content {
         max-width: 553px;

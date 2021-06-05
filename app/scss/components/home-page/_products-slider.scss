@@ -86,36 +86,6 @@
         }
     }
     &__link {
-        font-family: $Rubik;
-        font-weight: $fw500;
-        display: inline-block;
-        background-color: $gray;
-        padding: 20px 100px 20px 29px;
-        font-size: 15px;
-        color: #fff;
-        position: relative;
-        transition: background-color .3s ease-in;
-        outline: transparent;
-        &::after {
-            position: absolute;
-            content: '';
-            width: 22px;
-            height: 9px;
-            background-image: url(../images/icons/arrow.svg);
-            @include bg;
-            right: 17px;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-        &:hover {
-            background-color: $vio;
-        }
-        &:focus {
-            outline: 1px solid $vio;
-        }
-        &:active {
-            background-color: $fff500;
-        }
         @include max($lg) {
             padding: 15px 55px 15px 20px;
         }

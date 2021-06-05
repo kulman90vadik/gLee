@@ -29,7 +29,7 @@
     }
     &__text {
         color: $title;
-        line-height: 1.9;
+        line-height: 2;
         margin-bottom: 32px;
         p {
             @include lineClamp;
@@ -40,36 +40,13 @@
         }
     }
     &__join {
-        display: inline-block;
         border-radius: 5px;
-        border-radius: 5px;
-        background-color: $gray;
-        color: #fff;
-        font-size: 15px;
         font-family: $Poppins;
         font-weight: $fw600;
         padding: 14px 56px 14px 16px;
-        position: relative;
-        transition: background-color .3s ease-in;
-        outline: transparent;
-        &:hover {
-            background-color: $title;
-        }
-        &:focus {
-            outline: 1px solid $title;
-        }
-        &:active {
-            background-color: $orange100;
-        }
         &::after {
-            position: absolute;
-            content: '';
-            top: 50%;
-            right: 23px;
-            transform: translateY(-50%);
             width: 15px;
             height: 11px;
-            @include bg;
             background-image: url(../images/icons/arrow-white.svg);
         }
     }
@@ -144,8 +121,10 @@
     &__socials {
         display: flex;
     }
-    &__item:not(:last-child) {
-        margin-right: 5px;
+    &__item {
+        &:not(:last-child) {
+            margin-right: 5px;
+        }
     }
     &__link {
         display: block;

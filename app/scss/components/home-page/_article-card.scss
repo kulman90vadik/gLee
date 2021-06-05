@@ -11,6 +11,9 @@
         background-color: #fff;
         position: relative;
         height: 100%;
+        @include max($lg) {         
+            background-color: #fff8e8;
+        }
     }
     &__title {
         font-size: 18px;

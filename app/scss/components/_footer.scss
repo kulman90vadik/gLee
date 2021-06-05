@@ -75,6 +75,9 @@
         margin-bottom: 18px;
         padding-top: 18px;
         color: $vio;
+        @include max($lg) {
+            color: #2b6373;
+        }
         @include max($md) {
             padding-top: 5px;
             margin-bottom: 5px;
