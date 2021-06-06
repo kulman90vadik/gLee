@@ -32,39 +32,8 @@
     &__publication {
         padding-top: 20px;
         border-top: 1px solid #e0e0e0;
-        text-transform: uppercase;
-        font-size: 12px;
-        color: $bl100;
-        display: flex;
-        align-items: center;
     }
-    &__author,
-    &__time {
-        position: relative;
-        padding-left: 15px;
-        &::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            @include bg;
-            background-size: contain;
-            width: 12px;
-            height: 10px;
-        }
-    }
-    &__time {
-        margin-right: 25px;
-        &::before {
-            background-image: url(../images/icons/calendar.svg);
-        }
-    }
-    &__author {
-        &::before {
-            background-image: url(../images/icons/date.svg);
-        }
-    }
+    
     &__news {
         text-transform: uppercase;
         position: absolute;

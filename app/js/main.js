@@ -32,6 +32,7 @@ $(function(){
         ]
     })
 
+
     $('.sidebar__title').on('click', function(){
         $(this).next('.sidebar__inner').slideToggle();
         $(this).toggleClass('sidebar__title--active');
