@@ -4,22 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Blog One</title>
     <link rel="shortcut icon" href="images/logo-title.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     @include('./components/header.html')
     <main class="main">
-        <section class="page-list page-list--blog">
+        <section class="page-list page-list--blog-one">
             <div class="container">
-                <h1 class="page-list__title">Blog</h1>
+                <h1 class="page-list__title">Blog Details</h1>
                 <ul class="breamcrams">
                     <li class="breamcrams__item">
                         <a class="breamcrams__link" href="#">Home</a>
                     </li>
                     <li class="breamcrams__item">
-                        <span class="breamcrams__link">Blog</span>
+                        <a class="breamcrams__link" href="#">Blog</a>
+                    </li>
+                    <li class="breamcrams__item">
+                        <span class="breamcrams__link">Blog Details</span>
                     </li>
                 </ul>
             </div>
@@ -28,7 +31,61 @@
         <div class="blog-page">
             <div class="container">
                 <div class="blog-page__inner">
-                    @include('./components/blog/articles.html')
+                    <section class="articles">
+
+                        <article class="article article--one">
+                            <div class="article__photo">
+                                <img class="article__img" src="images/article-blog-1.jpg" width="830" height="501" alt="pictures of interior">
+                                <div class="publication article__publication">
+                                    <time class="publication__time article__time" datetime="28.01.2020">28 January, 2020</time>
+                                    <span class="publication__author article__author">
+                                        By admin
+                                    </span>
+                                </div>
+                            </div>
+                            <h2 class="article__title">Fonsectetur adipisicing  eiusmod</h2>
+                            <span class="article__subtitle">
+                                Sdipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                            </span>
+                            <p>
+                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                            </p>
+                            <blockquote>
+                                <p>
+                                    Sdipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                </p>
+                                <site>
+                                    Wiusmod tempor 
+                                </site>
+                            </blockquote>
+                            <div class="article__content">
+                                <div class="article__images" style="background-image: url(images/article-blog-4.jpg);">
+
+                                </div>
+                                <div class="article__info">
+                                    <span class="article__subtitle">
+                                        Riusmod tempor incididunt 
+                                    </span>
+                                    <p>
+                                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="article__info article__info--lang">
+                                <span class="article__subtitle">
+                                    Kajtsal jervcm eoaspckred
+                                </span>
+                                <p>
+                                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                                </p>
+                            </div>
+
+                            @include('./components/blog/article-author.html')
+                            @include('./components/blog/comments.html')
+
+                        </article>
+                        
+                    </section>    
 
                     <div class="sidebar blog-page__sidebar">
                         <span class="visually-hidden">

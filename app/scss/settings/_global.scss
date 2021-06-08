@@ -86,3 +86,77 @@ body {
     border-radius: 50%;
     background-color: $fff100;
 }
+
+.link {
+    font-family: $Rubik;
+    font-weight: $fw500;
+    display: inline-block;
+    background-color: $gray;
+    padding: 20px 100px 20px 29px;
+    font-size: 15px;
+    color: #fff;
+    position: relative;
+    transition: background-color .3s ease-in;
+    outline: transparent;
+    &::after {
+        position: absolute;
+        content: '';
+        width: 22px;
+        height: 9px;
+        background-image: url(../images/icons/arrow.svg);
+        @include bg;
+        right: 17px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &:hover {
+        background-color: $vio;
+    }
+    &:focus {
+        outline: 1px solid $vio;
+    }
+    &:active {
+        background-color: $fff500;
+    }
+}
+
+.publication {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: $bl100;
+    display: flex;
+    align-items: center;
+    &__author,
+    &__time {
+        position: relative;
+        padding-left: 15px;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            @include bg;
+            background-size: contain;
+            width: 12px;
+            height: 10px;
+        }
+    }
+    &__time {
+        margin-right: 25px;
+        &::before {
+            background-image: url(../images/icons/calendar.svg);
+        }
+    }
+    &__author {
+        &::before {
+            background-image: url(../images/icons/date.svg);
+        }
+    }
+    &__time--recent-post {
+        color: #9a9a9a;
+        &::before {
+            background-image: url(../images/icons/calendar-gray.svg);
+        }
+    }
+}
