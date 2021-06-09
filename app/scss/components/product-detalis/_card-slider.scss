@@ -1,0 +1,87 @@
+.card-slider {
+    margin-bottom: 116px;
+    &__title {
+        text-align: left;
+        margin-bottom: 65px;
+        color: $title;
+    }
+    &__list {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 1200px;
+        margin: 0 auto;
+        @include max($xl) {
+            width: 930px;
+        }
+        @include max($lg) {
+            width: 717px;
+        }
+    }
+    &__item {
+        display: block !important;
+        height: 385px;
+        width: 270px !important;
+        // margin: 0 auto;
+        article {
+            box-shadow: none;
+            border: 1px solid #ececec;
+            & .product-card__photo {
+                margin-bottom: auto;
+            }
+        }
+        @include max($xl) {
+            margin: 0 auto;
+        }
+    }
+    & .slick-arrow {
+        position: absolute;
+        top: -106px;
+        @include bg;
+        background-size: auto;
+        border-radius: 5px;
+        border: 2px solid rgba(163, 187, 200, 0.2);
+        width: 46px;
+        height: 46px;
+        z-index: 4;
+        padding: 0;
+        background-color: transparent;
+        outline: transparent;
+        cursor: pointer;
+        transition: background-color .3s ease-in, border-color .3s ease-in;
+        &:hover {
+            background-color:rgba(163, 187, 200, 0.2);
+        }
+        &:focus {
+            background-color: $orange;
+            border-color: $orange;
+        }
+        &:active {
+            background-color: $orange100;
+            border-color: $orange100;
+        }
+        &.slick-disabled {
+            border-color: $gray;
+        }
+    }
+    & .slick-prev {
+        right: 90px;
+        background-image: url(../images/icons/arrow-slider-left.svg);
+        @include max($xl) {
+            right: 80px;
+        }
+        @include max($lg) {
+            right: 105px;
+        }
+    }
+    & .slick-next {
+        background-image: url(../images/icons/arrow-slider-right.svg);
+        right: 28px;
+        @include max($xl) {
+            right: 18px;
+        }
+        @include max($lg) {
+            right: 42px;
+        }
+    }
+}

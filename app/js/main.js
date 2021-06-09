@@ -1,4 +1,65 @@
 $(function(){
+
+
+    $('.tabs__text').fadeOut();
+    $('.tabs__text.tabs__text--active').fadeIn();
+
+    $('.tabs__link').on('click', function(e){
+        e.preventDefault();
+        $('.tabs__link').removeClass('tabs__link--active');
+        $(this).addClass('tabs__link--active');
+
+        var linkBtn = $(this).attr('data-link');
+        $('.tabs__text').fadeOut(900);    
+        $(linkBtn).fadeIn(900); 
+
+    });
+
+
+    $('.card-detalis__number').styler();
+    
+
+    $('.card-detalis__small-slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: false,
+        focusOnSelect: true,
+        vertical: true,
+        draggable: false,
+        asNavFor: '.card-detalis__big-slider'
+    });
+
+    $('.card-detalis__big-slider').slick({
+        arrows: false,
+        fade: true,
+        draggable: false,
+        asNavFor: '.card-detalis__small-slider'
+    });
+
+
+    $('.card-slider__list').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        infinite: false,
+        prevArrow: '<button type="button" class="slick-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next"></button>',
+        responsive: [
+            {
+                breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 990,
+                    settings: {
+                        slidesToShow: 2
+                }
+            }
+        ]
+    });
+
+
     $('.products-slider').slick({
         dots: true,
         arrows: false
@@ -87,6 +148,7 @@ $(function(){
         readOnly: true,
         spacing: "7px"
     });
+
 
     var containerEl1 = document.querySelector('[data-ref="container-1"]');
     var containerEl2 = document.querySelector('[data-ref="container-2"]');

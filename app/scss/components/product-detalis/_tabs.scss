@@ -1,0 +1,49 @@
+.tabs {
+    &__list {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    &__item {
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+    &__link {
+        background-color: $fff100;
+        font-size: 18px;
+        color: $title;
+        font-weight: $fw500;
+        min-width: 241px;
+        border-radius: 5px;
+        display: inline-block;
+        text-align: center;
+        padding: 13px 0;
+        outline: transparent;
+        transition: background-color .3s ease-in;
+        &:hover {
+            background-color: $gray;
+        }
+        &:focus {
+            background-color: $text;
+        }
+        &:active {
+            background-color: $orange;
+        }
+    }
+    &__link--active {
+        color: #fff;
+        background-color: $gray;
+    }
+    &__inner {
+        min-height: 200px;
+        position: relative;
+    }
+    &__text {
+        line-height: 1.8;
+        color: $title;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
