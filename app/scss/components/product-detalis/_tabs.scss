@@ -2,11 +2,20 @@
     &__list {
         display: flex;
         justify-content: center;
-        margin-bottom: 30px;
+        margin-bottom: 37px;
+        @include max($sm) {
+            flex-direction: column;
+            margin-bottom: 15px;
+            align-items: center;
+        }
     }
     &__item {
         &:not(:last-child) {
             margin-right: 10px;
+            @include max($sm) {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
         }
     }
     &__link {
@@ -30,6 +39,13 @@
         &:active {
             background-color: $orange;
         }
+        @include max($lg) {
+            min-width: 0;
+            padding: 13px 10px;
+        }
+        @include max($sm) {
+            min-width: 215px;
+        }
     }
     &__link--active {
         color: #fff;
@@ -38,6 +54,9 @@
     &__inner {
         min-height: 200px;
         position: relative;
+        @include max($lg) {
+            min-height: 150px;
+        }
     }
     &__text {
         line-height: 1.8;
@@ -45,5 +64,9 @@
         position: absolute;
         left: 0;
         top: 0;
+        p {
+            @include lineClamp;
+            -webkit-line-clamp: 5;
+        }
     }
 }

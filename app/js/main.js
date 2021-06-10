@@ -27,13 +27,31 @@ $(function(){
         vertical: true,
         draggable: false,
         asNavFor: '.card-detalis__big-slider'
+        // responsive: [
+        //     {
+        //         breakpoint: 540,
+        //             settings: {
+        //                 vertical: false
+        //         }
+        //     }
+        // ]
     });
 
     $('.card-detalis__big-slider').slick({
         arrows: false,
         fade: true,
         draggable: false,
-        asNavFor: '.card-detalis__small-slider'
+        asNavFor: '.card-detalis__small-slider',
+        responsive: [
+            {
+                breakpoint: 540,
+                    settings: {
+                        asNavFor: false,
+                        dots: true,
+                        fade: false
+                }
+            }
+        ]
     });
 
 
@@ -54,6 +72,12 @@ $(function(){
                 breakpoint: 990,
                     settings: {
                         slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 720,
+                    settings: {
+                        slidesToShow: 1
                 }
             }
         ]
@@ -148,6 +172,9 @@ $(function(){
         readOnly: true,
         spacing: "7px"
     });
+
+
+
 
 
     var containerEl1 = document.querySelector('[data-ref="container-1"]');

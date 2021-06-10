@@ -1,9 +1,16 @@
 .card-slider {
-    margin-bottom: 116px;
+    margin-bottom: 106px;
     &__title {
         text-align: left;
         margin-bottom: 65px;
         color: $title;
+        @include max($lg) {
+            margin-bottom: 35px;
+        }
+        @include max($sm) {
+            font-size: 24px;
+        }
+        
     }
     &__list {
         display: flex !important;
@@ -15,14 +22,16 @@
             width: 930px;
         }
         @include max($lg) {
-            width: 717px;
+            width: 678px;
+        }
+        @include max($md) {
+            width: 270px;
         }
     }
     &__item {
         display: block !important;
         height: 385px;
         width: 270px !important;
-        // margin: 0 auto;
         article {
             box-shadow: none;
             border: 1px solid #ececec;
@@ -33,10 +42,14 @@
         @include max($xl) {
             margin: 0 auto;
         }
+        @include max($md) {
+            margin: 0;
+        }
     }
+    
     & .slick-arrow {
-        position: absolute;
         top: -106px;
+        position: absolute;
         @include bg;
         background-size: auto;
         border-radius: 5px;
@@ -63,6 +76,17 @@
         &.slick-disabled {
             border-color: $gray;
         }
+        @include max($lg) {
+            top: -80px;
+        }
+        @include max($md) {
+            width: 36px;
+            height: 36px;
+            top: -73px;
+        }
+        @include max($s) {
+            top: 10px;
+        }
     }
     & .slick-prev {
         right: 90px;
@@ -71,7 +95,13 @@
             right: 80px;
         }
         @include max($lg) {
-            right: 105px;
+            right: 95px;
+        }
+        @include max($md) {
+            right: 42px;
+        }
+        @include max($s) {
+            right: 52px;
         }
     }
     & .slick-next {
@@ -81,7 +111,16 @@
             right: 18px;
         }
         @include max($lg) {
-            right: 42px;
+            right: 33px;
         }
+        @include max($md) {
+            right: 0;
+        }
+        @include max($s) {
+            right: 10px;
+        }
+    }
+    @include max($lg) {
+        margin-bottom: 50px;
     }
 }

@@ -1,0 +1,59 @@
+.terms {
+    margin-bottom: 100px;
+    &__title {
+        color: $title;
+        font-size: 24px;
+        font-weight: $fw500;
+        margin-bottom: 24px;
+        @include max($sm) {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+    }
+    &__list {
+        margin-bottom: 60px;
+        color: $title;
+        @include max($lg) {
+            margin-bottom: 30px;
+        }
+        @include max($sm) {
+            margin-bottom: 15px;
+        }
+    }
+    &__item {
+        line-height: 1.9;
+        padding-left: 41px;
+        position: relative;
+        &:not(:last-child) {
+            margin-bottom: 20px;
+            @include max($sm) {
+                margin-bottom: 10px;
+            }
+        }
+        &:nth-child(n + 1)::before {
+            position: absolute;
+            left: 0;
+            counter-increment: m-counter;
+            content: "0" counter(m-counter) ".";
+        }
+        @include max($s) {
+            padding-left: 30px;
+        }
+    }
+    &__text {
+        margin-bottom: 60px;
+        line-height: 1.8;
+        @include max($lg) {
+            margin-bottom: 30px;
+        }
+        @include max($sm) {
+            margin-bottom: 15px;
+        }
+    }
+    @include max($lg) {
+        margin-bottom: 30px;
+    }
+    @include max($sm) {
+        margin-bottom: 15px;
+    }
+}

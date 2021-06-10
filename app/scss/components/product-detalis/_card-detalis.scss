@@ -4,15 +4,38 @@
         margin-bottom: 95px;
         display: flex;
         align-items: center;
+        @include max($lg) {
+            flex-direction: column;
+            align-items: start;
+        }
+        @include max($lg) {
+            margin-bottom: 30px;
+        }
     }
     &__inner {
         display: flex;
         margin-right: 69px;
+        @include max($xl) {
+            margin-right: 25px;
+        }
+        @include max($lg) {
+            margin-right: 0;
+            justify-content: center;
+        }
+        @include max($sm) {
+            margin: 0 auto;
+        }
     }
     &__small-slider {
         width: 135px;
         height: 530px;
         margin-right: 25px;
+        @include max($md) {
+            margin-right: 15px;
+        }
+        @include max($sm) {
+            display: none;
+        }
     }
     &__small-item {
         height: 159px;
@@ -35,8 +58,54 @@
     }
     &__big-slider,
     &__big-item {
-        width: 383px !important;
+        width: 388px !important;
         height: 532px;
+        @include max($md) {
+            width: 340px !important;
+        }
+        @include max($sm) {
+            width: 360px !important;
+            height: 350px;
+        }
+        @include max($s) {
+            width: 265px !important;
+            height: 320px;
+        }
+    }
+    &__big-slider {
+        & .slick-dots {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            li {
+                &.slick-active button {
+                    background-color: $gray;
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+                &:not(:last-child) {
+                    margin-right: 10px;
+                }
+                button {
+                    cursor: pointer;
+                    font-size: 0;
+                    padding: 0;
+                    border: none;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background-color: $orange;
+                    transition: opacity .3s;
+                    &:hover {
+                        opacity: .5;
+                    }
+                }
+            }
+        }
+
     }
     &__small-item,
     &__big-item {
@@ -45,6 +114,9 @@
     }
     &__big {
         margin: auto;
+        @include max($sm) {
+            margin: 0 auto;
+        }
     }
 
     &__product-card {
@@ -56,9 +128,15 @@
             color: #333;
             font-family: $Rubik;
             font-weight: $fw400;
+            @include max($sm) {
+                font-size: 24px;
+            }
         }
         & .sidebar__star {
             margin-bottom: 30px;
+            @include max($lg) {
+                margin-bottom: 5px;
+            }
 
         }
         & .product-card__price--line {
@@ -66,6 +144,9 @@
             font-size: 30px;
             margin-bottom: 25px;
             display: block;
+            @include max($lg) {
+                margin-bottom: 0;
+            }
         }
         & .product-card__text {
             line-height: 1.8;
@@ -74,6 +155,12 @@
                 @include lineClamp;
                 -webkit-line-clamp: 3;
             }
+            @include max($lg) {
+                margin-bottom: 10px;
+            }
+        }
+        @include max($lg) {
+            max-width: 100%;
         }
     }
     &__number {
@@ -86,6 +173,9 @@
         padding: 0 50px;
         border: 1px solid $gray;
         margin-right: 15px;
+        @include max($sm) {
+            margin-bottom: 14px;
+        }
     }    
     & .jq-number.focused > .jq-number__field {
         border-top: none;
@@ -170,6 +260,13 @@
         &:active {
             background-color: $text;
         }
+        @include max($lg) {
+            margin-bottom: 15px;
+        }
+        @include max($sm) {
+            display: block;
+            padding: 0 29px;
+        }
     }
     &__item {
         display: flex;
@@ -193,6 +290,9 @@
         &:active {
             color: $text;
         }
+    }
+    @include max($lg) {
+        margin-bottom: 30px;
     }
 }
 

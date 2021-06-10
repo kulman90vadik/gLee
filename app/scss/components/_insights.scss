@@ -4,6 +4,16 @@
         justify-content: space-between;
         align-items: center;
         margin-bottom: 43px;
+        &--terms,
+        &--contact {
+            & .insights__title,
+            & .insights__view {
+                color: $global;
+            }
+            & .insights__icon {
+                fill: $global;
+            }
+        }
         @include max($lg) {
             margin-bottom: 20px;
         }
