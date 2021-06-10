@@ -1,0 +1,125 @@
+.address {
+    margin-bottom: 121px;
+    &__subtitle {
+        text-align: center;
+        color: $gray;
+        line-height: 1.2;
+        font-weight: $fw700;
+        font-family: $Poppins;
+        margin-bottom: 5px;
+    }
+    &__title {
+        color: $global;
+        margin-bottom: 65px;
+        @include max($lg) {
+            margin-bottom: 25px;
+        }
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        @include max($lg) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__items {
+        background-color: #fbfbfb;
+        border: 2px solid transparent;
+        max-width: 373px;
+        width: 100%;
+        transition: border-color .3s ease-out;
+        &:hover {
+            border-color: $gray;
+        }
+        &:hover .address__icon{
+            background-color: $gray;
+        }
+        &:hover .address__icons{
+            fill: #fff;
+        }
+        @include max($xl) {
+            max-width: 353px;
+        }
+        &:not(:last-child) {
+            @include max($xl) {
+                margin-right: 10px;
+            }
+            @include max($lg) {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+        @include max($lg) {
+            max-width: 100%;
+        }
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 69px 0 75px;
+        @include max($lg) {
+            padding: 30px 0;
+        }
+    }
+    &__icon {
+        display: flex;
+        border-radius: 20px;
+        box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+        background-color: #fff;
+        width: 80px;
+        height: 80px;
+        margin-bottom: 61px;
+        transition: background-color .3s ease-out;
+        @include max($lg) {
+            margin-bottom: 30px;
+        }
+    }
+    &__icons {
+        margin: auto;
+        fill: $gray;
+        height: 44px;
+        width: 37px;
+        transition: fill .3s ease-out;
+    }
+    &__map {
+        width: 31px;
+    }
+    &__letter {
+        height: 34px;
+    }
+    &__heading {
+        font-size: 20px;
+        font-weight: $fw700;
+        font-family: $DmSans;
+        color: #222;
+        line-height: 1.1;
+        margin-bottom: 15px;
+    }
+    &__connection {
+        line-height: 1.8;
+        color: #565872;
+        &--text {
+            width: 165px;
+            text-align: center;
+        }
+    }
+    &__link {
+        outline: transparent;
+        transition: color .2s ease-in;
+        &:hover {
+            color: #000;
+        }
+        &:focus {
+            color: $orange100;
+        }
+        &:active {
+            color: $vio;
+        }
+    }
+    @include max($lg) {
+        margin-bottom: 50px;
+    }
+}

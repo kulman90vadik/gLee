@@ -1,0 +1,126 @@
+.card-slider {
+    margin-bottom: 106px;
+    &__title {
+        text-align: left;
+        margin-bottom: 65px;
+        color: $title;
+        @include max($lg) {
+            margin-bottom: 35px;
+        }
+        @include max($sm) {
+            font-size: 24px;
+        }
+        
+    }
+    &__list {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 1200px;
+        margin: 0 auto;
+        @include max($xl) {
+            width: 930px;
+        }
+        @include max($lg) {
+            width: 678px;
+        }
+        @include max($md) {
+            width: 270px;
+        }
+    }
+    &__item {
+        display: block !important;
+        height: 385px;
+        width: 270px !important;
+        article {
+            box-shadow: none;
+            border: 1px solid #ececec;
+            & .product-card__photo {
+                margin-bottom: auto;
+            }
+        }
+        @include max($xl) {
+            margin: 0 auto;
+        }
+        @include max($md) {
+            margin: 0;
+        }
+    }
+    
+    & .slick-arrow {
+        top: -106px;
+        position: absolute;
+        @include bg;
+        background-size: auto;
+        border-radius: 5px;
+        border: 2px solid rgba(163, 187, 200, 0.2);
+        width: 46px;
+        height: 46px;
+        z-index: 4;
+        padding: 0;
+        background-color: transparent;
+        outline: transparent;
+        cursor: pointer;
+        transition: background-color .3s ease-in, border-color .3s ease-in;
+        &:hover {
+            background-color:rgba(163, 187, 200, 0.2);
+        }
+        &:focus {
+            background-color: $orange;
+            border-color: $orange;
+        }
+        &:active {
+            background-color: $orange100;
+            border-color: $orange100;
+        }
+        &.slick-disabled {
+            border-color: $gray;
+        }
+        @include max($lg) {
+            top: -80px;
+        }
+        @include max($md) {
+            width: 36px;
+            height: 36px;
+            top: -73px;
+        }
+        @include max($s) {
+            top: 10px;
+        }
+    }
+    & .slick-prev {
+        right: 90px;
+        background-image: url(../images/icons/arrow-slider-left.svg);
+        @include max($xl) {
+            right: 80px;
+        }
+        @include max($lg) {
+            right: 95px;
+        }
+        @include max($md) {
+            right: 42px;
+        }
+        @include max($s) {
+            right: 52px;
+        }
+    }
+    & .slick-next {
+        background-image: url(../images/icons/arrow-slider-right.svg);
+        right: 28px;
+        @include max($xl) {
+            right: 18px;
+        }
+        @include max($lg) {
+            right: 33px;
+        }
+        @include max($md) {
+            right: 0;
+        }
+        @include max($s) {
+            right: 10px;
+        }
+    }
+    @include max($lg) {
+        margin-bottom: 50px;
+    }
+}

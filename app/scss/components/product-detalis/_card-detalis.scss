@@ -1,0 +1,299 @@
+.card-detalis {
+    margin-bottom: 100px;
+    &__wrapper {
+        margin-bottom: 95px;
+        display: flex;
+        align-items: center;
+        @include max($lg) {
+            flex-direction: column;
+            align-items: start;
+        }
+        @include max($lg) {
+            margin-bottom: 30px;
+        }
+    }
+    &__inner {
+        display: flex;
+        margin-right: 69px;
+        @include max($xl) {
+            margin-right: 25px;
+        }
+        @include max($lg) {
+            margin-right: 0;
+            justify-content: center;
+        }
+        @include max($sm) {
+            margin: 0 auto;
+        }
+    }
+    &__small-slider {
+        width: 135px;
+        height: 530px;
+        margin-right: 25px;
+        @include max($md) {
+            margin-right: 15px;
+        }
+        @include max($sm) {
+            display: none;
+        }
+    }
+    &__small-item {
+        height: 159px;
+        width: 134px !important;
+        margin-bottom: 25px;
+        cursor: pointer;
+        transition: border-color .3s ease-in;
+        &:hover {
+            border-color: $global;
+        }
+    }
+    &__small {
+        margin: 0 auto;
+    }
+    &__small--bottom {
+        margin: auto auto 0;
+    }
+    &__small-item--last {
+        margin-bottom: 0;
+    }
+    &__big-slider,
+    &__big-item {
+        width: 388px !important;
+        height: 532px;
+        @include max($md) {
+            width: 340px !important;
+        }
+        @include max($sm) {
+            width: 360px !important;
+            height: 350px;
+        }
+        @include max($s) {
+            width: 265px !important;
+            height: 320px;
+        }
+    }
+    &__big-slider {
+        & .slick-dots {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            li {
+                &.slick-active button {
+                    background-color: $gray;
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+                &:not(:last-child) {
+                    margin-right: 10px;
+                }
+                button {
+                    cursor: pointer;
+                    font-size: 0;
+                    padding: 0;
+                    border: none;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background-color: $orange;
+                    transition: opacity .3s;
+                    &:hover {
+                        opacity: .5;
+                    }
+                }
+            }
+        }
+
+    }
+    &__small-item,
+    &__big-item {
+        border: 2px solid #f2f2f2;
+        display: flex !important;
+    }
+    &__big {
+        margin: auto;
+        @include max($sm) {
+            margin: 0 auto;
+        }
+    }
+
+    &__product-card {
+        max-width: 535px;
+        padding: 0;
+        box-shadow: none;
+        & .product-card__name {
+            font-size: 40px;
+            color: #333;
+            font-family: $Rubik;
+            font-weight: $fw400;
+            @include max($sm) {
+                font-size: 24px;
+            }
+        }
+        & .sidebar__star {
+            margin-bottom: 30px;
+            @include max($lg) {
+                margin-bottom: 5px;
+            }
+
+        }
+        & .product-card__price--line {
+            color: #333;
+            font-size: 30px;
+            margin-bottom: 25px;
+            display: block;
+            @include max($lg) {
+                margin-bottom: 0;
+            }
+        }
+        & .product-card__text {
+            line-height: 1.8;
+            margin-bottom: 30px;
+            P {
+                @include lineClamp;
+                -webkit-line-clamp: 3;
+            }
+            @include max($lg) {
+                margin-bottom: 10px;
+            }
+        }
+        @include max($lg) {
+            max-width: 100%;
+        }
+    }
+    &__number {
+        outline: transparent;
+        &:focus {
+            outline: 1px solid $title;
+        }
+    }
+    & .jq-number {
+        padding: 0 50px;
+        border: 1px solid $gray;
+        margin-right: 15px;
+        @include max($sm) {
+            margin-bottom: 14px;
+        }
+    }    
+    & .jq-number.focused > .jq-number__field {
+        border-top: none;
+        border-bottom: none;
+    }
+    & .jq-number__field {
+        width: 50px;
+        border: 1px solid $gray;
+        border-top: none;
+        border-bottom: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    & .jq-number__field input {
+        width: 50px;
+        height: 51px;
+        padding: 0;
+        border: none;
+        outline: transparent;
+        background: none;
+        font-size: 15px;
+        text-align: center;
+        color: #333;
+        font-family: $Rubik;
+    }
+    & .jq-number__spin {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: auto;
+        width: 20px;
+        height: 20px;
+        border: none;
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+        background: transparent;
+        text-shadow: none;
+        cursor: pointer;
+        &::after {
+            border: none;
+            color: #333;
+        }
+    }
+    & .jq-number__spin.minus {
+        left: 15px;
+        &::after {
+            font-size: 23px;
+            content: '-';
+            left: 6px;
+            top: -6px;
+        }
+    }
+    & .jq-number__spin.plus {
+        right: 15px;
+        &::after {
+            left: 4px;
+            top: -5px;
+            content: '+';
+            font-size: 22px;
+        }
+    }
+    &__btn {
+        height: 54px;
+        text-transform: uppercase;
+        font-size: 15px;
+        border: none;
+        color: #fff;
+        background-color: $gray;
+        padding: 0 50px;
+        outline: transparent;
+        border-radius: 5px;
+        margin-bottom: 55px;
+        transition: background-color .3s  ease-in;
+        cursor: pointer;
+        &:hover {
+            background-color: $suptitle;
+        }
+        &:focus {
+            background-color: $global;
+        }
+        &:active {
+            background-color: $text;
+        }
+        @include max($lg) {
+            margin-bottom: 15px;
+        }
+        @include max($sm) {
+            display: block;
+            padding: 0 29px;
+        }
+    }
+    &__item {
+        display: flex;
+        color: $title;
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+    &__heading {
+        margin-right: 4px;
+    }
+    &__link {
+        outline: transparent;
+        transition: color .3s ease-in;
+        &:hover {
+            color: $orange100;
+        }
+        &:focus {
+            color: $global;
+        }
+        &:active {
+            color: $text;
+        }
+    }
+    @include max($lg) {
+        margin-bottom: 30px;
+    }
+}
+
+
