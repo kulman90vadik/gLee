@@ -31,7 +31,6 @@ $(function(){
         infinite: false,
         prevArrow: $('.card-slider__prev'),
         nextArrow: $('.card-slider__next'),
-        // arrows: false,
         responsive: [
             {
                 breakpoint: 1200,
@@ -144,20 +143,48 @@ $(function(){
         spacing: "7px"
     });
 
-
-
-
-
     var containerEl1 = document.querySelector('[data-ref="container-1"]');
     var containerEl2 = document.querySelector('[data-ref="container-2"]');
-
     var config = {
         controls: {
             scope: 'local'
+        },
+        animation: {
+            effects: 'fade translateZ(-100px)'
         }
     };
 
     var mixer1 = mixitup(containerEl1, config);
     var mixer2 = mixitup(containerEl2, config);
 
-})
+    // var mixer1;
+    // var mixer2;
+    // if (containerEl1) {
+    //     mixer1 = mixitup(containerEl1, {
+    //         selectors: {
+    //             control: '.container-1'
+    //         },
+    //         load: {
+    //             filter: 'all'
+    //         },
+    //         controls: {
+    //             scope: 'local'
+    //         }
+    //     });
+    // }
+    // if (containerEl2) {
+    //     mixer2 = mixitup(containerEl2, {
+    //         selectors: {
+    //             control: '.container-2'
+    //         },
+    //         load: {
+    //             filter: 'all'
+    //         },
+    //         controls: {
+    //             scope: 'local'
+    //         }
+    //     });
+    // }
+
+    
+});
