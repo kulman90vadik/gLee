@@ -28,15 +28,23 @@
         border: 2px solid transparent;
         max-width: 373px;
         width: 100%;
-        transition: border-color .3s ease-out;
+        transition: border-color 0.3s ease-out;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 69px 0 75px;
+        @include max($lg) {
+            padding: 30px 0;
+        }
         &:hover {
             border-color: $gray;
-        }
-        &:hover .address__icon{
-            background-color: $gray;
-        }
-        &:hover .address__icons{
-            fill: #fff;
+            .address__icon{
+                background-color: $gray;
+            }
+            .address__icons{
+                fill: #fff;
+            }
         }
         @include max($xl) {
             max-width: 353px;
@@ -54,16 +62,6 @@
             max-width: 100%;
         }
     }
-    &__item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 69px 0 75px;
-        @include max($lg) {
-            padding: 30px 0;
-        }
-    }
     &__icon {
         display: flex;
         border-radius: 20px;
@@ -72,7 +70,7 @@
         width: 80px;
         height: 80px;
         margin-bottom: 61px;
-        transition: background-color .3s ease-out;
+        transition: background-color 0.3s ease-out;
         @include max($lg) {
             margin-bottom: 30px;
         }
@@ -82,7 +80,7 @@
         fill: $gray;
         height: 44px;
         width: 37px;
-        transition: fill .3s ease-out;
+        transition: fill 0.3s ease-out;
     }
     &__map {
         width: 31px;
@@ -98,17 +96,15 @@
         line-height: 1.1;
         margin-bottom: 15px;
     }
-    &__connection {
+    &__link {
+        outline: transparent;
+        transition: color 0.2s ease-in;
         line-height: 1.8;
         color: #565872;
         &--text {
             width: 165px;
             text-align: center;
         }
-    }
-    &__link {
-        outline: transparent;
-        transition: color .2s ease-in;
         &:hover {
             color: #000;
         }

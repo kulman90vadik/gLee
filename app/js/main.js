@@ -19,48 +19,19 @@ $(function(){
     $('.card-detalis__number').styler();
     
 
-    $('.card-detalis__small-slider').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        arrows: false,
-        focusOnSelect: true,
-        vertical: true,
-        draggable: false,
-        asNavFor: '.card-detalis__big-slider'
-        // responsive: [
-        //     {
-        //         breakpoint: 540,
-        //             settings: {
-        //                 vertical: false
-        //         }
-        //     }
-        // ]
+    $('.card-detalis__small-item').on('click', function(){
+        var img = $(this).children('img').attr('src');
+        console.log(img);
+        $('.card-detalis__big').attr('src', img);
     });
-
-    $('.card-detalis__big-slider').slick({
-        arrows: false,
-        fade: true,
-        draggable: false,
-        asNavFor: '.card-detalis__small-slider',
-        responsive: [
-            {
-                breakpoint: 540,
-                    settings: {
-                        asNavFor: false,
-                        dots: true,
-                        fade: false
-                }
-            }
-        ]
-    });
-
 
     $('.card-slider__list').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
         infinite: false,
-        prevArrow: '<button type="button" class="slick-prev"></button>',
-        nextArrow: '<button type="button" class="slick-next"></button>',
+        prevArrow: $('.card-slider__prev'),
+        nextArrow: $('.card-slider__next'),
+        // arrows: false,
         responsive: [
             {
                 breakpoint: 1200,

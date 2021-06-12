@@ -81,51 +81,44 @@
         </nav>
     </div>
 </header>
+    <section class="page-list page-list--product-detalis">
+        <div class="container">
+            <h1 class="page-list__title">Product Detalis</h1>
+            <ul class="breamcrams">
+                <li class="breamcrams__item">
+                    <a class="breamcrams__link" href="#">Home</a>
+                </li>
+                <li class="breamcrams__item">
+                    <span class="breamcrams__link">Product Detalis</span>
+                </li>
+            </ul>
+        </div>
+    </section>
     <main class="main">
-        <section class="page-list page-list--product-detalis">
-            <div class="container">
-                <h1 class="page-list__title">Product Detalis</h1>
-                <ul class="breamcrams">
-                    <li class="breamcrams__item">
-                        <a class="breamcrams__link" href="#">Home</a>
-                    </li>
-                    <li class="breamcrams__item">
-                        <span class="breamcrams__link">Product Detalis</span>
-                    </li>
-                </ul>
-            </div>
-        </section>
 
         <section class="card-detalis">
-    <h2></h2>
     <div class="container">
         <div class="card-detalis__wrapper">
             <div class="card-detalis__inner">
                 <ul class="card-detalis__small-slider">
                     <li class="card-detalis__small-item">
-                        <img class="card-detalis__small" src="images/small-1.png" alt="images lamp" width="107" height="147">
+                        <img class="card-detalis__small" data-img="images/small-1.png" src="images/small-1.png" alt="images lamp" >
                     </li>
                     <li class="card-detalis__small-item">
-                        <img class="card-detalis__small card-detalis__small--bottom" src="images/small-2.png" alt="images lamp" width="105" height="119">
+                        <img class="card-detalis__small card-detalis__small--bottom" src="images/small-2.png" alt="images lamp" >
                     </li>
                     <li class="card-detalis__small-item card-detalis__small-item--last">
-                        <img class="card-detalis__small" src="images/small-3.png" alt="images lamp" width="77" height="155">
+                        <img class="card-detalis__small" src="images/small-3.png" alt="images lamp" >
                     </li>
                 </ul>
                 <ul class="card-detalis__big-slider">
                     <li class="card-detalis__big-item">
-                        <img class="card-detalis__big" src="images/card-1.png" alt="images lamp">
-                    </li>
-                    <li class="card-detalis__big-item">
-                        <img class="card-detalis__big" src="images/card-1.png" alt="images lamp">
-                    </li>
-                    <li class="card-detalis__big-item">
-                        <img class="card-detalis__big" src="images/card-1.png" alt="images lamp">
+                        <img class="card-detalis__big card-detalis__big--lamp" src="images/card-1.png" width="233" height="405" alt="images">
                     </li>
                 </ul>
             </div>
 
-            <article class="product-card card-detalis__product-card">
+            <article class="product-card card-detalis__product">
                 <div class="product-card__content">
                     <h3 class="product-card__name">Pendant lamp</h3>
                     <div class="sidebar__star" data-rateyo-rating="4"></div>
@@ -197,10 +190,23 @@
         </div>
     </div>
 </div>
-
         <section class="card-slider">
     <div class="container">
-        <h2 class="title card-slider__title">Related products</h2>
+        <div class="card-slider__holder">
+            <h2 class="title card-slider__title">Related products</h2>
+            <div class="card-slider__buttons">
+                <button class="card-slider__arrows card-slider__prev" type="button">
+                    <span class="visually-hidden">
+                        the button switches sliders with product cards. This button scrolls backward through slides.
+                    </span>
+                </button>
+                <button class="card-slider__arrows card-slider__next" type="button">
+                    <span class="visually-hidden">
+                        the button switches sliders with product cards. This button scrolls forward slides
+                    </span>
+                </button>
+            </div>
+        </div>
         <div class="card-slider__list">
             <div class="card-slider__item">
                     <article class="product-card">
@@ -580,10 +586,6 @@
         </div>
     </div>
 </section>
-
-
-
-
     </main>
     <section class="insights">
     <div class="container">
