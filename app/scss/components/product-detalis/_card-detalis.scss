@@ -5,11 +5,11 @@
         display: flex;
         align-items: center;
         @include max($lg) {
-            flex-direction: column;
-            align-items: start;
-        }
-        @include max($lg) {
             margin-bottom: 30px;
+        }
+        @include max($sm) {
+            flex-direction: column;
+            align-items: center;
         }
     }
     &__inner {
@@ -19,107 +19,81 @@
             margin-right: 25px;
         }
         @include max($lg) {
-            margin-right: 0;
-            justify-content: center;
+            display: block;
+            margin-right: 15px;
         }
         @include max($sm) {
-            margin: 0 auto;
+            margin-right: 0;
+            margin-bottom: 15px;
         }
     }
     &__small-slider {
         width: 135px;
         height: 530px;
         margin-right: 25px;
-        @include max($md) {
-            margin-right: 15px;
-        }
-        @include max($sm) {
-            display: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @include max($lg) {
+            flex-direction: row;
+            width: 269px;
+            margin-bottom: 16px;
+            height: 84px;
+            margin-right: 0;
         }
     }
     &__small-item {
         height: 159px;
-        width: 134px !important;
-        margin-bottom: 25px;
+        width: 134px;
         cursor: pointer;
         transition: border-color .3s ease-in;
         &:hover {
             border-color: $global;
         }
+        @include max($lg) {
+            height: 84px;
+            width: 77px;
+        }
     }
     &__small {
-        margin: 0 auto;
+        object-fit: cover;
     }
     &__small--bottom {
         margin: auto auto 0;
-    }
-    &__small-item--last {
-        margin-bottom: 0;
+        @include max($lg) {
+            margin: 0;
+        }
     }
     &__big-slider,
     &__big-item {
-        width: 388px !important;
+        width: 388px;
         height: 532px;
-        @include max($md) {
-            width: 340px !important;
+        @include max($lg) {
+            width: 270px;
+            height: 377px;
         }
-        @include max($sm) {
-            width: 360px !important;
-            height: 350px;
-        }
-        @include max($s) {
-            width: 265px !important;
-            height: 320px;
-        }
-    }
-    &__big-slider {
-        & .slick-dots {
-            position: absolute;
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            li {
-                &.slick-active button {
-                    background-color: $gray;
-                    &:hover {
-                        opacity: 1;
-                    }
-                }
-                &:not(:last-child) {
-                    margin-right: 10px;
-                }
-                button {
-                    cursor: pointer;
-                    font-size: 0;
-                    padding: 0;
-                    border: none;
-                    width: 20px;
-                    height: 20px;
-                    border-radius: 50%;
-                    background-color: $orange;
-                    transition: opacity .3s;
-                    &:hover {
-                        opacity: .5;
-                    }
-                }
-            }
-        }
-
     }
     &__small-item,
     &__big-item {
         border: 2px solid #f2f2f2;
-        display: flex !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    &__big {
-        margin: auto;
-        @include max($sm) {
-            margin: 0 auto;
+    &__small-item {
+        align-items: normal;
+    }
+    &__big{
+        &--lamp {
+            margin: auto;
         }
-    }
+        @include max($lg) {
+            width: 80%;
+            height: 80%;
+        }
+    } 
 
-    &__product-card {
+    &__product {
         max-width: 535px;
         padding: 0;
         box-shadow: none;
@@ -128,8 +102,8 @@
             color: #333;
             font-family: $Rubik;
             font-weight: $fw400;
-            @include max($sm) {
-                font-size: 24px;
+            @include max($md) {
+                font-size: 27px;
             }
         }
         & .sidebar__star {
@@ -146,6 +120,10 @@
             display: block;
             @include max($lg) {
                 margin-bottom: 0;
+                
+            }
+            @include max($md) {
+                font-size: 24px;
             }
         }
         & .product-card__text {
@@ -173,7 +151,7 @@
         padding: 0 50px;
         border: 1px solid $gray;
         margin-right: 15px;
-        @include max($sm) {
+        @include max($md) {
             margin-bottom: 14px;
         }
     }    
@@ -203,11 +181,8 @@
     }
     & .jq-number__spin {
         position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: auto;
-        width: 20px;
-        height: 20px;
+        width: 50px;
+        height: 50px;
         border: none;
         border-radius: 0;
         border: none;
@@ -221,19 +196,19 @@
         }
     }
     & .jq-number__spin.minus {
-        left: 15px;
+        left: 0;
         &::after {
             font-size: 23px;
             content: '-';
-            left: 6px;
-            top: -6px;
+            left: 21px;
+            top: 7px;
         }
     }
     & .jq-number__spin.plus {
-        right: 15px;
+        right: 0;
         &::after {
-            left: 4px;
-            top: -5px;
+            left: 19px;
+            top: 9px;
             content: '+';
             font-size: 22px;
         }
@@ -263,7 +238,7 @@
         @include max($lg) {
             margin-bottom: 15px;
         }
-        @include max($sm) {
+        @include max($md) {
             display: block;
             padding: 0 29px;
         }
@@ -273,6 +248,9 @@
         color: $title;
         &:not(:last-child) {
             margin-bottom: 10px;
+            @include max($md) {
+                margin-bottom: 0;
+            }
         }
     }
     &__heading {

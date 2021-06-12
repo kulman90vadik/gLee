@@ -10,29 +10,24 @@
 </head>
 <body>
     @include('./components/header.html')
+    <section class="page-list page-list--product-detalis">
+        <div class="container">
+            <h1 class="page-list__title">Product Detalis</h1>
+            <ul class="breamcrams">
+                <li class="breamcrams__item">
+                    <a class="breamcrams__link" href="#">Home</a>
+                </li>
+                <li class="breamcrams__item">
+                    <span class="breamcrams__link">Product Detalis</span>
+                </li>
+            </ul>
+        </div>
+    </section>
     <main class="main">
-        <section class="page-list page-list--product-detalis">
-            <div class="container">
-                <h1 class="page-list__title">Product Detalis</h1>
-                <ul class="breamcrams">
-                    <li class="breamcrams__item">
-                        <a class="breamcrams__link" href="#">Home</a>
-                    </li>
-                    <li class="breamcrams__item">
-                        <span class="breamcrams__link">Product Detalis</span>
-                    </li>
-                </ul>
-            </div>
-        </section>
 
         @include('./components/product-detalis/card-detalis.html')
         @include('./components/product-detalis/tabs.html')
-
         @include('./components/product-detalis/card-slider.html')
-
-
-
-
     </main>
     @include('./components/insights.html')
     @include('./components/footer.html')

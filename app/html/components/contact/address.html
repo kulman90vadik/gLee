@@ -2,12 +2,12 @@
     <div class="container">
         <p class="address__subtitle">Write Here</p>
         <h2 class="title address__title">Get In Touch</h2>
-        <ul class="address__list">
-            <span class="visually-hidden">
-                a list in the form of cards in the main contacts
-            </span>
-            <li class="address__items">
-                <address class="address__item">
+        <address class="address__block">
+            <ul class="address__list">
+                <span class="visually-hidden">
+                    a list in the form of cards in the main contacts
+                </span>
+                <li class="address__items">
                     <div class="address__icon">
                         <svg class="address__icons address__map">
                             <use xlink:href="images/sprite.svg#map"></use>
@@ -17,13 +17,11 @@
                         </span>
                     </div>
                     <h3 class="address__heading">Address</h3>
-                    <p class="address__connection address__connection--text">
+                    <a class="address__link address__link--text" href="#">
                         2416 Mapleview Drive Tampa, FL 33634
-                    </p>
-                </address>
-            </li>
-            <li class="address__items">
-                <address class="address__item">
+                    </a>
+                </li>
+                <li class="address__items">
                     <div class="address__icon">
                         <svg class="address__icons address__letter">
                             <use xlink:href="images/sprite.svg#letter"></use>
@@ -41,10 +39,8 @@
                         Inquiries:
                         <a class="address__link" href="mailto:contact@website.com">Info@mail.com</a>
                     </span>
-                </address>
-            </li>
-            <li class="address__items">
-                <address class="address__item">
+                </li>
+                <li class="address__items">
                     <div class="address__icon">
                         <svg class="address__icons address__phone">
                             <use xlink:href="images/sprite.svg#phone"></use>
@@ -62,8 +58,8 @@
                         Mobile:
                         <a class="address__link" href="tel:000 2324 39493">000 2324 39493</a>
                     </span>
-                </address>
-            </li>
-        </ul>
+                </li>
+            </ul>
+        </address>
     </div>
 </section>
