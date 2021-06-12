@@ -1,6 +1,8 @@
 $(function(){
 
 
+    new WOW().init();
+
     $('.tabs__text').fadeOut();
     $('.tabs__text.tabs__text--active').fadeIn();
 
@@ -148,9 +150,6 @@ $(function(){
     var config = {
         controls: {
             scope: 'local'
-        },
-        animation: {
-            effects: 'fade translateZ(-100px)'
         }
     };
 
