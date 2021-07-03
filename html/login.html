@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="images/logo-title.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    @include('./components/header.html')
+    <section class="page-list page-list--login">
+        <div class="container">
+            <h1 class="page-list__title">Log in</h1>
+            <ul class="breamcrams">
+                <li class="breamcrams__item">
+                    <a class="breamcrams__link" href="#">Home</a>
+                </li>
+                <li class="breamcrams__item">
+                    <a class="breamcrams__link" href="#">Log in</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <main class="main">
+
+        <section class="login">
+            <h2 class="visually-hidden">Login</h2>
+            <div class="container">
+                <form class="login__form">
+                    <label class="login__label" for="email">Username or email address *</label>
+                    <span class="visually-hidden">
+                        text field where you need to enter your email
+                    </span>
+                    <input class="login__input login__input--email" id="email" name="email" type="email" required>
+                    <label class="login__label" for="password">Password *</label>
+                    <span class="visually-hidden">
+                        text field where you need to enter your password
+                    </span>
+                    <input class="login__input login__input--password" id="password" name="password" type="password" required>
+                    <button class="login__btn" type="submit">Login</button>
+                    <div class="login__inner">
+                        <label class="login__checkbox">
+                            <input class="login__check" type="checkbox" name="checkbox">
+                            <span class="login__checked"></span>
+                            Remember me
+                            <span class="visually-hidden">
+                                a field where you need to put your consent in order to remember your data
+                            </span>
+                        </label>
+                        <a class="login__link" href="#">Lost your password?</a>
+                    </div>
+                    <span class="login__problem">
+                        <a class="login__link" href="#">Not registered?</a>
+                        No problem
+                    </span>
+                    <a class="login__registered" href="#">Create an account</a>
+                </form>    
+            </div>
+        </section>
+
+    </main>
+    <div class="partners login__partners">
+        <div class="container">
+            <ul class="partners-slider">
+                <li class="partners-slider__slide">
+                    <a class="partners-slider__link" href="#">
+                        <img class="partners-slider__images" src="images/logo-slide-1.png" alt="peterson">
+                    </a>
+                </li>
+                <li class="partners-slider__slide">
+                    <a class="partners-slider__link" href="#">
+                        <img class="partners-slider__images" src="images/logo-slide-2.png" alt="kmn colsalting">
+                    </a>
+                </li>
+                <li class="partners-slider__slide">
+                    <a class="partners-slider__link" href="#">
+                        <img class="partners-slider__images" src="images/logo-slide-3.png" alt="chainforce">
+                    </a>
+                </li>
+                <li class="partners-slider__slide">
+                    <a class="partners-slider__link" href="#">
+                        <img class="partners-slider__images" src="images/logo-slide-4.png" alt="next">
+                    </a>  
+                </li>
+                <li class="partners-slider__slide">
+                    <a class="partners-slider__link" href="#"> 
+                        <img class="partners-slider__images" src="images/logo-slide-5.png" alt="vintage">
+                    </a>
+                </li>
+                <li class="partners-slider__slide">
+                    <a class="partners-slider__link" href="#">
+                        <img class="partners-slider__images" src="images/logo-slide-4.png" alt="next">
+                    </a>
+                </li>
+                <li class="partners-slider__slide">
+                    <a class="partners-slider__link" href="#"></a>
+                        <img class="partners-slider__images" src="images/logo-slide-3.png" alt="vintage">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    @include('./components/footer.html')
+    
+    <script src="js/main.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog One</title>
+    <link rel="shortcut icon" href="images/logo-title.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    @include('./components/header.html')
+    <section class="page-list page-list--blog-one">
+        <div class="container">
+            <h1 class="page-list__title">Blog Details</h1>
+            <ul class="breamcrams">
+                <li class="breamcrams__item">
+                    <a class="breamcrams__link" href="#">Home</a>
+                </li>
+                <li class="breamcrams__item">
+                    <a class="breamcrams__link" href="#">Blog</a>
+                </li>
+                <li class="breamcrams__item">
+                    <span class="breamcrams__link">Blog Details</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <main class="main">
+
+        <div class="blog-page">
+            <div class="container">
+                <div class="blog-page__inner">
+                    <section class="articles">
+
+                        <article class="article article--one">
+                            <div class="article__photo">
+                                <img class="article__img" src="images/article-blog-1.jpg" width="830" height="501" alt="pictures of interior">
+                                <div class="publication article__publication">
+                                    <time class="publication__time article__time" datetime="28.01.2020">28 January, 2020</time>
+                                    <span class="publication__author article__author">
+                                        By admin
+                                    </span>
+                                </div>
+                            </div>
+                            <h2 class="article__title">Fonsectetur adipisicing  eiusmod</h2>
+                            <span class="article__subtitle">
+                                Sdipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                            </span>
+                            <p>
+                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                            </p>
+                            <blockquote>
+                                <p>
+                                    Sdipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                </p>
+                                <cite>
+                                    Wiusmod tempor 
+                                </cite>
+                            </blockquote>
+                            <div class="article__content">
+                                <div class="article__images" style="background-image: url(images/article-blog-4.jpg);">
+
+                                </div>
+                                <div class="article__info">
+                                    <span class="article__subtitle">
+                                        Riusmod tempor incididunt 
+                                    </span>
+                                    <p>
+                                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="article__info article__info--lang">
+                                <span class="article__subtitle">
+                                    Kajtsal jervcm eoaspckred
+                                </span>
+                                <p>
+                                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                                </p>
+                            </div>
+
+                            @include('./components/blog/article-author.html')
+                            @include('./components/blog/comments.html')
+                            @include('./components/form.html')
+
+                        </article>
+                        
+                    </section>    
+
+                    <div class="sidebar blog-page__sidebar">
+                        <span class="visually-hidden">
+                            A block with filters where you can select articles by category
+                        </span>
+                        <aside class="sidebar__block">
+                            <form class="sidebar__search-form">
+                                <label class="sidebar__label visually-hidden" for="search">
+                                    search box on the page
+                                </label>
+                                <input class="sidebar__search" type="search" id="search" name="search">
+                                <button class="sidebar__search-btn" type="submit">
+                                    <span class="visually-hidden">
+                                        price selection filterwhen you click on the button, the necessary information will be searched on this page
+                                    </span>
+                                </button>
+                            </form>
+                        </aside>
+
+                        <aside class="sidebar__block">
+                            <h2 class="sidebar__title">Category</h2>
+                            <div class="sidebar__inner">
+                                <ul class="sidebar__list">
+                                    <li class="sidebar__item">
+                                        <button class="sidebar__btn" type="button">Chair</button>
+                                    </li>
+                                    <li class="sidebar__item">
+                                        <button class="sidebar__btn" type="button">Table</button>
+                                    </li>
+                                    <li class="sidebar__item">
+                                        <button class="sidebar__btn" type="button">Lamp</button>
+                                    </li>
+                                    <li class="sidebar__item">
+                                        <button class="sidebar__btn" type="button">Watch</button>
+                                    </li>
+                                    <li class="sidebar__item">
+                                        <button class="sidebar__btn" type="button">Clock</button>
+                                    </li>
+                                </ul>
+                            </div>   
+                        </aside>
+
+                        <aside class="sidebar__block">
+                            <h2 class="sidebar__title">Recent Posts</h2>
+                            <div class="sidebar__inner">
+                                <ul class="sidebar__holder">
+                                    <li class="sidebar__items">
+                                        <a class="sidebar__link" href="#">
+                                            <div class="sidebar__images sidebar__images--recent-post">
+                                                <img class="sidebar__photo" src="images/post-1.jpg" alt="product lamp" width="71" height="71">
+                                            </div>
+                                            <div class="sidebar__info">
+                                                <span class="sidebar__name sidebar__name--recent-post">
+                                                    Corem ipsum dolor tetur adipisicing elit
+                                                </span>
+                                                <div class="publication">
+                                                    <time class="publication__time publication__time--recent-post" datetime="28.01.2020">28 January, 2020</time>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar__items">
+                                        <a class="sidebar__link" href="#">
+                                            <div class="sidebar__images sidebar__images--recent-post">
+                                                <img class="sidebar__photo" src="images/post-2.jpg" alt="product lamp" width="71" height="71">
+                                            </div>
+                                            <div class="sidebar__info">
+                                                <span class="sidebar__name sidebar__name--recent-post">
+                                                    Fdipisicing elit, sed do eiusmod tempor
+                                                </span>
+                                                <div class="publication">
+                                                    <time class="publication__time publication__time--recent-post" datetime="28.01.2020">28 January, 2020</time>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar__items">
+                                        <a class="sidebar__link" href="#">
+                                            <div class="sidebar__images sidebar__images--recent-post">
+                                                <img class="sidebar__photo" src="images/post-3.jpg" alt="product lamp" width="71" height="71">
+                                            </div>
+                                            <div class="sidebar__info">
+                                                <span class="sidebar__name sidebar__name--recent-post">
+                                                    Eonsectetur adipisicing elit, sed do eiusmod 
+                                                </span>
+                                                <div class="publication">
+                                                    <time class="publication__time publication__time--recent-post" datetime="28.01.2020">28 January, 2020</time>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar__items">
+                                        <a class="sidebar__link" href="#">
+                                            <div class="sidebar__images sidebar__images--recent-post">
+                                                <img class="sidebar__photo" src="images/post-4.jpg" alt="product lamp" width="71" height="71">
+                                            </div>
+                                            <div class="sidebar__info">
+                                                <span class="sidebar__name sidebar__name--recent-post">
+                                                    gnim ad minim veniam, quis nostrud 
+                                                </span>
+                                                <div class="publication">
+                                                    <time class="publication__time publication__time--recent-post" datetime="28.01.2020">28 January, 2020</time>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <div class="partners blog-page__partners">
+        <div class="container">
+            <ul class="partners-slider">
+                <li class="partners-slider__slide">
+                    <a class="partners-slider__link" href="#">
+                        <img class="partners-slider__images" src="images/logo-slide-1.png" alt="peterson">
+                    </a>
+                </li>
+                <li class="partners-slider__slide">
+                    <a class="partners-slider__link" href="#">
+                        <img class="partners-slider__images" src="images/logo-slide-2.png" alt="kmn colsalting">
+                    </a>
+                </li>
+                <li class="partners-slider__slide">
+                    <a class="partners-slider__link" href="#">
+                        <img class="partners-slider__images" src="images/logo-slide-3.png" alt="chainforce">
+                    </a>
+                </li>
+                <li class="partners-slider__slide">
+                    <a class="partners-slider__link" href="#">
+                        <img class="partners-slider__images" src="images/logo-slide-4.png" alt="next">
+                    </a>  
+                </li>
+                <li class="partners-slider__slide">
+                    <a class="partners-slider__link" href="#"> 
+                        <img class="partners-slider__images" src="images/logo-slide-5.png" alt="vintage">
+                    </a>
+                </li>
+                <li class="partners-slider__slide">
+                    <a class="partners-slider__link" href="#">
+                        <img class="partners-slider__images" src="images/logo-slide-4.png" alt="next">
+                    </a>
+                </li>
+                <li class="partners-slider__slide">
+                    <a class="partners-slider__link" href="#"></a>
+                        <img class="partners-slider__images" src="images/logo-slide-3.png" alt="vintage">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    @include('./components/footer.html')
+    
+    <script src="js/main.min.js"></script>
+</body>
+</html>
